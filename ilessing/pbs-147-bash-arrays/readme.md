@@ -1,13 +1,13 @@
-### [Episode 147]((https://pbs.bartificer.net/pbs147)) Arrays Challenge:
+### [Episode 147](https://pbs.bartificer.net/pbs147) Arrays Challenge:
 
 39:08 Write a script to take the user’s breakfast order.
 
 The script should: 
-- store the menu items in an array, then 
-- use a `select` loop to to present the user with the menu items, 
-- an option to indicate user is done ordering. 
-- Each time the user selects an item, append it to an array representing their order. 
-- When the user is done adding items, print their order.
+- [x] store the menu items in an array, then 
+- [x] use a `select` loop to to present the user with the menu items, 
+- [ ] an option to indicate user is done ordering. 
+- [ ] Each time the user selects an item, append it to an array representing their order. 
+- [ ] When the user is done adding items, print their order.
 
 #### For bonus credit: 
 -  update your script to load the menu into an array from a text file
@@ -24,3 +24,8 @@ The script should:
 - ignore empty lines
 
 I'm mentioned at 3:07 LOL
+
+### My Notes
+
+- [https://devhints.io/bash](https://devhints.io/bash) very helpful 
+- examples at [shell tips](https://www.shell-tips.com/bash/select-loop/#gsc.tab=0) were also helpful
