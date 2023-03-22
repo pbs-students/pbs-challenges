@@ -1,7 +1,3 @@
-# Programming By Stealth Overview
-
-Programming By Stealth is a podcast created by Bart Busschots and me (Allison Sheridan). Bart is the instructor of the class to learn to program and I am the student in the audio podcast.  Bart writes tutorial shownotes which are published at https://pbs.bartificer.net and you can listen to the show in your podcatcher of choice, or via the shownotes, or via Programming By Stealth at [www.podfeet.com/...](https://www.podfeet.com/blog/category/programming-by-stealth/).
-
 # PBS 146 Challenge Shell Loops
 
 Bart is teaching a mini-series on shell scripting and in [PBS 146](https://pbs.bartificer.net/pbs146) included this challenge:
