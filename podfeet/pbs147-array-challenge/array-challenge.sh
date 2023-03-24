@@ -15,7 +15,7 @@
 
 declare -a breakfastMenu
 
-# DID NOT WORK - Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
+# NOTE Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
 # SAVEIFS=$IFS
 # Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
 IFS="/"
