@@ -21,7 +21,7 @@ declare -a order
 # Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
 IFS="/"
 
-# BUG: if I leave it waiting too long to answer, I get the error ./array-challenge.sh: line 96: xt: command not found. And weirder yet, sometimes "xt" is ".txt"
+# BUG: if I leave it waiting too long to answer, I get the error ./array-challenge.sh: line 96: xt: command not found. And weirder yet, sometimes "xt" is ".txt". One time it just said "t"
 # Loop through the menu.txt file and populate the breakfastMenu array
 i=0
 while read line
@@ -52,7 +52,18 @@ select food in ${breakfastMenu[@]}
     then
       break
     fi
-    echo "Have some $food"
+    # got this syntax from https://www.masteringunixshell.net/qa36/bash-how-to-add-to-array.html to keep spaces between the elements
+    order+=("$food")
+    echo "Your order so far contains:"
+    for item in ${order[@]}
+      do
+        echo "there are ${#order[@]} items in your order"
+        # this lists each item but not as individual lines
+        echo "Your order so far is: ${order[@]}. Can I get you anything else?"
+        # this only gives me the most recent item. why?
+        echo "* $item"
+      done
+   
   done
 
 # Maybe they can have more than one of something - will require counting...
