@@ -26,22 +26,18 @@ IFS="/"
 i=0
 while read line
   # if line contains space, replace with "\ " when added to bM
-  
+
   do breakfastMenu[$i]="$line"
     i=$((i+1))
   done < menu.txt
 
-# DID NOT WORK - Restore IFS to default
+# DID NOT WORK - Tried to set default IFS to a variable and then Restore IFS to default afterwards
 # IFS=$SAVEIFS
 
 # Create a user prompt
 # Include the available menu items from the array
 # Bart suggested a number is how they can choose "I'll have a number 7"
 # look at Select Menu Loops in [pbs.bartificer.net/...](https://pbs.bartificer.net/pbs146)
-# 
-# this is giving a numbered list but it's seeing more and bacon as two items
-# put quotes back into menu.txt but it's still two things in the prompt
-# tried changing it to More\ Bacon and "More Bacon" but it still split it
 
 echo -e "Let me read you the breakfast menu.
 Type the number for the item you would like.
