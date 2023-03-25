@@ -12,14 +12,16 @@
 # For bonus credit, update your script to load the menu into an array from a text file containing one menu item per line, ignoring empty lines and lines starting with a # symbol.
 
 # Create an array of breakfast foods
-
 declare -a breakfastMenu
+# Create an array to hold the user's order
+declare -a order
 
 # NOTE Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
 # SAVEIFS=$IFS
 # Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
 IFS="/"
 
+# BUG: if I leave it waiting too long to answer, I get the error ./array-challenge.sh: line 96: xt: command not found. And weirder yet, sometimes "xt" is ".txt"
 # Loop through the menu.txt file and populate the breakfastMenu array
 i=0
 while read line
@@ -40,6 +42,10 @@ while read line
 # this is giving a numbered list but it's seeing more and bacon as two items
 # put quotes back into menu.txt but it's still two things in the prompt
 # tried changing it to More\ Bacon and "More Bacon" but it still split it
+
+echo -e "Let me read you the breakfast menu.
+Type the number for the item you would like.
+When you're done ordering, type the number that corresponds to \"done\""
 select food in ${breakfastMenu[@]}
   do
     if [[ $food == 'Done' ]]
