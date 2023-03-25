@@ -50,6 +50,11 @@ select food in ${breakfastMenu[@]}
   do
     if [[ $food == 'Done' ]]
     then
+      echo "Thank you. Your order is:"
+      for item in ${order[@]}
+        do
+          echo "* $item"
+        done
       break
     fi
     # got this syntax from https://www.masteringunixshell.net/qa36/bash-how-to-add-to-array.html to keep spaces between the elements
@@ -57,52 +62,13 @@ select food in ${breakfastMenu[@]}
     echo "Your order so far contains:"
     for item in ${order[@]}
       do
-        echo "there are ${#order[@]} items in your order"
+        # echo "there are ${#order[@]} items in your order"
         # this lists each item but not as individual lines
-        echo "Your order so far is: ${order[@]}. Can I get you anything else?"
-        # this only gives me the most recent item. why?
+        # echo "Your order so far is: * $item". Can I get you anything else?"
+        # this only gives me the FIRST item. why?
         echo "* $item"
       done
    
   done
 
 # Maybe they can have more than one of something - will require counting...
-
-
-
-#
-# things that didn't work
-#
-
-# cat menu.txt | while read -r item
-#   do
-#     # echo "item is $item"
-#     # Add each item with a space after it to the array breakfastMenu
-#     breakfastMenu+="$item "
-#     echo "breakfastMenu: ${breakfastMenu[@]}"
-#     # This should show 8 items but it says 1
-#     echo "There are ${#breakfastMenu[@]} items in the breakfast menu"
-    
-#   done
-#   # this should show all of the items in the array separated by spaces but nothing comes out
-#     echo "breakfastMenu: ${breakfastMenu[@]}"
-#     # this SHOULD tell me the fourth element in the array when it exists but it doesn't
-#     echo "${breakfastMenu[3]}"
-
-
-# breakfastMenu=
-#     while read item
-#       do echo $item | $breakfastMenu
-#         echo $breakfastMenu
-#       done < menu.txt
-  
-# while IFS= read -r item
-#   do breakfastMenu+=("$item")
-#   echo $breakfastMenu
-#   done < menu.txt
-
-# loop through menu in text file
-# This works to simply echo out the lines from menu.txt
-# while read item
-#   do echo $item
-#   done < menu.txt
