@@ -29,7 +29,14 @@ while read line
 
   do breakfastMenu[$i]="$line"
     i=$((i+1))
-  done < menu.txt
+  done < $(dirname "$BASH_SOURCE")/menu.txt
+
+
+
+# Allison's challenge - let the user add to the menu
+# Bart explained we don't know what they typed - if they type anything but one of the numbers, it returns an empty string
+# He said you could note if an empty string was received
+# And respond by asking if they meant to ask for something on the menu and then record it and THEN append to the menu
 
 # DID NOT WORK - Tried to set default IFS to a variable and then Restore IFS to default afterwards
 # IFS=$SAVEIFS
