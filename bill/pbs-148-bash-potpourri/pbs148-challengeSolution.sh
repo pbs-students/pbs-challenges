@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Welcome to The Gluten Free Zone\n"
+echo "Welcome to The Gluten Free Zone"
 read -p "Which meal are you here for today; [b]reakfast, [l]unch or [d]inner " meal
 read -p "And how many items will you want to eat today? " num_o_items
 
@@ -29,8 +29,7 @@ if ! [[ $num_o_items =~ $re ]] ; then
 fi
 
 this_dir=$PWD"/"
-echo $this_dir
-echo ""
+
 if [[ $this_dir == *"/bill/pbs-148-bash-potpourri/" ]]
 then
     lib_dir="../lib"
@@ -52,7 +51,8 @@ fi
 source $lib_dir"/getArray.sh"
 source $lib_dir"/inArray.sh"
 
-echo "\nHere is today's Totally Gluten-free Menu"
+echo ""
+echo "Here is today's Totally Gluten-free Menu"
 getArray "$menu_file"
 for i in ${a_array[@]}
 do
@@ -69,8 +69,8 @@ loopi=1
 while [[ $loopi -le $num_o_items ]]
 do
     read -p "For item $loopi what do you want? " this_item
-
-    if [[ $loopi -le 1 ]]
+    inArray $this_item "${a_array[@]}"
+    if [[ $is_yes = "Yes" ]]
     then
       order+=("$this_item")
       ((loopi++))
