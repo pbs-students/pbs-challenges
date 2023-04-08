@@ -1,0 +1,28 @@
+# Again, stollen from ../bill with some items added
+# Sandwiches
+BLT
+Rueben Traditional
+Rueben Pastrami
+Tuna salad
+Egg Salad
+# Burgers
+Slider
+Cheeseburger
+Bacon Cheeseburger
+TexMex Burger
+Veggie Burger
+Turkey Burger
+# Chicken
+Grilled Chicken
+Cornflaked Chicken
+TexMex Grilled
+
+# Sides
+Fries
+Sweet Potato Fries
+Potato Chips
+Sweet Potato Chips
+Cole Slaw
+Applesauce
+House Salad
+

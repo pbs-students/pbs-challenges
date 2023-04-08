@@ -1,0 +1,2 @@
+FOO="${VARIABLE:-default}"   # If variable not set or null, use default. 
+ # If VARIABLE was unset or null, it still is after this (no assignment done).

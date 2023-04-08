@@ -13,10 +13,13 @@ declare -a choices
 choices=(pancakes coffee orange)
 #load_array  breakfast_menu.txt menu1
 # Read in the choices from the menu file
+# Get the name of the file to read in, or use default if not supplied
+fname="${1:-breakfast_menu.txt}"
+# read each line into the menu array using here string. (Thanks Bart)
 while read -r line
 do
   menu+=( "$line" )
-done <<< "$(egrep -v '(#.*$)|(^$)' breakfast_menu.txt)"
+done <<< "$(egrep -v '(#.*$)|(^$)' $fname)"
 
 echo What will you have?
 echo Here are some items we have on hand today
