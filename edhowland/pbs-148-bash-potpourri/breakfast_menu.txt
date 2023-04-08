@@ -1,0 +1,22 @@
+# Stole this from ../bill. Added more items
+# sweet stuff
+pancakes
+waffles
+french toast
+
+# healthy stuff
+porridge
+muesli
+grits
+# fried
+sausages
+bacon
+eggs
+spam
+Canadian Bacon
+# drinks
+tea
+coffee
+orange juice
+tomato juice
+grapefruit juice
