@@ -10,24 +10,28 @@ source ${LIB}/pbs-funcs.sh
 # The arrays: menu and choices
 declare -a menu
 declare -a choices
-choices=(pancakes coffee orange)
 #load_array  breakfast_menu.txt menu1
-# Read in the choices from the menu file
+# Read in the menu items  from the selected menu file
 # Get the name of the file to read in, or use default if not supplied
 fname="${1:-breakfast_menu.txt}"
 # read each line into the menu array using here string. (Thanks Bart)
 while read -r line
 do
-  menu+=( "$line" )
+  menu+=( "'$line'" )
 done <<< "$(egrep -v '(#.*$)|(^$)' $fname)"
 
-echo What will you have?
-echo Here are some items we have on hand today
-for i in ${!menu[@]}
-do
-  echo $i: ${menu[$i]}
-done
 
+# set the IFS (input fields separator) to an empty string to prevent word splitting
+IFS=''
+echo Type 1 to exit 
+PS3="What will you have? "
+select food in done ${menu[@]}
+do
+  [[ -z "$food" ]] && continue
+  [[ "$food" == "done" ]] && break
+  choices+=("$food")
+echo Type 1 to exit 
+done
 echo Your choices are:
 for item in ${choices[@]}
 do
