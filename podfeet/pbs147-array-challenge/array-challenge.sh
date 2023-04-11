@@ -17,9 +17,9 @@ declare -a breakfastMenu
 declare -a order
 
 # NOTE Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
-SAVEIFS=$IFS
+# SAVEIFS=$IFS
 # Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
-IFS="/"
+# IFS="/"
 
 # Loop through the menu.txt file and populate the breakfastMenu array
 
@@ -38,8 +38,9 @@ while read -r line
   # dirname grabs just the directory name from $BASH_SOURCE
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
+  echo ${breafkastMenu[7]}
 
-IFS=$IFS
+# IFS=$IFS
 
 
 # Allison's challenge - let the user add to the menu
@@ -54,7 +55,7 @@ IFS=$IFS
 
 echo -e "Let me read you the breakfast menu.
 Type the number for the item you would like.
-When you're done ordering, type the number that corresponds to \"done\""
+When you're done ordering, type 1 to select done"
 select food in ${breakfastMenu[@]}
   do
     if [[ $food == 'Done' ]]
