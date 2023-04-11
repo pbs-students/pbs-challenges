@@ -39,10 +39,6 @@ while read -r line
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
 
-# while read -r item
-#   do echo "* $item"
-# done <<< "$(cat $breakfastMenu[@])"
-
 IFS=$IFS
 
 
