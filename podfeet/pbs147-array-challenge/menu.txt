@@ -1,19 +1,10 @@
-# Starches
 Pancakes
 Waffles
-
-# Meat
 Spam
+Eggs
 Bacon
 Sausage
-More Bacon
-
-# Poultry
-Eggs
 Eggs Benedict
-
-# Disgusting
 Porridge
-
-# Exit
+More Bacon
 Done

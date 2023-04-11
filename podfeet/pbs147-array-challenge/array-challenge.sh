@@ -17,39 +17,29 @@ declare -a breakfastMenu
 declare -a order
 
 # NOTE Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
-SAVEIFS=$IFS
+# SAVEIFS=$IFS
 # Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
 IFS="/"
 
+# BUG: if I leave it waiting too long to answer, I get the error ./array-challenge.sh: line 96: xt: command not found. And weirder yet, sometimes "xt" is ".txt". One time it just said "t"
 # Loop through the menu.txt file and populate the breakfastMenu array
+i=0
+while read line
+  # if line contains space, replace with "\ " when added to bM
 
-while read -r line
-  do
-    # skip invalid selections ($food is empty)
-    [[ -z $line ]] && continue
-    
-    # skip comment lines
-    echo "$line" | egrep -q '^[ ]*#' && continue
+  do breakfastMenu[$i]="$line"
+    i=$((i+1))
+  done < $(dirname "$BASH_SOURCE")/menu.txt
 
-    breakfastMenu+=("$line")
-
-  # cat to read in the file
-  # $BASH_SOURCE if the path of the executing script including script name
-  # dirname grabs just the directory name from $BASH_SOURCE
-  # menu.txt is where our breakfast menu resides
-  done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
-
-# while read -r item
-#   do echo "* $item"
-# done <<< "$(cat $breakfastMenu[@])"
-
-IFS=$IFS
 
 
 # Allison's challenge - let the user add to the menu
 # Bart explained we don't know what they typed - if they type anything but one of the numbers, it returns an empty string
 # He said you could note if an empty string was received
 # And respond by asking if they meant to ask for something on the menu and then record it and THEN append to the menu
+
+# DID NOT WORK - Tried to set default IFS to a variable and then Restore IFS to default afterwards
+# IFS=$SAVEIFS
 
 # Create a user prompt
 # Include the available menu items from the array
@@ -62,21 +52,23 @@ When you're done ordering, type the number that corresponds to \"done\""
 select food in ${breakfastMenu[@]}
   do
     if [[ $food == 'Done' ]]
-      then
-        echo "Thank you. Your order is:"
-        for item in ${order[@]}
-          do
-            echo "* $item"
-          done
-        break
-      fi
+    then
+      echo "Thank you. Your order is:"
+      for item in ${order[@]}
+        do
+          echo "* $item"
+        done
+      break
+    fi
     # got this syntax from https://www.masteringunixshell.net/qa36/bash-how-to-add-to-array.html to keep spaces between the elements
-
-
     order+=("$food")
     echo "Your order so far contains:"
     for item in ${order[@]}
       do
+        # echo "there are ${#order[@]} items in your order"
+        # this lists each item but not as individual lines
+        # echo "Your order so far is: * $item". Can I get you anything else?"
+        # this only gives me the FIRST item. why?
         echo "* $item"
       done
    
