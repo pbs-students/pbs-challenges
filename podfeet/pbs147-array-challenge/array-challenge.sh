@@ -38,7 +38,7 @@ while read -r line
   # dirname grabs just the directory name from $BASH_SOURCE
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
-  echo ${breafkastMenu[7]}
+  echo ${breakfastMenu[6]} # expected value: more bacon 
 
 # IFS=$IFS
 
@@ -56,27 +56,23 @@ while read -r line
 echo -e "Let me read you the breakfast menu.
 Type the number for the item you would like.
 When you're done ordering, type 1 to select done"
+
 select food in ${breakfastMenu[@]}
+# select item in done "${menu[@]}"
+do 
+  # skip invalid selections ($food is empty)  
+  [[ -z $food ]] && continue
+
+  # exit if done
+  [[ $food == done ]] && break
+
+  order+=("$food")
+  echo "You added $food to your order"
+  
+done
+
+echo "Let me read your order back to you:"
+for item in ${order[@]}
   do
-    if [[ $food == 'Done' ]]
-      then
-        echo "Thank you. Your order is:"
-        for item in ${order[@]}
-          do
-            echo "* $item"
-          done
-        break
-      fi
-    # got this syntax from https://www.masteringunixshell.net/qa36/bash-how-to-add-to-array.html to keep spaces between the elements
-
-
-    order+=("$food")
-    echo "Your order so far contains:"
-    for item in ${order[@]}
-      do
-        echo "* $item"
-      done
-   
+    echo "* $item"
   done
-
-# Maybe they can have more than one of something - will require counting...
