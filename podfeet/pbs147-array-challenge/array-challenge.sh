@@ -57,8 +57,9 @@ echo -e "Let me read you the breakfast menu.
 Type the number for the item you would like.
 When you're done ordering, type 1 to select done"
 
-select food in ${breakfastMenu[@]}
-# select item in done "${menu[@]}"
+# NOTE: Quotes around the array in select required to keep items with spaces in their names as one item
+select food in "${breakfastMenu[@]}" 
+
 do 
   # skip invalid selections ($food is empty)  
   [[ -z $food ]] && continue
