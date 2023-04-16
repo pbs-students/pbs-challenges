@@ -16,11 +16,6 @@ declare -a breakfastMenu
 # Create an array to hold the user's order
 declare -a order
 
-# NOTE Tried to save default value of IFS to a variable and set it back afterwards but that broke up "more bacon" again into two strings
-# SAVEIFS=$IFS
-# Set IFS to anything BUT space, so that More Bacon is one entry in the resulting array
-# IFS="/"
-
 # Loop through the menu.txt file and populate the breakfastMenu array
 
 while read -r line
@@ -39,9 +34,6 @@ while read -r line
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
   echo ${breakfastMenu[6]} # expected value: more bacon 
-
-# IFS=$IFS
-
 
 # Allison's challenge - let the user add to the menu
 # Bart explained we don't know what they typed - if they type anything but one of the numbers, it returns an empty string
@@ -73,7 +65,7 @@ do
 done
 
 echo "Let me read your order back to you:"
-for item in ${order[@]}
+for item in "${order[@]}"
   do
     echo "* $item"
   done
