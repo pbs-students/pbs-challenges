@@ -18,10 +18,9 @@ maxFood=$1
 regex=^[+]?[0-9]+$
 
 # test for whole number as input for maxFood
-# NOTE: do I have to verify if they gave me an argument?
 if [[ -z $maxFood ]] # if no argument supplied
   then
-    maxFood=2
+    maxFood=2 # Arbitrary max number of items allowed to be ordered
     echo "The max items you can order is $maxFood"
   else
   until [[ $maxFood =~ $regex ]]
@@ -72,16 +71,21 @@ When you're done ordering, type 1 to select done"
 # NOTE: Quotes around the array in select required to keep items with spaces in their names as one item
 select food in "${breakfastMenu[@]}" 
 
-do 
-  # skip invalid selections ($food is empty)  
-  [[ -z $food ]] && continue
+  do 
+    # skip invalid selections ($food is empty)  
+    [[ -z $food ]] && continue
+    [[ $food -gt ${#breakfastMenu[@]} ]] && echo "number too big"
 
-  # exit if done
-  [[ $food == done ]] && break
+    # exit if done
+    [[ $food == done ]] && break
 
-  order+=("$food")
-  echo "You added $food to your order"
-  
+    order+=("$food")
+    printf "You added $food to your order\n\n"
+    echo "You have ordered ${#order[@]} item(s)"
+
+    # exit if $maxFood is reached
+    [[ ${#order[@]} -eq $maxFood ]] && echo "You can't order any more food" && break
+    
 done
 
 echo "Let me read your order back to you:"
