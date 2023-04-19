@@ -1,0 +1,14 @@
+# this is the menu for the Canopy Road Cafe
+# Updated on 4/17/2023
+#
+
+bacon
+lizzard parts
+eggs, poached 
+gagh
+gravy 
+grits 
+slithy toves
+bacon, peanut-flavored
+
+# end of file

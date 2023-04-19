@@ -1,0 +1,18 @@
+# this is the menu for the Metro Diner
+# Updated on 4/17/2023
+#
+
+biscuits 
+Cheerios 
+eggs, poached 
+oatmeal 
+omelet
+waffles
+milk
+cinnamon sugar 
+gravy 
+grits 
+maple syrup
+sausage
+
+# end of file
