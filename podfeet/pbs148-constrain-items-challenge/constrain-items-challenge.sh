@@ -54,32 +54,23 @@ while read -r line
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
 
-# Allison's challenge - let the user add to the menu
-# Bart explained we don't know what they typed - if they type anything but one of the numbers, it returns an empty string
-# He said you could note if an empty string was received
-# And respond by asking if they meant to ask for something on the menu and then record it and THEN append to the menu
-
-# Create a user prompt
-# Include the available menu items from the array
-# Bart suggested a number is how they can choose "I'll have a number 7"
-# look at Select Menu Loops in [pbs.bartificer.net/...](https://pbs.bartificer.net/pbs146)
-
 echo -e "Let me read you the breakfast menu.
 Type the number for the item you would like.
 When you're done ordering, type 1 to select done"
 
 # NOTE: Quotes around the array in select required to keep items with spaces in their names as one item
 select food in "${breakfastMenu[@]}" 
-
   do 
+    
     # skip invalid selections ($food is empty)  
     [[ -z $food ]] && continue
-    [[ $food -gt ${#breakfastMenu[@]} ]] && echo "number too big"
+
 
     # exit if done
     [[ $food == done ]] && break
 
     order+=("$food")
+    # using printf because it's easier to add line feeds
     printf "You added $food to your order\n\n"
     echo "You have ordered ${#order[@]} item(s)"
 
