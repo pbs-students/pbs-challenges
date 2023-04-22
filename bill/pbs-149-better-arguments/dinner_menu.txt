@@ -1,0 +1,39 @@
+# Beef
+Bone-in Ribeye
+Ribeye
+KC Strip
+Prime Rib
+BBQ Ribs
+Chipotle Meatloaf
+
+# Poultry
+1/2 Roasted Chicken
+Baked Parmesean Chicken
+Singapore Chicken Satay
+Sweet and Spicy Lemonade Grilled Chicken
+Chipotle Turkey Meatloaf
+Orange Duck
+
+# Comfort
+Mac & Cheese
+Lobster Mac & Cheese
+Spinach and 3 Cheese Lasagna
+Chicken Soup
+Sausage & Lentel Soup
+
+# Sides
+House Salad
+Ceasar Salad
+Fresh Steamed Vegetables
+Baked Potato
+Sweet Potato
+Roasted Califlower and Red Potatoes
+
+# Desert
+Brownie Sundae
+Apple Pie
+Pecan Pie
+Lemon Lime Meringue Pie
+German Chocolate Cake
+Caramel Tart
+Blackberry Lime Pavlova
