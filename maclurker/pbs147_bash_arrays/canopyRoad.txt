@@ -1,0 +1,15 @@
+# this is the menu for the Canopy Road Cafe
+# Updated on 4/17/2023
+#
+
+bacon
+biscuits 
+eggs, poached 
+oatmeal 
+milk
+cinnamon sugar 
+gravy 
+grits 
+sausage
+
+# end of file

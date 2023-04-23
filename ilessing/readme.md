@@ -5,3 +5,5 @@
 - [PBS 145 of X — Shell Conditionals](https://pbs.bartificer.net/pbs145)
 - [PBS 146 of X — Shell Loops](https://pbs.bartificer.net/pbs146)
 - [PBS 147 of X — Bash Arrays](https://pbs.bartificer.net/pbs147)
+
+an insignificant change.  testing git.
