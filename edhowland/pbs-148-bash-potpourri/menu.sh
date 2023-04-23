@@ -22,10 +22,9 @@ done <<< "$(egrep -v '(#.*$)|(^$)' $fname)"
 
 
 # set the IFS (input fields separator) to an empty string to prevent word splitting
-IFS=''
 echo Type 1 to exit 
 PS3="What will you have? "
-select food in done ${menu[@]}
+select food in done "${menu[@]}"
 do
   [[ -z "$food" ]] && continue
   [[ "$food" == "done" ]] && break
@@ -33,7 +32,7 @@ do
 echo Type 1 to exit 
 done
 echo Your choices are:
-for item in ${choices[@]}
+for item in "${choices[@]}"
 do
   echo $item
 done
