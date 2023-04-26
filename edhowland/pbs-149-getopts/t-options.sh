@@ -3,4 +3,5 @@
 source options.sh
 echo menu: $fname
 echo limit: $limit
-echo snark: $snark
+echo "$msg_fname"
+

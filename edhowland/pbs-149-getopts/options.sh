@@ -3,8 +3,15 @@
 usage=$(
 cat<<EOD
 $(basename $0) [-m menufile.txt] [-l limit_choices] [-s]
+  Where -m menu_file.xt is file of menu choices. [default: breakfast_menu.txt]
+    - l <number> : Limits the number of choices user can make.
+    -s : Use snark-messages.txt for prompts instead of std-messages.txt
 EOD
 )
+fname="breakfast_menu.txt"
+msg_fname="std-messages.txt"
+limit=""
+snark="N"
 while getopts ':m:l:s' OPT
 do
   case $OPT in
@@ -14,7 +21,7 @@ test -f $fname || { echo No such file: $fname; exit 2; };;
     l)
       limit=$OPTARG;;
     s)
-      snark=Y;;
+      msg_fname="snark-messages.txt";;
     \:)
 echo Bad value for argument $OPT
       echo "$usage";;
