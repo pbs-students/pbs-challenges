@@ -21,11 +21,13 @@ while getopts ":sl:m:" opt; do
             ;;
         m)
             meal=$OPTARG
-            short_meal=${meal::1}
+            test_meal=${meal::1}
             if [[ $test_meal != "b" ]] && [[ $test_meal != "l" ]] && [[ $test_meal != "d" ]]
             then
                 echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
                 exit 1
+            else
+                short_meal=$test_meal
             fi
             ;;
         \?)
@@ -38,7 +40,12 @@ while getopts ":sl:m:" opt; do
             ;;
     esac
 done
-if [[ short_meal != "b" ]]
+
+echo "Snarky: "$is_snarky
+echo "meal: "$short_meal
+echo "limit: "$num_o_items
+
+if [[ $short_meal != "b" ]] && [[ $short_meal != "l" ]] && [[ $short_meal != "d" ]]
 then
     if [[ $is_snarky = "no" ]]
     then
@@ -46,11 +53,12 @@ then
         read -p "Which meal are you here for today; [b]reakfast, [l]unch or [d]inner " meal
     else
         echo "Heya hun, don't go dragging any gluten in here, we are The Gluten Free Zone"
-        read -p "Don't want breakfast? Spill, what you want.; [b]reakfast, [l]unch or [d]inner " meal
+        read -p "Don't want breakfast? Spill, what you want. [b]reakfast, [l]unch or [d]inner " meal
     fi
+    short_meal=${meal::1}
 fi
 
-case $shortmeal in
+case $short_meal in
     b)
         menu_name="breakfast_menu.txt"
         ;;
@@ -107,11 +115,11 @@ loopi=1
 
 while [[ $loopi -le $num_o_items ]]
 do
-    if [[ $is_snarky = "n" ]]
+    if [[ $is_snarky = "no" ]]
     then
         read -p "For item $loopi what do you want? " this_item
     else
-        read -p "Let's get on with it, what do you want? " this_item
+        read -p "Let's get on with it, what do you want? This will be item $loopi. " this_item
     fi
     inArray $this_item "${a_array[@]}"
     if [[ $is_yes = "Yes" ]]
@@ -119,7 +127,7 @@ do
       order+=("$this_item")
       ((loopi++))
     else
-        if [[ $is_snarky = "n" ]]
+        if [[ $is_snarky = "no" ]]
         then
             echo "That is not on the menu, but I can look into adding it at a latter time."
         else
@@ -130,14 +138,15 @@ do
 done
 
 if [[ $is_snarky = "n" ]]
-then
-    echo "I have as your order" ${order[@]}
+then  
+    echo "I have as your order:" ${order[@]}
 else
-    echo "Here's what you are getting, like it or not." ${order[@]}
+    echo "Here's what you are getting, like it or not:" ${order[@]}
 fi
 echo ""
 
-for i in ${order[@]}
-do
-    echo "$i"
-done
+# for i in ${order[@]}
+# do
+#     echo "$i"
+# done
+
