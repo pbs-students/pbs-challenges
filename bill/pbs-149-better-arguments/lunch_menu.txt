@@ -1,0 +1,23 @@
+# Sandwiches
+BLT
+Rueben Traditional
+Rueben Pastrami
+
+# Burgers
+Slider
+Cheeseburger
+Bacon Cheeseburger
+TexMex Burger
+
+# Chicken
+Grilled Chicken
+Cornflaked Chicken
+TexMex Grilled
+
+# Sides
+Fries
+Sweet Potato Fries
+Potato Chips
+Sweet Potato Chips
+Cole Slaw
+House Salad
