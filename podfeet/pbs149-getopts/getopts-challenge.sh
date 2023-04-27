@@ -14,6 +14,8 @@
 
 # Variable to hold snarkiness - assume it's blank
 isSnark=""
+# Variable to hold maximum number of food items
+maxFood="2"
 
 usage="Usage: $(basename $0) [-s] [-l LIMIT]"
 
@@ -27,11 +29,12 @@ while getopts ':sl:' opt
 do
   case $opt in
     s)
-      # flag for snarkiness - 1 means to be snarky
+      # if we find the flag for snarkiness - 1 means to be snarky
       isSnark = 1
+      echo "isSnark is $isSnark"
       ;;
     l)
-      # optional argument to set a limit on how many items they can order
+      # if we get an optional argument to set a limit on how many items they can order
       maxFood = "$OPTARG"
       ;;
     ?)
@@ -45,11 +48,29 @@ done
 # regex allows whole positive numbers
 regex=^[+]?[0-9]+$
 
+#
+# === do I change this whole part for the getopts stuff? ===
+# 01:13 in recording for shift. 0:17 I say I don't know why shift
+
+# remove all of the arguments from the indices by using shift by one less than $OPTIND which is the next value that would come into getops
+shift $(echo "$OPTIND-1" | bc)
+maxFood=$1
+echo "maxFood is $maxFood" 
+
+message=""
+
+if [[ -n $isSnark ]] # if isSnark is NOT empty
+then
+  message+="Your doctor says you're obese."
+else
+  message+="If you've had sufficient, you might want to stop."
+fi
+
 # test for whole number as input for maxFood
 if [[ -z $maxFood ]] # if no argument supplied
   then
     maxFood=2 # Arbitrary max number of items allowed to be ordered
-    echo "The max items you can order is $maxFood"
+    message+="The max items you can order is $maxFood"
   else
   until [[ $maxFood =~ $regex ]] # $maxFood is a positive number
     do
