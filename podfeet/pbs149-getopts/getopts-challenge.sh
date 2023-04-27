@@ -2,15 +2,24 @@
 
 # Written by Allison Sheridan (aka @podfeet) in 2023 under the MIT license
 # This script was written as a response to the challenge starting at
-# Bart Busschots in Programming By Stealth 146 at https://pbs.bartificer.net/pbs146
-# The challenge was written as:
-# Write a script to take the user’s breakfast order.
-# The script should store the menu items in an array, then use a select loop to present the user with the menu, plus an extra option to indicate they’re done ordering. 
-# Each time the user selects an item, append it to an array representing their order. 
+# Bart Busschots in Programming By Stealth 147 at
+# https://pbs.bartificer.net/pbs147 d
+# PBS147:
+# Write a script to take the user’s breakfast order. The script should store the
+# menu items in an array, then use a select loop to present the user with the 
+# menu, plus an extra option to indicate they’re done ordering. Each time the 
+# user selects an item, append it to an array representing their order. 
 # When the user is done adding items, print their order.
-# For bonus credit, update your script to load the menu into an array from a text file containing one menu item per line, ignoring empty lines and lines starting with a # symbol.
-# PBS148: accept an optional argument limiting the number of items a user can order from the breakfast menu.
-# PBS149: update your solution to the previous challenge to convert the optional argument for specifying a limit to a -l optional argument, and add a -s flag to enable snarky output (like the infamous Carrot weather app for iOS does).
+# For bonus credit, update your script to load the menu into an array from a 
+# text file containing one menu item per line, ignoring empty lines and lines 
+# starting with a # symbol.
+# PBS148: 
+# accept an optional argument limiting the number of items a user can order 
+# from the breakfast menu.
+# PBS149: 
+# update your solution to the previous challenge to convert the optional 
+# argument for specifying a limit to a -l optional argument, and add a -s flag 
+# to enable snarky output (like the infamous Carrot weather app for iOS does).
 
 # Variable to hold snarkiness - assume it's blank
 isSnark=""
@@ -30,15 +39,16 @@ do
   case $opt in
     s)
       # if we find the flag for snarkiness - 1 means to be snarky
-      isSnark = 1
-      echo "isSnark is $isSnark"
+      isSnark=1
       ;;
     l)
-      # if we get an optional argument to set a limit on how many items they can order
-      maxFood = "$OPTARG"
+      # if we get an optional argument to set a limit on how many items th
+      # they can order
+      maxFood="$OPTARG"
       ;;
     ?)
-      # here comes my fancy error message if they type something after the shell script name that isn't -s or -l
+      # here comes my fancy error message if they type something after the shell
+      # script name that isn't -s or -l
       echo "$usage"
       exit 1
       ;;
@@ -48,22 +58,28 @@ done
 # regex allows whole positive numbers
 regex=^[+]?[0-9]+$
 
-#
-# === do I change this whole part for the getopts stuff? ===
-# 01:13 in recording for shift. 0:17 I say I don't know why shift
+# ------------------------------------------------------------------------------
+# At 1:17 in PBS149 I tell Bart I don't understand shift and what it's doing. 
+# His example is very helpful and is not in the show notes. Plus you get to hear
+# him say "minus a stinky would be 2" and it will make perfect sense.
+# ------------------------------------------------------------------------------
 
-# remove all of the arguments from the indices by using shift by one less than $OPTIND which is the next value that would come into getops
+# remove all of the arguments from the indices by using shift by one less than
+# $OPTIND which is the next value that would come into getops
 shift $(echo "$OPTIND-1" | bc)
-maxFood=$1
-echo "maxFood is $maxFood" 
 
-message=""
+# Initialize a variable with a leading line feed to hold the message when 
+# maxFood has been reached
+message="
+"
 
 if [[ -n $isSnark ]] # if isSnark is NOT empty
 then
-  message+="Your doctor says you're obese."
-else
-  message+="If you've had sufficient, you might want to stop."
+  message+="Your doctor says you're obese so you can't order any more food.
+  "
+else # isSnark is empty so we have to be more polite
+  message+="Thank you. You have ordered the maximum number of items.
+  "
 fi
 
 # test for whole number as input for maxFood
@@ -74,9 +90,9 @@ if [[ -z $maxFood ]] # if no argument supplied
   else
   until [[ $maxFood =~ $regex ]] # $maxFood is a positive number
     do
-      read -p "Please enter a whole number, try again: " maxFood		
+      read -p 
+      "Please enter a whole number for the food order limit:" maxFood		
     done
-  echo "The max items you can order is $maxFood"
 fi
 
 # Create an array of breakfast foods
@@ -102,11 +118,15 @@ while read -r line
   # menu.txt is where our breakfast menu resides
   done <<< "$(cat $(dirname "$BASH_SOURCE")/menu.txt)"
 
-echo -e "Let me read you the breakfast menu.
-Type the number for the item you would like.
-When you're done ordering, type 1 to select done"
+echo -e "
+Below is the breakfast menu.
+Enter the number for the item you would like to order.
+When you're done ordering, type 1 to select done and complete your order
+"
 
-# NOTE: Quotes around the array in select required to keep items with spaces in their names as one item
+# Quotes around the array in select required to keep items with 
+# spaces in their names as one item
+
 select food in "${breakfastMenu[@]}" 
   do 
     # skip invalid selections ($food is empty)  
@@ -118,10 +138,10 @@ select food in "${breakfastMenu[@]}"
     order+=("$food")
     # using printf because it's easier to add line feeds
     printf "You added $food to your order\n\n"
-    echo "You have ordered ${#order[@]} item(s)"
+    # echo "You have ordered ${#order[@]} item(s)"
 
     # exit if $maxFood is reached
-    [[ ${#order[@]} -eq $maxFood ]] && echo "You can't order any more food" && break
+    [[ ${#order[@]} -eq $maxFood ]] && echo "$message" && break
 done
 
 echo "Let me read your order back to you:"
