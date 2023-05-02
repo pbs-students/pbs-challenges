@@ -27,7 +27,7 @@ do
   [[ "$food" == "done" ]] && break
   choices+=("$food")
 dmesg 2
-done
+done < /dev/tty
 dmesg 3
 for item in "${choices[@]}"
 do
