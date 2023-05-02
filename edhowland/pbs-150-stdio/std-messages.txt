@@ -1,0 +1,6 @@
+Your choices are:
+What will you have?
+Type 1 to exit
+You chose the following items:
+Comming right up
+Sorry, your limit of food items has been reached
