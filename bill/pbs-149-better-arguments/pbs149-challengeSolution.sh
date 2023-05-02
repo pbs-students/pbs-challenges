@@ -1,51 +1,87 @@
 #!/usr/bin/env bash
 
 is_snarky="no"
-num_o_items=20
-meal="b"
-short_meal="b"
+num_o_items=0
+meal=""
+short_meal=""
 solution_dir="pbs-149-better-arguments"
+menu_dir=""
 
-while getopts ":sl:m:" opt; do
+while getopts ":sl:m:-:" opt; do
     case $opt in
-        s)
-            is_snarky="yes"
-            ;;
-        l)
-            num_o_items=$OPTARG
-            if [[ $num_o_items -lt 1 ]] || [[ $num_o_items -gt 20 ]]
-            then
-                echo "Please enter a value between 1 and 20 when specifying a limit to the number of items you are ordering."
-                exit 1            
-            fi
-            ;;
-        m)
-            meal=$OPTARG
-            test_meal=${meal::1}
-            if [[ $test_meal != "b" ]] && [[ $test_meal != "l" ]] && [[ $test_meal != "d" ]]
-            then
-                echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
-                exit 1
-            else
-                short_meal=$test_meal
-            fi
-            ;;
-        \?)
-            echo "Valid options are:" >&2
-            echo "  -s - snarky output" >&2
-            echo "  -l x -
-             limit number of items to x amount, max of 20" >&2
-            echo "  -m y - which meal you want: [b]reakfast, [l]unch, [d]inner" >&2
-            exit 1
-            ;;
+      -)
+        given_meal=""
+        given_items=""
+        case "${OPTARG}" in
+           snarky)
+             is_snarky="yes"
+             ;;
+           meal)
+             given_meal="${!OPTIND}"; OPTIND=$(( $OPTIND + 1))
+             ;;
+           meal=*)
+             given_meal=${OPTARG#*=}
+             ;;
+           items)
+             given_items="${!OPTIND}"; OPTIND=$(( $OPTIND + 1))
+             ;;
+           items=*)
+             given_items=${OPTARG#*=}
+             ;;
+           \?)
+             echo "--"${OPTARG}" is not an option, moving on."
+             ;;
+        esac
+        test_meal=${given_meal::1}
+        if [ $test_meal != "b" ] && [ $test_meal != "l" ] && [ $test_meal != "d" ]
+        then
+          echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
+          exit 1
+        else
+          short_meal=$test_meal
+        fi
+        if [ $given_items -gt 0 ] && [ $given_items -lt 21 ]
+        then
+         num_o_items=$given_items
+        else
+          echo "The number of items has to be between 1 and 20. You are getting 10"
+          num_o_items=10
+        fi
+        ;;
+      s)
+        is_snarky="yes"
+        ;;
+      l)
+        num_o_items=$OPTARG
+        if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ]
+        then
+          echo "Please enter a value between 1 and 20 when specifying a limit to the number of items you are ordering."
+          exit 1
+        fi
+        ;;
+      m)
+        meal=$OPTARG
+        test_meal=${meal::1}
+        if [[ $test_meal != "b" ]] && [[ $test_meal != "l" ]] && [[ $test_meal != "d" ]]
+        then
+          echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
+          exit 1
+        else
+          short_meal=$test_meal
+        fi
+        ;;
+      \?)
+        echo "Valid options are:" >&2
+        echo "  -s or --snarky - snarky output" >&2
+        echo "  -l x  or --limit=x -
+          limit number of items to x amount, max of 20" >&2
+        echo "  -m y or --meal=y - which meal y you want: [b]reakfast, [l]unch, [d]inner" >&2
+        exit 1
+        ;;
     esac
 done
 
-echo "Snarky: "$is_snarky
-echo "meal: "$short_meal
-echo "limit: "$num_o_items
-
-if [[ $short_meal != "b" ]] && [[ $short_meal != "l" ]] && [[ $short_meal != "d" ]]
+if [[ $short_meal != "b" && $short_meal != "l" && $short_meal != "d" ]]
 then
     if [[ $is_snarky = "no" ]]
     then
@@ -53,16 +89,25 @@ then
         read -p "Which meal are you here for today; [b]reakfast, [l]unch or [d]inner " meal
     else
         echo "Heya hun, don't go dragging any gluten in here, we are The Gluten Free Zone"
-        read -p "Don't want breakfast? Spill, what you want. [b]reakfast, [l]unch or [d]inner " meal
+        read -p "Confused about what to eat? Spill, what you want. [b]reakfast, [l]unch or [d]inner " meal
     fi
     short_meal=${meal::1}
+fi
+
+if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ]
+then
+    if [[ $is_snarky = "no" ]]
+    then
+        read -p "How many items do you wish to order (1-20)?" num_o_items
+    else
+        read -p "So hun, how many items do you want to pig out on (1-20 ... 20? Really? " num_o_items
+    fi
 fi
 
 case $short_meal in
     b)
         menu_name="breakfast_menu.txt"
         ;;
-        
     l)
         menu_name="lunch_menu.txt"
         ;;
@@ -80,13 +125,15 @@ this_dir=$PWD"/"
 if [[ $this_dir == *"/bill/"$solution_dir"/" ]]
 then
     lib_dir="../lib"
-    menu_file=$this_dir$menu_name
+    file_dir="../files"
+    menu_file=$file_dir$menu_name
 elif [[ $this_dir == *"/bill/" ]]
 then
     lib_dir="lib"
-    menu_file=$this_dir$solution_dir"/"$menu_name
+    file_dir="files"
+    menu_file=$this_dir$file_dir"/"$menu_name
 else 
-  echo "You must run this script in bill's directory for the challenge."
+  echo "You must run this script in bill's directory or bill's solution directory for the challenge."
   exit 1
 fi
 
