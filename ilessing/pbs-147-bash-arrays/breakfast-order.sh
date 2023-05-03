@@ -29,8 +29,12 @@ do
     then
       echo "sorry bud.  that's not on the menu"
     else
-    echo -e "\n you want $itemchosen.  Okay"
-  fi
+      # user made a valid menu selection so lets record their choice
+      # by adding their choice to an array
+      # TODO
+
+      echo -e "\n you want $itemchosen.  Okay"
+    fi
 
 else
 
