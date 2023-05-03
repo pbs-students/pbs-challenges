@@ -3,9 +3,10 @@
 39:08 Write a script to take the user’s breakfast order.
 
 The script should: 
+
 - [x] store the menu items in an array, then 
 - [x] use a `select` loop to to present the user with the menu items, 
-- [ ] an option to indicate user is done ordering. 
+- [x] an option to indicate user is done ordering. 
 - [ ] Each time the user selects an item, append it to an array representing their order. 
 - [ ] When the user is done adding items, print their order.
 
@@ -29,3 +30,9 @@ I'm mentioned at 3:07 LOL
 
 - [https://devhints.io/bash](https://devhints.io/bash) very helpful 
 - examples at [shell tips](https://www.shell-tips.com/bash/select-loop/#gsc.tab=0) were also helpful
+- run the script with `-x` flag to get some debug tracing output.  
+example:
+
+```sh
+bash -x ilessing/pbs-147-bash-arrays/breakfast-order.sh
+```
