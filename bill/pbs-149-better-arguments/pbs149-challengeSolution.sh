@@ -20,7 +20,8 @@ while getopts ":sl:m:-:" opt; do
       given_meal="${!OPTIND}"
       OPTIND=$(($OPTIND + 1))
       test_meal=${given_meal::1}
-      if [ $test_meal != "b" ] && [ $test_meal != "l" ] && [ $test_meal != "d" ]; then
+      if [ $test_meal != "b" ] && [ $test_meal != "l" ] && [ $test_meal != "d" ]
+      then
         echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
         exit 1
       else
@@ -31,7 +32,8 @@ while getopts ":sl:m:-:" opt; do
     meal=*)
       given_meal=${OPTARG#*=}
       test_meal=${given_meal::1}
-      if [ $test_meal != "b" ] && [ $test_meal != "l" ] && [ $test_meal != "d" ]; then
+      if [ $test_meal != "b" ] && [ $test_meal != "l" ] && [ $test_meal != "d" ] 
+      then
         echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
         exit 1
       else
@@ -42,7 +44,8 @@ while getopts ":sl:m:-:" opt; do
     items)
       given_items="${!OPTIND}"
       OPTIND=$(($OPTIND + 1))
-      if [[ $given_items -gt 0 && $given_items -lt 21 ]]; then
+      if [[ $given_items -gt 0 && $given_items -lt 21 ]] 
+      then
         num_o_items=$given_items
       else
         echo "The number of items has to be between 1 and 20. You are getting 10"
@@ -52,7 +55,8 @@ while getopts ":sl:m:-:" opt; do
       ;;
     items=*)
       given_items=${OPTARG#*=}
-      if [[ $given_items -gt 0 && $given_items -lt 21 ]]; then
+      if [[ $given_items -gt 0 && $given_items -lt 21 ]] 
+      then
         num_o_items=$given_items
       else
         echo "The number of items has to be between 1 and 20. You are getting 10"
@@ -75,7 +79,8 @@ while getopts ":sl:m:-:" opt; do
     ;;
   l)
     num_o_items=$OPTARG
-    if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ]; then
+    if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ]
+    then
       echo "Please enter a value between 1 and 20 when specifying a limit to the number of items you are ordering."
       exit 1
     fi
@@ -83,7 +88,8 @@ while getopts ":sl:m:-:" opt; do
   m)
     meal=$OPTARG
     test_meal=${meal::1}
-    if [[ $test_meal != "b" ]] && [[ $test_meal != "l" ]] && [[ $test_meal != "d" ]]; then
+    if [[ $test_meal != "b" && $test_meal != "l" && $test_meal != "d" ]]
+    then
       echo "Please enter [b]reakfast, [l]unch, [d]inner" >&2
       exit 1
     else
@@ -92,17 +98,19 @@ while getopts ":sl:m:-:" opt; do
     ;;
   *)
     echo "-"${OPTARG}" is not an option."
-    echo "Valid options are:" >&2
-    echo "  -s or --snarky - snarky output" >&2
+    echo "Valid options are:" 
+    echo "  -s or --snarky - snarky output"
     echo "  -l x  or --items=x -
-          limit number of items to x amount, max of 20" >&2
-    echo "  -m y or --meal=y - which meal y you want: [b]reakfast, [l]unch, [d]inner" >&2
+          limit number of items to x amount, max of 20"
+    echo "  -m y or --meal=y - which meal y you want: [b]reakfast, [l]unch, [d]inner"
     ;;
   esac
 done
 
-if [[ $short_meal != "b" && $short_meal != "l" && $short_meal != "d" ]]; then
-  if [[ $is_snarky = "no" ]]; then
+if [[ $short_meal != "b" && $short_meal != "l" && $short_meal != "d" ]] 
+then
+  if [[ $is_snarky = "no" ]] 
+  then
     echo "Welcome to The Gluten Free Zone"
     read -p "Which meal are you here for today; [b]reakfast, [l]unch or [d]inner " meal
   else
@@ -112,8 +120,10 @@ if [[ $short_meal != "b" && $short_meal != "l" && $short_meal != "d" ]]; then
   short_meal=${meal::1}
 fi
 
-if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ]; then
-  if [[ $is_snarky = "no" ]]; then
+if [ $num_o_items -lt 1 ] || [ $num_o_items -gt 20 ] 
+then
+  if [[ $is_snarky = "no" ]] 
+  then
     read -p "How many items do you wish to order (1-20)? " num_o_items
   else
     read -p "So hun, how many items do you want to pig out on (1-20 ... 20? Really? " num_o_items
@@ -138,10 +148,11 @@ esac
 
 this_dir=$PWD"/"
 
-if [[ $this_dir == *"/bill/"$solution_dir"/" ]]; then
+if [[ $this_dir == *"/bill/"$solution_dir"/" ]] 
+then
   lib_dir="../lib"
   file_dir="../files"
-  menu_file=$file_dir$menu_name
+  menu_file=$file_dir"/"$menu_name
 elif [[ $this_dir == *"/bill/" ]]; then
   lib_dir="lib"
   file_dir="files"
@@ -151,7 +162,8 @@ else
   exit 1
 fi
 
-if [[ ! -e $menu_file ]]; then
+if [[ ! -e $menu_file ]] 
+then
   echo $menu_file
   exit 2
 fi
@@ -162,7 +174,8 @@ echo ""
 echo "Here is today's Totally Gluten-Free Menu"
 getArray "$menu_file"
 for i in ${a_array[@]}; do
-  if [[ ! $i == "#"* ]]; then
+  if [[ ! $i == "#"* ]] 
+  then
     echo "$i"
   fi
 done
@@ -172,17 +185,20 @@ order=()
 loopi=1
 
 while [[ $loopi -le $num_o_items ]]; do
-  if [[ $is_snarky = "no" ]]; then
+  if [[ $is_snarky = "no" ]] 
+  then
     read -p "For item $loopi what do you want? " this_item
   else
     read -p "Let's get on with it, what do you want? This will be item $loopi. " this_item
   fi
   inArray $this_item "${a_array[@]}"
-  if [[ $is_yes = "Yes" ]]; then
+  if [[ $is_yes = "Yes" ]] 
+  then
     order+=("$this_item")
     ((loopi++))
   else
-    if [[ $is_snarky = "no" ]]; then
+    if [[ $is_snarky = "no" ]] 
+    then
       echo "That is not on the menu, but I can look into adding it at a latter time."
     else
       echo "Hun, do you know how to read, it's not on the menu? Try again."
@@ -195,11 +211,12 @@ final_order=""
 for i in ${order[@]}; do
   final_order=$final_order$i", "
 done
-if [[ $is_snarky = "no" ]]; then
-  # echo "I have as your order:" ${order[@]}
-  echo "I have as your order:" ${final_order}
+if [[ $is_snarky = "no" ]] 
+then
+  # echo "I have as your order: " ${order[@]}
+  echo "I have as your order: " ${final_order}
 else
-  # echo "Here's what you are getting, like it or not:" ${order[@]}
-  echo "Here's what you are getting, like it or not:" ${final_order}
+  # echo "Here's what you are getting, like it or not: " ${order[@]}
+  echo "Here's what you are getting, like it or not: " ${final_order}
 fi
 echo ""
