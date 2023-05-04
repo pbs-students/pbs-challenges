@@ -12,7 +12,30 @@ Every section contains:
 - Bart's description of the challenge
   * And any possible bonus challenges
 - A link to the episode page on the PBS web site for the show notes
-  * https://pbs.bartificer.net/pbs146
+  * E.g. https://pbs.bartificer.net/pbs146
+
+### A note on running the challenge solutions
+
+Bart has helpfully named every solution  script with the following format:
+ 'pbs1XX-challenge-solution.sh' - where the pbs1XX is the  episode number.
+E.g. in the folder pbs-148-bash-potpourri is the file:  
+pbs148-challenge-solution.sh
+It can be run thusly:
+
+```bash
+$ cd  pbs-148-bash-potpourri
+$ ./pbs148-challenge-solution.sh
+```
+
+Sometimes there are supplemental files like: 'menu.txt' and bonus challenge 
+solution scripts. And in some cases there are options and arguments  and ways 
+topipe content into the solution script.
+See the show notes for further instructions.
+Please contact any of us if you have any questions. If you comment on GitHub I
+will see it and respond there.  You can contact me directly at:
+ed.howland@gmail.com
+
+[The Programming By Stealth About page](https://pbs.bartificer.net)
 
 ## pbs-149-bash-better-arguments-with-POSIX-special-variables/
 
