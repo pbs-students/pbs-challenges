@@ -1,0 +1,7 @@
+eggs
+oatmeal
+croisant
+waffles
+toast
+yogurt
+fruit

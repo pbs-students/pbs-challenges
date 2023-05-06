@@ -12,8 +12,8 @@ The script should:
 
 #### For bonus credit: 
 -  update your script to load the menu into an array from a text file
-  -  containing one menu item per line, 
-  - ignoring empty lines and lines starting with a # symbol.
+  - [x]  containing one menu item per line, 
+  - [ ] ignoring empty lines and lines starting with a # symbol.
 - @podfeet bonus: add bacon to the menu.  (allow special requests to the kitchen)
 
 #### In this challenge we'll exercise:

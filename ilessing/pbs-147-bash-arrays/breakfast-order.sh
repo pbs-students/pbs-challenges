@@ -5,8 +5,8 @@
 declare -a mymenu
 declare -a myorder
 
-# add items to the array
-mymenu=("eggs" "oatmeal" "croisant" "waffles" "toast" "yogurt" "fruit")
+# read menu items from stored text file
+mymenu=( $(cat menu.txt) )
 
 # push one more item to the end of the array
 mymenu+=(done)
