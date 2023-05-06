@@ -7,8 +7,8 @@ The script should:
 - [x] store the menu items in an array, then 
 - [x] use a `select` loop to to present the user with the menu items, 
 - [x] an option to indicate user is done ordering. 
-- [ ] Each time the user selects an item, append it to an array representing their order. 
-- [ ] When the user is done adding items, print their order.
+- [x] Each time the user selects an item, append it to an array representing their order. 
+- [x] When the user is done adding items, print their order.
 
 #### For bonus credit: 
 -  update your script to load the menu into an array from a text file

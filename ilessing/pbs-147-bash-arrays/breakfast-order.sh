@@ -3,6 +3,7 @@
 # usage: 
 
 declare -a mymenu
+declare -a myorder
 
 # add items to the array
 mymenu=("eggs" "oatmeal" "croisant" "waffles" "toast" "yogurt" "fruit")
@@ -34,6 +35,8 @@ do
       # TODO
 
       echo -e "\n you want $itemchosen.  Okay"
+      
+      myorder+=("$itemchosen")
     fi
 
 else
@@ -44,4 +47,4 @@ else
   fi
 done
 
-# prompt 
+echo "you ordered: ${myorder[@]}"
