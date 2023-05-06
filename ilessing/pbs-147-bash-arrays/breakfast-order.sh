@@ -32,10 +32,7 @@ do
     else
       # user made a valid menu selection so lets record their choice
       # by adding their choice to an array
-      # TODO
-
       echo -e "\n you want $itemchosen.  Okay"
-      
       myorder+=("$itemchosen")
     fi
 
