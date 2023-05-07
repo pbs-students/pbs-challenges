@@ -14,5 +14,6 @@ You will find my solution in this folder.
 - [ ] use `$BASH_SOURCE` environment variable
 - [ ] use `dirname` and `basename` functions to derive correct paths
 - [ ] allow running the main script from some other directory
-- [ ] accept an argument
-- [ ] if agument is numeric treat it as item limit
+- [x] accept an argument
+- [x] if agument is numeric treat it as item limit
+- [x] break off ordering if limit specified on command line is reached

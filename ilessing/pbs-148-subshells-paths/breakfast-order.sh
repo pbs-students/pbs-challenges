@@ -22,12 +22,10 @@ while IFS= read
 if [[ -z $1 ]] 
 then
   numitems=${#mymenu[@]}
-  echo "no limit"
-# $1 is numeric
+# $1 is numeric and less than or equal to the number of items in the menu
 elif [[ $1 =~ ^[0-9]+$ ]] && [[ $1 -le ${#mymenu[@]} ]]
   then
     numitems=$1
-    echo "limit is $1"
   else
   # user entered too high a number or a non-number
   echo "out of range. Now, let's be reasonable.  I'll give you the whole menu"
@@ -51,31 +49,31 @@ PS3="select your breakfast: "
 
 # a select loop over the array
 select itemchosen in "${mymenu[@]}"
-do 
-  echo "you chose $itemchosen"
-  
-  # test if they are done or not
-  if [[ $itemchosen != done ]]
-  then
-    echo " is that on the menu?"
-    # test if they have chosen something from the menu
-    if [[ -z $itemchosen ]]
+  do 
+
+    # test if they are done or not
+    if [[ $itemchosen != done ]]
     then
-      echo "sorry bud.  that's not on the menu"
+      # test if they have chosen something from the menu
+      if [[ -z $itemchosen ]]
+        then
+          echo "sorry bud.  that's not on the menu"
+        else
+          # user made a valid menu selection so lets record their choice
+          # by adding their choice to an array
+          echo -e "\n you want $itemchosen."
+          myorder+=("$itemchosen")
+
+          # here we test if they have reached the limit specified by command line argument
+          [[ ${#myorder[@]} -eq $numitems ]]  && break
+   
+        fi
     else
-      # user made a valid menu selection so lets record their choice
-      # by adding their choice to an array
-      echo -e "\n you want $itemchosen.  Okay"
-      myorder+=("$itemchosen")
+    # double square brackets to test if user entered "done".  
+    # the break executes only if the expression in the square brackets resolves true
+    [[ $itemchosen == done ]]  && break
+
     fi
-  else
-  # under what conditions is this part of the conditional executed??
-
-  # double square brackets to test if user entered "done".  
-  # the break executes only if the expression in the square brackets resolves true
-  [[ $itemchosen == done ]] && break
-
-  fi
-done
+  done
 
 echo -e "\n\n you ordered: ${myorder[@]} \n\n I'm sending it to the kitchen now."
