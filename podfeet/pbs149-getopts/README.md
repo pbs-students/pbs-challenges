@@ -8,7 +8,7 @@ Update your solution to the previous challenge to convert the optional argument 
 I'm also going to add error checking with getopts to see if the user chooses a number above or below the allowable range
 # ---------------------------------
 
-Example of usage:
+Example output:
 
 ```
 ./getopts-challenge.sh -s -l 4
