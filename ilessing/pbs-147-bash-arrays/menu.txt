@@ -1,7 +1,14 @@
+# trad
 eggs
 oatmeal
 croisant
+
+# the baked goods
 waffles
 toast
+wheat toast
+grits with gravy
+
+# healthy
 yogurt
 fruit

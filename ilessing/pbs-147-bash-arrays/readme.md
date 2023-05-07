@@ -13,7 +13,7 @@ The script should:
 #### For bonus credit: 
 -  update your script to load the menu into an array from a text file
   - [x]  containing one menu item per line, 
-  - [ ] ignoring empty lines and lines starting with a # symbol.
+  - [X] ignoring empty lines and lines starting with a # symbol.
 - @podfeet bonus: add bacon to the menu.  (allow special requests to the kitchen)
 
 #### In this challenge we'll exercise:
@@ -36,3 +36,5 @@ example:
 ```sh
 bash -x ilessing/pbs-147-bash-arrays/breakfast-order.sh
 ```
+- [Use Bash to read line by line and keep space - Stack Overflow](https://stackoverflow.com/questions/7314044/use-bash-to-read-line-by-line-and-keep-space)
+- [bash - Read quoted array elements with spaces from file? - Linux Stack Exchange](https://unix.stackexchange.com/questions/237735/read-quoted-array-elements-with-spaces-from-file)

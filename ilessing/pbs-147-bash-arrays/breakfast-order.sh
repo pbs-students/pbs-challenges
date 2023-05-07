@@ -5,11 +5,19 @@
 declare -a mymenu
 declare -a myorder
 
-# read menu items from stored text file
-mymenu=( $(cat menu.txt) )
+# read menu items from stored menu.txt file
+# skip blank lines and comment lines in the menu.text file
+while IFS= read
+  do
+    [[ -z $REPLY ]] && continue
+    [[ $REPLY =~ ^[\#] ]] && continue #not sure how/why this works. I don't understand the syntax.
+    mymenu+=("$REPLY")
+  done < menu.txt 
 
 # push one more item to the end of the array
 mymenu+=(done)
+
+# echo "${mymenu[5]}"; exit; # expected value: "wheat toast"
 
 # show count of menu items
 echo "there are ${#mymenu[@]} menu items available"
@@ -44,4 +52,4 @@ else
   fi
 done
 
-echo "you ordered: ${myorder[@]}"
+echo -e "\n you ordered: ${myorder[@]}"
