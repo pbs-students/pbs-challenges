@@ -11,9 +11,11 @@ You will find my solution in this folder.
 
 ### To Dos
 
-- [ ] use `$BASH_SOURCE` environment variable
-- [ ] use `dirname` and `basename` functions to derive correct paths
-- [ ] allow running the main script from some other directory
+- [x] use `$BASH_SOURCE` environment variable
+- [x] use `dirname` functions to derive correct paths
+- [x] allow running the main script from some other directory
 - [x] accept an argument
 - [x] if agument is numeric treat it as item limit
 - [x] break off ordering if limit specified on command line is reached
+
+noticed that if one orders the same item more than once that still uses up the alloted choices.  Also if one orders every item on the menu that reaches your limit and you don't get to choose if you're done.  It's as if the waiter just decided not to accept any more menu choices from this customer.   I don't feel like programming around this edge case.

@@ -15,7 +15,7 @@ while IFS= read
     [[ -z $REPLY ]] && continue
     [[ $REPLY =~ ^[\#] ]] && continue #not sure how/why this works. I don't understand the syntax.
     mymenu+=("$REPLY")
-  done < menu.txt 
+  done < $(dirname $BASH_SOURCE)/menu.txt 
 
 # if no argument is passed, default to number of items in the menu
 # otherwise, use the argument passed to the script
