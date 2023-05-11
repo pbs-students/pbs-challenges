@@ -20,6 +20,13 @@
 # update your solution to the previous challenge to convert the optional 
 # argument for specifying a limit to a -l optional argument, and add a -s flag 
 # to enable snarky output (like the infamous Carrot weather app for iOS does).
+# PBS150:
+# Update your challenge solution from last time so it can optionally load the
+# menu from a or from STDIN. Add an option named -m (for menu), and if that 
+# option has the value -, read from STDIN, otherwise, treat the value of -m as a
+# file path and load the menu from that file. If -m is not passed, default to 
+#  reading from ./menu.txt.
+# Also, make a conscious choice about what goes to STDOUT and STDERR.
 
 # Variable to hold snarkiness - assume it's blank
 isSnark=""
