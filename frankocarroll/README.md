@@ -19,13 +19,19 @@ We need a way to read interactively from the user terminal while STDIN and STDOU
 flowchart LR
     subgraph PBS[pbs150.sh]
     direction TB
-        SCRIPT[Menu Chooser<br>Script] <-->
-        USER[Interactive<br>Terminal<br>/dev/tty]
+        SCRIPT[Menu Chooser<br>Script] <-- /dev/tty -->
+        USER[Interactive<br>Terminal]
     end
     MENU[Menu<br>File or Pipe] -- stdin --> PBS
     PBS -- stdout --> ORDER[Order<br>File or Pipe]
 
 ```
 
-It turns out that the file /dev/tty (for teletype) is a special file which is connected to the terminal which started the process. So we will try using the select loop by redirecting the input and output from /dev/tty for the select loop only
+It turns out that the file `/dev/tty` (for teletype) is a special file which is always connected to the terminal which started the process. 
+So to implement this design we can try using the `select` loop by redirecting the input and output from `/dev/tty` for the select loop only,
+something like
+
+```
+(no spoilers)
+```
 
