@@ -1,0 +1,12 @@
+
+Below is the breakfast menu.
+Enter the number for the item you would like to order.
+When you're done ordering, type 1 to select done and complete your order
+
+You added Waffles to your order
+
+
+Thank you. You have ordered the maximum number of items.
+  
+Let me read your order back to you:
+* Waffles
