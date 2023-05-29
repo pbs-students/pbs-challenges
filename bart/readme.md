@@ -34,8 +34,28 @@ See the show notes for further instructions.
 Please contact any of us if you have any questions. If you comment on GitHub I
 will see it and respond there.  You can contact me directly at:
 ed.howland@gmail.com
+Or ping me on Slack. I appear to be @edhowland there.
+Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 
-[The Programming By Stealth About page](https://pbs.bartificer.net)
+
+
+
+##### Challenges are below this line
+
+##  pbs-150-of-x--bash-script-plumbing
+
+Update your challenge solution from last time so it can ingest its menu in three ways:
+
+Default to reading the menu from a file named menu.txt in the same folder as the script.
+Read the menu from STDIN with the optional argument -m -.
+Read the menu from a file with the optional argument -m path_to_file.txt
+Regardless of where the menu is coming from, always present the menu interactively, i.e., the user always has to choose using the keyboard.
+
+Finally, to simplify your script, feel free to remove the -s (snark) flag added last time.
+
+Heres my sample solution, which youll find in this folder
+
+[PBS 150 Show notes](https://pbs.bartificer.net/pbs150)
 
 ## pbs-149-bash-better-arguments-with-POSIX-special-variables/
 
