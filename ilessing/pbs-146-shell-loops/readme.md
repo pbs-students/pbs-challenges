@@ -34,3 +34,5 @@ done
 
 - [if statement - Difference between single and double square brackets in Bash - Stack Overflow](https://stackoverflow.com/questions/13542832/difference-between-single-and-double-square-brackets-in-bash)
 
+
+2023-05-12: as an exercise I completed the challenge using Python and Ruby instead of Bash. (see: `p-table_gen.py` & `r-table_gen.rb`)

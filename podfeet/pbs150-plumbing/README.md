@@ -1,17 +1,22 @@
-# pbs149-getopts-challenge
+# pbs150-plumbing-challenge
 
-Response to challenge from Programming By Stealth installment 149 at [pbs.bartificer.net/...](https://pbs.bartificer.net/pbs149)
+Response to challenge from Programming By Stealth installment 150 at 
+[pbs.bartificer.net/...](https://pbs.bartificer.net/pbs149)
 
 # ---------------------------------
-Update your solution to the previous challenge to convert the optional argument for specifying a limit to a -l optional argument, and add a -s flag to enable snarky output (like the infamous Carrot weather app for iOS does).
+Update your challenge solution from last time so it can optionally load the menu
+from a or from STDIN. Add an option named -m (for menu), and if that option has 
+the value -, read from STDIN, otherwise, treat the value of -m as a file path 
+and load the menu from that file. If -m is not passed, default to reading from 
+./menu.txt.
 
-I'm also going to add error checking with getopts to see if the user chooses a number above or below the allowable range
+Also, make a conscious choice about what goes to STDOUT and STDERR.
 # ---------------------------------
 
-Example output:
+Example of usage:
 
 ```
-./getopts-challenge.sh -s -l 4
+./plumbing-challenge.sh -m -
 
 Below is the breakfast menu.
 Enter the number for the item you would like to order.
