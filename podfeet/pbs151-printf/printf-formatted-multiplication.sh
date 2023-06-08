@@ -35,7 +35,26 @@ rangemin=$2
 rangemax=$3
 
 # new version will be to add optional arguments specifically
-
+usage="Usage: $(basename $0) [-m] [-M LIMIT]"
+# NOTE: I think n is wrong the way I'm doing it. It's required, not optional
+while getops ':nm:M:' opt # I'll do error checking, n is required, m and M are optional
+do
+	case $opt in
+		n) # The number to be multiplied by
+			number=1
+			;;
+		m) # Minimum value to use as multiplier
+			rangemin=$OPTARG
+			;;
+		M) # Maximum value to use as multiplier
+			rangemax=$OPTARG
+			;;
+		?) # What if they type something after the script name that isn't n, m, or M
+				echo "$usage"
+				exit 1
+				;;
+	ecase
+done
 
 # Define a regular expression for a whole number to check each value against
 # Optional + or - sign followed by one or more digits from 0 to 9
