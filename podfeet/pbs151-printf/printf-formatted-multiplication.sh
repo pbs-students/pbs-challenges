@@ -34,6 +34,9 @@ number=$1
 rangemin=$2
 rangemax=$3
 
+# new version will be to add optional arguments specifically
+
+
 # Define a regular expression for a whole number to check each value against
 # Optional + or - sign followed by one or more digits from 0 to 9
 # This allows whole positive or negative numbers
@@ -97,13 +100,23 @@ else
 fi
 
 # Check to see if they put in a bigger min than max, and count down instead if so
+# --- Change to use printf ---
+rowFormat="%4d %2s %2d %2s %'4d\n"
 if [[ $rangemin -le $rangemax ]]
 	then
 			while  [[ $rangemin -le $rangemax ]]
 			do 
 			# use `bc` basic calculator to do the arithmetic
 				answer=`echo "$rangemin*$number" | bc`
-				echo "$rangemin x $number = $answer"	
+				# echo "$rangemin x $number = $answer"
+
+				# Goal to print 5 columns: multiply-by, x, multiplier, =, answer
+				# 1,3,5 are digits so %d
+				# 2, 4 are strings so %s
+				# rough cut let them be right justified
+				printf #$rowFormat" "$rangemin" x "$number" = "$answer"
+				# printf '%20d\n' "$rangemin"
+
 				((rangemin=rangemin+1))
 			done
 	else
@@ -111,7 +124,8 @@ if [[ $rangemin -le $rangemax ]]
 			do
 				# use `bc` basic calculator to do the arithmetic
 				answer=`echo "$rangemin*$number" | bc`
-				echo "$rangemin x $number = $answer"	
+				# echo "$rangemin x $number = $answer"	
+				printf $rowFormat "$rangemin" x "$number" = "$answer"
 				# decrement rangemin to count down
 				((rangemin=rangemin-1))
 			done
