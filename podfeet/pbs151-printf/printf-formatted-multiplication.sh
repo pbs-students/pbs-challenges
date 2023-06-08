@@ -114,7 +114,7 @@ if [[ $rangemin -le $rangemax ]]
 				# 1,3,5 are digits so %d
 				# 2, 4 are strings so %s
 				# rough cut let them be right justified
-				printf #$rowFormat" "$rangemin" x "$number" = "$answer"
+				printf "$rowFormat" "$rangemin" x "$number" = "$answer"
 				# printf '%20d\n' "$rangemin"
 
 				((rangemin=rangemin+1))
@@ -125,7 +125,7 @@ if [[ $rangemin -le $rangemax ]]
 				# use `bc` basic calculator to do the arithmetic
 				answer=`echo "$rangemin*$number" | bc`
 				# echo "$rangemin x $number = $answer"	
-				printf $rowFormat "$rangemin" x "$number" = "$answer"
+				printf "$rowFormat" "$rangemin" x "$number" = "$answer"
 				# decrement rangemin to count down
 				((rangemin=rangemin-1))
 			done
