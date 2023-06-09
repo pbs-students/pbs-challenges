@@ -34,27 +34,31 @@
 # rangemin=$2
 # rangemax=$3
 
+# Set default inputs
 number=5
 rangemin=1
 rangemax=10
 
-# new version will be to add optional arguments specifically
-usage="Usage: $(basename $0) [-m] [-M LIMIT]"
-# NOTE: I think n is wrong the way I'm doing it. It's required, not optional
-while getops ':n:m:M:' opt # I'll do error checking, n, m and M are optional flags
+# Define the usage string on bad input
+usage="Usage: $(basename $0) [-n NUMBER] [-m MINIMUM] [-M MAXIMUM]"
+
+while getopts ':n:m:M:' opt # I'll do error checking, n, m and M are optional flags
 do
 	case $opt in
 		n) 
 			# The number to be multiplied by
 			number="$OPTARG"
+			echo "DEBUG: number supplied"
 			;;
 		m) 
 			# Minimum value to use as multiplier
 			rangemin="$OPTARG"
+			echo "DEBUG: minimum supplied"
 			;;
 		M) 
 			# Maximum value to use as multiplier
 			rangemax="$OPTARG"
+			echo "DEBUG: maximum supplied"
 			;;
     ?)
       # here comes my fancy error message if they type something after the shell
