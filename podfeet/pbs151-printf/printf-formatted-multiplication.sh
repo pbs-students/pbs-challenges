@@ -26,13 +26,8 @@
 	# ```
 	
 	# For bonus credit, update your script to allow the user to specify how high the table should go, defaulting to 10 like above.
-#
-# My solution goes a bit beyond and allows the user to define the specific range, not just 1-x
 
-# use the first argument as the number if it was given
-# number=$1
-# rangemin=$2
-# rangemax=$3
+# My solution goes a bit beyond and allows the user to define the specific range, not just 1-x
 
 # Set default inputs
 number=5
@@ -42,11 +37,12 @@ rangemax=10
 # Define the usage string on bad input
 usage="Usage: $(basename $0) [-n NUMBER] [-m MINIMUM] [-M MAXIMUM]"
 
-while getopts ':n:m:M:' opt # I'll do error checking, n, m and M are optional flags
+# I'll do error checking, n, m and M are optional flags
+while getopts ':n:m:M:' opt
 do
 	case $opt in
 		n) 
-			# The number to be multiplied by
+			# The number to be multiplied
 			number="$OPTARG"
 			;;
 		m) 
