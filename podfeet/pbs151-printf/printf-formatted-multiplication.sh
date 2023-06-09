@@ -48,17 +48,14 @@ do
 		n) 
 			# The number to be multiplied by
 			number="$OPTARG"
-			echo "DEBUG: number supplied"
 			;;
 		m) 
 			# Minimum value to use as multiplier
 			rangemin="$OPTARG"
-			echo "DEBUG: minimum supplied"
 			;;
 		M) 
 			# Maximum value to use as multiplier
 			rangemax="$OPTARG"
-			echo "DEBUG: maximum supplied"
 			;;
     ?)
       # here comes my fancy error message if they type something after the shell
