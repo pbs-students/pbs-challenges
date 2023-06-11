@@ -12,10 +12,34 @@ print_table() {
   done
 }
 # main
+min=1; max=10
+Usage="$(basename $0) [-m minimum] [-M maxinum] number"
+while getopts ':m:M:' OPT
+do
+  case $OPT in
+    m)
+      min=$OPTARG;;
+    M)
+      max=$OPTARG;;
+    ?)
+      echo $Usage
+      exit 2;;
+  esac
+done
+shift $((OPTIND - 1))
+if  ! positive_whole_num "$min" 
+then
+  echo Minimum must be a positive hole number
+  echo $Usage; exit 3
+fi
+if  ! positive_whole_num "$max" 
+then
+  echo Maximum must be a positive whole number
+  echo $Usage; exit 4
+fi
 num="${1:-0}"
-max="${2:-10}"
 until positive_whole_num "$num"
 do
   read -p "Enter a positive whole number:" num
 done
-print_table $num 1 "$max"
+print_table $num "$min" "$max"

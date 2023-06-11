@@ -40,6 +40,15 @@ Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 
 
 
+##### Index of all the Programming by Stealth episode show notes
+
+[https://pbs.bartificer.net](https://pbs.bartificer.net)
+
+
+[
+  bart-automation
+
+
 ##### Challenges are below this line
 
 ##  pbs-150-of-x--bash-script-plumbing
