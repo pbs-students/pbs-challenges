@@ -7,4 +7,4 @@
 # We curl the value of $1 which must be the complete of Bart's show page for that
 # episode then pipe it into htmlq and get matching h1 with partial id="pbs-" ...
 # Then get only the id attribute of that
-curl --silent "https://pbs.bartificer.net/pbs${1}" | htmlq -a id 'h1[id^="pbs-"]'
+curl --silent "https://pbs.bartificer.net/pbs${1}" | htmlq -a id 'h1[id^="pbs-"]' | sed -e 's/-of-x-//'
