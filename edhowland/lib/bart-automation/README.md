@@ -9,3 +9,8 @@ the challenge solutions
 ## Manifest
 
 - get-show-id.sh :  Used to get the hyphenated show title given a show number
+  * Uses the 'sed' command to remove the "-of-x-" part
+- get-show-zip.sh : Used to get theshow notes .zip containing Bart's solution
+- automate-me.sh : Script to automate all the steps
+  * Currently only incomplete list of comments detailing each step
+  * Meant to be pseudo-code which will become real code in Bash someday
