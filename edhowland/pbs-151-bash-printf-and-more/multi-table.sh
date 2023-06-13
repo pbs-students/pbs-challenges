@@ -44,4 +44,14 @@ until positive_whole_num "$num"
 do
   read -p "Enter a positive whole number:" num
 done
-print_table $num "$min" "$max"
+# check if our output would scroll the terminal and if so and the output is an
+# actual terminal  then send it to $PAGER
+lines=$(stty size | cut -d ' ' -f 1)
+if [ -t 1 ] && (( $max - $min >= $lines ))
+then
+  PAGER=${PAGER:-less}
+else
+  PAGER=cat
+fi
+
+print_table $num "$min" "$max" | $PAGER
