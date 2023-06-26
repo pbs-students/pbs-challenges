@@ -51,6 +51,18 @@ Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 
 ##### Challenges are below this line
 
+## pbs-151-bash-printf-and-more
+
+Write a script to render multiplication tables in a nicely formatted table. Your script should:
+
+    Require one argument  the number to render the table for
+    Default to multiplying the number given by 1 to 10 inclusive
+    Accept the following two optional arguments:
+        -m to specify a minimum value, replacing the default of 1
+        -M to specify a maximum value, replacing the default of 10
+
+For bonus credit, pipe the output through less if and only if standard out is a terminal.
+
 ##  pbs-150-of-x--bash-script-plumbing
 
 Update your challenge solution from last time so it can ingest its menu in three ways:
