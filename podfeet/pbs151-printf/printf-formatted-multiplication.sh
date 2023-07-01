@@ -40,23 +40,44 @@ usage="Usage: $(basename $0) [-n NUMBER] [-m MINIMUM] [-M MAXIMUM]"
 # Define a regular expression for a whole number to check each value against
 # Optional + or - sign followed by one or more digits from 0 to 9
 # This allows whole positive or negative numbers
-regex=^[+-]?[0-9]+$
+regex='^[+-]?[0-9]+$'
 
 # I'll do error checking, n, m and M are optional flags
 while getopts ':n:m:M:' opt
 do
 	case $opt in
 		n) 
-			# The number to be multiplied
-			number="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The number to be multiplied
+				number="$OPTARG"
+			else
+				echo "Number to be multiplied '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
 		m) 
-			# Minimum value to use as multiplier
-			rangemin="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The minimum multiplier
+				rangemin="$OPTARG"
+			else
+				echo "Minimum multiplier '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
 		M) 
-			# Maximum value to use as multiplier
-			rangemax="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The maximum multiplier
+				rangemax="$OPTARG"
+			else
+				echo "Maximum multiplier '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
     ?)
       # here comes my fancy error message if they type something after the shell
