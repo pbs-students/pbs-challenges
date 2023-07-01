@@ -88,9 +88,26 @@ do
 	esac
 done
 
+# Calculating the length of the formatted values
+
+# Input number which is the optional argument "n"
+# We need to know the _formatted_ length
+# Guess that means we have to use the format string in the equation
+
+echo "$number"
+rawNumLength=$(printf "$number" | wc -m)
+echo "$rawNumLength"
+# formNum="%'"$rawNumlength"d"
+# echo "The formatted number is $formNum"
+formNumLength=$(printf "%'"$rawNumlength"d" $number | wc -m)
+#                      "%'5d"
+
+echo "Formatted number length is $formNumLength"
+
+
 # Check to see if they put in a bigger min than max, and count down instead if so
 # --- Change to use printf ---
-rowFormat="%'4d %2s %'2d %2s %'4d\n"
+rowFormat="%'5d %2s %'2d %2s %'4d\n"
 if [[ $rangemin -le $rangemax ]]
 	then
 			while  [[ $rangemin -le $rangemax ]]
