@@ -90,7 +90,7 @@ done
 
 # Check to see if they put in a bigger min than max, and count down instead if so
 # --- Change to use printf ---
-rowFormat="%4d %2s %2d %2s %'4d\n"
+rowFormat="%'4d %2s %'2d %2s %'4d\n"
 if [[ $rangemin -le $rangemax ]]
 	then
 			while  [[ $rangemin -le $rangemax ]]
