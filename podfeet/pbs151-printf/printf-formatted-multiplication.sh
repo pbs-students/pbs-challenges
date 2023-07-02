@@ -94,12 +94,14 @@ done
 # We need to know the _formatted_ length
 # Guess that means we have to use the format string in the equation
 
-echo "The number is $number"
+
 rawNumLength=$(printf "$number" | wc -m)
-echo "The raw number length is $rawNumLength"
 formNum=$(printf "%'"$rawNumlength"d" $number)
-echo "The formatted number is $formNum"
 formNumLength=$(printf "%'"$rawNumlength"d" $number | wc -m)
+
+echo "The formatted number is $formNum"
+echo "The raw number length is $rawNumLength"
+echo "The number is $number"
 echo "Formatted number length is $formNumLength"
 
 
