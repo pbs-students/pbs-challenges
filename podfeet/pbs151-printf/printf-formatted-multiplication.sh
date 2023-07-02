@@ -94,16 +94,34 @@ done
 # We need to know the _formatted_ length
 # Guess that means we have to use the format string in the equation
 
+NumLength=$(printf "$number" | wc -m)
+# I don't actually use formNum
+# formNum=$(printf "%'"$Numlength"d" $number)
+formNumLength=$(printf "%'"$Numlength"d" $number | wc -m)
 
-rawNumLength=$(printf "$number" | wc -m)
-formNum=$(printf "%'"$rawNumlength"d" $number)
-formNumLength=$(printf "%'"$rawNumlength"d" $number | wc -m)
+# echo "The formatted number is $formNum"
+# echo "The raw number length is $NumLength"
+# echo "The number is $number"
+# echo "Formatted number length is $formNumLength"
 
-echo "The formatted number is $formNum"
-echo "The raw number length is $rawNumLength"
-echo "The number is $number"
-echo "Formatted number length is $formNumLength"
+# https://unix.stackexchange.com/questions/672009/using-printf-in-bash
+# However, if you are interpolating a variable it should never go into the format string, just in case it starts with - or contains % or \ characters (or other characters whose encoding contains that of % or \ with most printf implementations including bash's builtin one).
 
+rangeminLength=$(printf "$rangemin" | wc -m)
+echo "rangeminLength is $rangeminLength"
+formRangeminLength=$(printf "%'"$rangeminLength"d" $rangemin | wc -m)
+
+rangemaxLength=$(printf "$rangemax" | wc -m)
+echo "rangemaxLength is $rangemaxLength"
+formRangemaxLength=$(printf "%'"$rangemaxLength"d" $rangemax | wc -m)
+
+if (( formRangemaxLength > formRangeminLength ))
+	multiplierLength=$formRangemaxLength
+then
+	multiplierLength=$formRangeminLength
+fi
+
+echo "The largest multiplier length is $multiplierLength"
 
 # Check to see if they put in a bigger min than max, and count down instead if so
 # --- Change to use printf ---
