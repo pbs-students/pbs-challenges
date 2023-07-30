@@ -194,11 +194,21 @@ Note that line matches the exact folder name you previously created but with
 2 #'s just before it
 
 
+Note: You can perform the following steps on a Mac:
+
+```bash
+$ ls -d pbs-150* | pbcopy
+```
+
+This will have copied the folder name you previously mkdir-ed to your clipboard.
+Then edit readme.md and go to the line mentioned above (2 lines below the line that reads:
+##### Challenges are below this line
+
 
 
 ### In your web browser, go to the previous installment's show page
 
-E.g. Hit the back button or press: Command plus [
+E.g. Hit the back button or press: Command plus [ (only on a Mac)
 
 Then search for the show number of the previous installment.
 
@@ -213,7 +223,7 @@ the 'challenge' heading. This might be the next Heading level 3 past the
 
 Copy and paste this text from the web page after this 'challenge' heading
 into the 'readme.md' file directly after the '## pbs-1XX-.... heading you
-previously creating
+previously created
 
 
 
@@ -231,7 +241,8 @@ E.g.
 ```
 
 
-Save the 'readme.md' file. get add both the 'readme.md' file and the directory you created.
+Save the 'readme.md' file. 
+git add both the 'readme.md' file and the directory you created.
 
 E.g.
 
@@ -251,7 +262,9 @@ If you are satisfied that all these steps have been done, then do the following
 ```
 $ rm -rf ./tmp
 git add .
-git commit
+git commit -a  -m 'feat: PBS 150 challenge solution added'
+
+(Note: Add additional -m 'messages' if you there are other files to mention )
 ```
 
 Add in a descriptive commit message saying that you updated Bart's folder with

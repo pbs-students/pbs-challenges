@@ -45,11 +45,19 @@ Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 [https://pbs.bartificer.net](https://pbs.bartificer.net)
 
 
-[
-  bart-automation
+
+
 
 
 ##### Challenges are below this line
+
+
+## pbs-152-bash-xargs--easier-arithmetic
+
+Update your solution to the  pbs 151  challenge to make use of arithmetic expressions for all your calculations. Also re-evaluate your code to see if there are any places where using xargs could simplify your code.
+
+[PBS 152 Show notes](https://pbs.bartificer.net/pbs152)
+
 
 ## pbs-151-bash-printf-and-more
 
@@ -62,6 +70,9 @@ Write a script to render multiplication tables in a nicely formatted table. Your
         -M to specify a maximum value, replacing the default of 10
 
 For bonus credit, pipe the output through less if and only if standard out is a terminal.
+
+
+[PBS 151 Show notes](https://pbs.bartificer.net/pbs151)
 
 ##  pbs-150-of-x--bash-script-plumbing
 
