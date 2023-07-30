@@ -37,21 +37,47 @@ rangemax=10
 # Define the usage string on bad input
 usage="Usage: $(basename $0) [-n NUMBER] [-m MINIMUM] [-M MAXIMUM]"
 
+# Define a regular expression for a whole number to check each value against
+# Optional + or - sign followed by one or more digits from 0 to 9
+# This allows whole positive or negative numbers
+regex='^[+-]?[0-9]+$'
+
 # I'll do error checking, n, m and M are optional flags
 while getopts ':n:m:M:' opt
 do
 	case $opt in
 		n) 
-			# The number to be multiplied
-			number="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The number to be multiplied
+				number="$OPTARG"
+			else
+				echo "Number to be multiplied '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
 		m) 
-			# Minimum value to use as multiplier
-			rangemin="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The minimum multiplier
+				rangemin="$OPTARG"
+			else
+				echo "Minimum multiplier '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
 		M) 
-			# Maximum value to use as multiplier
-			rangemax="$OPTARG"
+			# Check to see if argument is a valid integer
+			if echo "$OPTARG" | egrep -q "$regex"
+			then
+				# The maximum multiplier
+				rangemax="$OPTARG"
+			else
+				echo "Maximum multiplier '$OPTARG' is not a valid number. Must be a positive or negative integer or zero"
+				exit
+			fi
 			;;
     ?)
       # here comes my fancy error message if they type something after the shell
@@ -62,71 +88,44 @@ do
 	esac
 done
 
-# Define a regular expression for a whole number to check each value against
-# Optional + or - sign followed by one or more digits from 0 to 9
-# This allows whole positive or negative numbers
-regex=^[+-]?[0-9]+$
+# Calculating the length of the formatted values
 
-# until statement to see if an argument was provided
-# if no argument was provided ask for one
-# code to make sure it's really a whole number
+# Input number which is the optional argument "n"
+# We need to know the _formatted_ length
+# Guess that means we have to use the format string in the equation
 
-# if [[ -z $number ]] # if no arguments were supplied
-# 	then
-# 		# Ask user for the whole number to multiply and optionally to define the range
-# 			read -p "Give me a whole number and I'll show you the times table for it: " number
-# 			until [[ $number =~ $regex ]]
-# 				do
-# 					read -p "That was not a whole number, try again: " number		
-# 				done	
-# 				# ask if user wants to define the range. If they answer anything but yes, it will use the default of 1-10
-# 				read -p "Do you want to define the range for the times table? Type yes (y) or no (n or enter) " yesno
-# 				# Quotes added around var $yesno otherwise I get a unary operator error
-# 				# Without the quotes, if the value doesn't exist, the variable vanishes, leaving if [ = "yes"]
-# 				# Single [] brackets are POSIX compatible. If I used double [] brackets I wouldn't need the "" around var
-# 				if [[ $yesno == 'yes' ]] || [[ $yesno == 'y' ]] || [[ $yesno == 'Y' ]] || [[ $yesno == 'YES' ]]
-# 				# if [ "$yesno" == 'yes' ] || [ "$yesno" == 'y' ] || [ "$yesno" == 'Y' ] || [ "$yesno" == 'YES' ]
-# 					then
-# 						# Keep asking till the user supplies a whole number for range min	
-# 						# Ask user for range minimum and assign to variable rangemin
-# 						read -p "Give me the MINIMUM value by which you want to multiply: " rangemin		
-# 						# ***********
-# 						until echo "$rangemin" | egrep -q $regex
-# 						# ****************
-# 							do
-# 								read -p "That was not a whole number, try again: " rangemin	
-# 							done
-# 						# Keep asking till the user supplies a whole number for range max
-# 						read -p "Now give me the MAX value by which you want to multiply: " rangemax
-# 						until echo "$rangemax" | egrep -q $regex
-# 							do
-# 								 read -p "That was not a whole number, try again: " rangemax
-# 							done
-# 				else
-# 					rangemin=1
-# 					rangemax=10
-# 				fi
-# else
-# 	number=$1
-# 	if [[ $number =~ $regex ]]
-# 		then
-# 			if [[ -z $2 ]] # if there is no second argument, there cannot be a third so do not worry about it
-# 				then # set range min/max to defaults
-# 					rangemin=1
-# 					rangemax=10
-# 				else # assume there is a second and third argument and use them
-# 					# if there is no third argument, it multiplies down to zero. That sure is convenient!
-# 					rangemin=$2
-# 					rangemax=$3
-# 			fi
-# 		else
-# 			echo "That was not a whole number"
-# 		fi
+NumLength=$(printf "$number" | wc -m)
+# I don't actually use formNum
+# formNum=$(printf "%'"$Numlength"d" $number)
+formNumLength=$(printf "%'"$Numlength"d" $number | wc -m)
+
+# echo "The formatted number is $formNum"
+# echo "The raw number length is $NumLength"
+echo "The number is $number"
+echo "Formatted number length is $formNumLength"
+
+# https://unix.stackexchange.com/questions/672009/using-printf-in-bash
+# However, if you are interpolating a variable it should never go into the format string, just in case it starts with - or contains % or \ characters (or other characters whose encoding contains that of % or \ with most printf implementations including bash's builtin one).
+
+# rangeminLength=$(printf "$rangemin" | wc -m)
+# echo "rangeminLength is $rangeminLength"
+# formRangeminLength=$(printf "%'"$rangeminLength"d" $rangemin | wc -m)
+
+# rangemaxLength=$(printf "$rangemax" | wc -m)
+# echo "rangemaxLength is $rangemaxLength"
+# formRangemaxLength=$(printf "%'"$rangemaxLength"d" $rangemax | wc -m)
+
+# if (( formRangemaxLength > formRangeminLength ))
+# 	multiplierLength=$formRangemaxLength
+# then
+# 	multiplierLength=$formRangeminLength
 # fi
+
+# echo "The largest multiplier length is $multiplierLength"
 
 # Check to see if they put in a bigger min than max, and count down instead if so
 # --- Change to use printf ---
-rowFormat="%4d %2s %2d %2s %'4d\n"
+rowFormat="%'5d %2s %'2d %2s %'4d\n"
 if [[ $rangemin -le $rangemax ]]
 	then
 			while  [[ $rangemin -le $rangemax ]]
