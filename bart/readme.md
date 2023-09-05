@@ -48,14 +48,6 @@ Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 
 ##### Challenges are below this line
 
-## pbs-153-bash-functions--scope
-
-Finally, if you’d like to put your new-found function writing skills to the 
-test, update your multiplication table script to replace duplicated code blocks 
-with functions.
-
-[PBS 153 show notes](https://pbs.bartificer.net/pbs153)
-
 
 ## pbs-153-bash-functions--scope
 
