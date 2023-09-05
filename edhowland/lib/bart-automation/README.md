@@ -14,3 +14,10 @@ the challenge solutions
 - automate-me.sh : Script to automate all the steps
   * Currently only incomplete list of comments detailing each step
   * Meant to be pseudo-code which will become real code in Bash someday
+
+
+## Highlight: New Nushell automation
+
+In the folder: ./nushell, you will find a more natural way of automating
+the collection  of Bart's challenge solutions. See: [nushell/README.md](nushell/README.md)
+

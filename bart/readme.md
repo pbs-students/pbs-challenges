@@ -46,15 +46,31 @@ Or send me a toot on Mastodon. I am @edhowland@fosstodon.org
 
 
 
-
-
-
 ##### Challenges are below this line
+
+## pbs-153-bash-functions--scope
+
+Finally, if you’d like to put your new-found function writing skills to the 
+test, update your multiplication table script to replace duplicated code blocks 
+with functions.
+
+[PBS 153 show notes](https://pbs.bartificer.net/pbs153)
+
+
+## pbs-153-bash-functions--scope
+
+Finally, if you’d like to put your new-found function writing skills to the 
+test, update your multiplication table script to replace duplicated code blocks 
+with functions.
+
+[PBS 153 show notes](https://pbs.bartificer.net/pbs153)
 
 
 ## pbs-152-bash-xargs--easier-arithmetic
 
-Update your solution to the  pbs 151  challenge to make use of arithmetic expressions for all your calculations. Also re-evaluate your code to see if there are any places where using xargs could simplify your code.
+Update your solution to the  pbs 151  challenge to make use of arithmetic
+expressions for all your calculations. Also re-evaluate your code to see if there
+are any places where using xargs could simplify your code.
 
 [PBS 152 Show notes](https://pbs.bartificer.net/pbs152)
 
