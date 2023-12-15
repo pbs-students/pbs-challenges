@@ -1,9 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2759
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Avenir-Book;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fswiss\fcharset0 ArialMT;
-}
+\f3\fnil\fcharset0 Avenir-Heavy;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww17000\viewh20120\viewkind0
+\margl1440\margr1440\vieww16900\viewh9540\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf0 PBS 157 Querying JSON with jq - challenges\
@@ -109,15 +109,18 @@ Returns:\
 jq: error: syntax error, unexpected '(', expecting end of file (Unix shell quoting issues?) at <top-level>, line 1:\
 .prizes[] | .year, .category, .motivation (.laureates[]? | select(.surname == "Ghez")      \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f2 This works:
+\f2 \cf0 This works:
 \f1 \
 \
 \pard\pardeftab720\partightenfactor0
 \cf0 jq '.prizes[] | select(.year == "2000")' NobelPrizes.json
 \f0 \
 \
-And this works\
+
+\f3\b And this works
+\f0\b0 \
 \
 
 \f1 jq '.prizes[] | .year, .category, (.laureates[]? | .surname)' NobelPrizes.json\
@@ -127,8 +130,38 @@ And this works\
 \f1 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 jq '.prizes[] | .year, .category, .motivation (.laureates[]? | select(.surname == "Ghez")' NobelPrizes.json
+\cf0 jq '.prizes[]? | .year, .category, .motivation, (.laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
+\
+jq: error: syntax error, unexpected end of file (Unix shell quoting issues?) at <top-level>, line 1:\
+.prizes[]? | .year, .category, .motivation, (.laureates[]? | select(.surname == "Ghez") 
+\f0 \
+\
+
+\f3\b And this works
+\f0\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json
 \f0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+
+\f3\b This returns null twice and Andrea's motivation\
+
+\f1\b0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez") | .year, .category, .motivation' NobelPrizes.json\
+\
+null\
+null\
+"\\"for the discovery of a supermassive compact object at the centre of our galaxy\\""\
+\
+
+\f3\b Ah - I'm asking for year and category out of laureates, but it's at an upper level
+\f0\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf0 jq '.prizes[]? | .year, .category, .motivation | .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
+\
+jq: error (at NobelPrizes.json:0): Cannot index string with string "laureates"
+\f3\b \
 }
