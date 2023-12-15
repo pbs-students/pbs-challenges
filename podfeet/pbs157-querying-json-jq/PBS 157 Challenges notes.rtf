@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Avenir-Book;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww17000\viewh20120\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 PBS 157 Querying JSON with jq - challenges\
+\
+Using NobelPrizes.json, can you develop jq commands to answer the following questions:\
+\
+1. What prize did friend of the NosillaCast podcast Dr. Andrea Ghez win? List the year, category, and motivation.\
+2. How many laureates were there for each prize? List the year, category, and number of winners for each.\
+3. Which prizes were won outright, i.e. not shared? List the year, category, first name, last name, and motivation for each.\
+\
+# Need to see format first\
+\
+
+\f1 jq type NobelPrizes.json # Returns "object"
+\f0 \
+\
+We know objects have keys, so:\
+\
+
+\f1 jq 'keys' NobelPrizes.json 
+\f0 \
+Returns\
+\
+
+\f1 [\
+  "prizes"\
+]
+\f0 \
+\
+Now that we know it's an array containing [prizes], we can ask it for the first element of the array [0] to see the structure of what's inside.\
+\
+
+\f1 jq '.prizes[0]' NobelPrizes.json
+\f0 \
+\
+This gives us the object for the most recent year:\
+\
+
+\f1 \{\
+  "year": "2023",\
+  "category": "chemistry",\
+  "laureates": [\
+    \{\
+      "id": "1029",\
+      "firstname": "Moungi",\
+      "surname": "Bawendi",\
+      "motivation": "\\"for the discovery and synthesis of quantum dots\\"",\
+      "share": "3"\
+    \},\
+    \{\
+      "id": "1030",\
+      "firstname": "Louis",\
+      "surname": "Brus",\
+      "motivation": "\\"for the discovery and synthesis of quantum dots\\"",\
+      "share": "3"\
+    \},\
+    \{\
+      "id": "1031",\
+      "firstname": "Aleksey",\
+      "surname": "Yekimov",\
+      "motivation": "\\"for the discovery and synthesis of quantum dots\\"",\
+      "share": "3"\
+    \}\
+  ]\
+\}
+\f0 \
+\
+\
+# What prize did Andrea win incl year category & motivation\
+\
+so we want from laureates, for surname=Ghez, firstname=Andrea\
+Return the year, category, and motivation\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json
+\f0 \
+\
+Used 
+\f1 ?
+\f0  After 
+\f1 .prizes[]
+\f0  because it has some null values we need it to skip\
+Returns:\
+\
+
+\f1 \{\
+  "id": "990",\
+  "firstname": "Andrea",\
+  "surname": "Ghez",\
+  "motivation": "\\"for the discovery of a supermassive compact object at the centre of our galaxy\\"",\
+  "share": "4"\
+\}
+\f0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 So we found her, but this doesn't tell us her year, or category, and it also includes her share and id which we don't want.\
+\
+\
+
+\f1 jq '.prizes[] | .year, .category, .motivation (.laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
+\
+jq: error: syntax error, unexpected '(', expecting end of file (Unix shell quoting issues?) at <top-level>, line 1:\
+.prizes[] | .year, .category, .motivation (.laureates[]? | select(.surname == "Ghez")      \
+\
+
+\f2 This works:
+\f1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 jq '.prizes[] | select(.year == "2000")' NobelPrizes.json
+\f0 \
+\
+And this works\
+\
+
+\f1 jq '.prizes[] | .year, .category, (.laureates[]? | .surname)' NobelPrizes.json\
+\
+
+\f2 So why doesn't this work?
+\f1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 jq '.prizes[] | .year, .category, .motivation (.laureates[]? | select(.surname == "Ghez")' NobelPrizes.json
+\f0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}
