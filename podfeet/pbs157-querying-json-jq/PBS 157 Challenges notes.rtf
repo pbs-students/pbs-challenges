@@ -1,9 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2759
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Avenir-Book;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fswiss\fcharset0 ArialMT;
-\f3\fnil\fcharset0 Avenir-Heavy;}
+\f3\fnil\fcharset0 Avenir-Heavy;\f4\fmodern\fcharset0 CourierNewPS-BoldMT;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww16900\viewh9540\viewkind0
+\margl1440\margr1440\vieww16700\viewh18540\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs28 \cf0 PBS 157 Querying JSON with jq - challenges\
@@ -79,7 +79,7 @@ Return the year, category, and motivation\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json
+\f1 \cf0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json
 \f0 \
 \
 Used 
@@ -136,32 +136,91 @@ jq: error: syntax error, unexpected end of file (Unix shell quoting issues?) at 
 .prizes[]? | .year, .category, .motivation, (.laureates[]? | select(.surname == "Ghez") 
 \f0 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b And this works
+\f3\b \cf0 And this works
 \f0\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json
+\f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json\
+Returns entire entry for laureate with surname matching Ghez.
 \f0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b This returns null twice and Andrea's motivation\
+\f3\b \cf0 This returns null twice and Andrea's motivation\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f1\b0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez") | .year, .category, .motivation' NobelPrizes.json\
+\f1\b0 \cf0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez") | .year, .category, .motivation' NobelPrizes.json\
 \
 null\
 null\
 "\\"for the discovery of a supermassive compact object at the centre of our galaxy\\""\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b Ah - I'm asking for year and category out of laureates, but it's at an upper level
+\f3\b \cf0 Ah - I'm asking for year and category out of laureates, but it's at an upper level
 \f0\b0 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f1 \cf0 jq '.prizes[]? | .year, .category, .motivation | .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
 \
-jq: error (at NobelPrizes.json:0): Cannot index string with string "laureates"
-\f3\b \
+jq: error (at NobelPrizes.json:0): Cannot index string with string "laureates"\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\b \cf0 Ah, motivation is not at the higher level\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 Let's try it without motivation and see if we get anything
+\f4\b \
+
+\f1\b0 jq '.prizes[]? | .year, .category | .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
+\
+Same error. Maybe we need to explode laureates first?\
+\
+jq '.prizes[]? | .laureates[]? | .year, .category | select(.surname == "Ghez")' NobelPrizes.json\
+\
+Returns nothing\
+\
+jq '.prizes[]? | .year, .category, (.laureates[]? | select(.surname == "Ghez"))' NobelPrizes.json\
+Nope. That returned year and category for every prize. Ignored the select\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f4\b \cf0 How about turning it around?\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 Bart says:\
+\
+If we only want to see the laureates, and not the rest of the detail we can add another filter to the chain to extract just those:\
+\
+jq '.prizes[] | select(.year == "2000" and .category == "medicine") | .laureates[]' NobelPrizes.json\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 So maybe:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+jq '.prizes[]? | .year, .category, .laureates[]?' NobelPrizes.json\
+This returns year, category and then full laureates dictionary for each one\
+\
+
+\f4\b Let's build it up piece by piece\
+\
+
+\f1\b0 All prizes showing year and category
+\f4\b \
+
+\f1\b0 jq '.prizes[] | .year, .category' NobelPrizes.json\
+\
+All prizes showing year, category and Laureates\
+jq '.prizes[]? | .year, .category, .laureates[]?' NobelPrizes.json\
+\
+Can we pipe that to the select and keep the year and category?\
+jq '.prizes[]? | .year, .category, .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
+No: jq: error (at NobelPrizes.json:0): Cannot index string with string "surname"\
+\
+jq '.prizes[]? | .year, .category | .laureates[]? | select(.surname == "Ghez")' NobelPrizes.json\
 }
