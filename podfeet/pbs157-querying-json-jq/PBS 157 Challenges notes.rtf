@@ -77,6 +77,37 @@ This gives us the object for the most recent year:\
 so we want from laureates, for surname=Ghez, firstname=Andrea\
 Return the year, category, and motivation\
 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 jq '.prizes[] | select(.year == "2020")' NobelPrizes.json\
+\
+This selects all prizes that are year 2020 and keeps the entire prize Not just the year.\
+\
+ jq '.prizes[] | select(any(.laureates[]? ; .surname == "Ghez"))' NobelPrizes.json\
+\
+Returns the entire 2020 prize as a dictionary that includes Andra (so the physics prize):\
+\
+jq '.prizes[] | select(any(.laureates[]? ; .surname == "Ghez")) | .year, .category' NobelPrizes.json\
+\
+This gives us the year and category for that one prize\
+\
+jq '.prizes[] | select(any(.laureates[]? ; .surname == "Ghez")) | .year, .category, (.laureates[]? | select(.surname == "Ghez"))' NobelPrizes.json\
+\
+This gives us year and category but also  just andrea but also Andrea's entire laureate dictionary\
+\
+jq '.prizes[] | select(any(.laureates[]? ; .surname == "Ghez")) | .year, .category, (.laureates[]? | select(.surname == "Ghez") | .motivation, .surname)' NobelPrizes.json\
+\
+Gives us:\
+\
+"2020"\
+"physics"\
+"\\"for the discovery of a supermassive compact object at the centre of our galaxy\\""\
+"Ghez"\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f1 \cf0 jq '.prizes[]? | .laureates[] | select(.surname == "Ghez")' NobelPrizes.json
@@ -136,8 +167,9 @@ jq: error: syntax error, unexpected end of file (Unix shell quoting issues?) at 
 .prizes[]? | .year, .category, .motivation, (.laureates[]? | select(.surname == "Ghez") 
 \f0 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b And this works
+\f3\b \cf0 And this works
 \f0\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
@@ -145,17 +177,20 @@ jq: error: syntax error, unexpected end of file (Unix shell quoting issues?) at 
 \f0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b This returns null twice and Andrea's motivation\
+\f3\b \cf0 This returns null twice and Andrea's motivation\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f1\b0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez") | .year, .category, .motivation' NobelPrizes.json\
+\f1\b0 \cf0 jq '.prizes[]? | .laureates[]? | select(.surname == "Ghez") | .year, .category, .motivation' NobelPrizes.json\
 \
 null\
 null\
 "\\"for the discovery of a supermassive compact object at the centre of our galaxy\\""\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f3\b Ah - I'm asking for year and category out of laureates, but it's at an upper level
+\f3\b \cf0 Ah - I'm asking for year and category out of laureates, but it's at an upper level
 \f0\b0 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
