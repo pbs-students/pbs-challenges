@@ -1,0 +1,2402 @@
+[
+  {
+    "year": 2023,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2023,
+    "prize": "economics"
+  },
+  {
+    "year": 2023,
+    "prize": "literature"
+  },
+  {
+    "year": 2023,
+    "prize": "peace"
+  },
+  {
+    "year": 2023,
+    "prize": "physics"
+  },
+  {
+    "year": 2023,
+    "prize": "medicine"
+  },
+  {
+    "year": 2022,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2022,
+    "prize": "economics"
+  },
+  {
+    "year": 2022,
+    "prize": "literature"
+  },
+  {
+    "year": 2022,
+    "prize": "peace"
+  },
+  {
+    "year": 2022,
+    "prize": "physics"
+  },
+  {
+    "year": 2022,
+    "prize": "medicine"
+  },
+  {
+    "year": 2021,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2021,
+    "prize": "economics"
+  },
+  {
+    "year": 2021,
+    "prize": "literature"
+  },
+  {
+    "year": 2021,
+    "prize": "peace"
+  },
+  {
+    "year": 2021,
+    "prize": "physics"
+  },
+  {
+    "year": 2021,
+    "prize": "medicine"
+  },
+  {
+    "year": 2020,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2020,
+    "prize": "economics"
+  },
+  {
+    "year": 2020,
+    "prize": "literature"
+  },
+  {
+    "year": 2020,
+    "prize": "physics"
+  },
+  {
+    "year": 2020,
+    "prize": "medicine"
+  },
+  {
+    "year": 2019,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2019,
+    "prize": "economics"
+  },
+  {
+    "year": 2019,
+    "prize": "literature"
+  },
+  {
+    "year": 2019,
+    "prize": "peace"
+  },
+  {
+    "year": 2019,
+    "prize": "physics"
+  },
+  {
+    "year": 2019,
+    "prize": "medicine"
+  },
+  {
+    "year": 2018,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2018,
+    "prize": "economics"
+  },
+  {
+    "year": 2018,
+    "prize": "literature"
+  },
+  {
+    "year": 2018,
+    "prize": "peace"
+  },
+  {
+    "year": 2018,
+    "prize": "physics"
+  },
+  {
+    "year": 2018,
+    "prize": "medicine"
+  },
+  {
+    "year": 2017,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2017,
+    "prize": "economics"
+  },
+  {
+    "year": 2017,
+    "prize": "literature"
+  },
+  {
+    "year": 2017,
+    "prize": "physics"
+  },
+  {
+    "year": 2017,
+    "prize": "medicine"
+  },
+  {
+    "year": 2016,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2016,
+    "prize": "economics"
+  },
+  {
+    "year": 2016,
+    "prize": "literature"
+  },
+  {
+    "year": 2016,
+    "prize": "peace"
+  },
+  {
+    "year": 2016,
+    "prize": "physics"
+  },
+  {
+    "year": 2016,
+    "prize": "medicine"
+  },
+  {
+    "year": 2015,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2015,
+    "prize": "economics"
+  },
+  {
+    "year": 2015,
+    "prize": "literature"
+  },
+  {
+    "year": 2015,
+    "prize": "physics"
+  },
+  {
+    "year": 2015,
+    "prize": "medicine"
+  },
+  {
+    "year": 2014,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2014,
+    "prize": "economics"
+  },
+  {
+    "year": 2014,
+    "prize": "literature"
+  },
+  {
+    "year": 2014,
+    "prize": "peace"
+  },
+  {
+    "year": 2014,
+    "prize": "physics"
+  },
+  {
+    "year": 2014,
+    "prize": "medicine"
+  },
+  {
+    "year": 2013,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2013,
+    "prize": "economics"
+  },
+  {
+    "year": 2013,
+    "prize": "literature"
+  },
+  {
+    "year": 2013,
+    "prize": "physics"
+  },
+  {
+    "year": 2013,
+    "prize": "medicine"
+  },
+  {
+    "year": 2012,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2012,
+    "prize": "economics"
+  },
+  {
+    "year": 2012,
+    "prize": "literature"
+  },
+  {
+    "year": 2012,
+    "prize": "physics"
+  },
+  {
+    "year": 2012,
+    "prize": "medicine"
+  },
+  {
+    "year": 2011,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2011,
+    "prize": "economics"
+  },
+  {
+    "year": 2011,
+    "prize": "literature"
+  },
+  {
+    "year": 2011,
+    "prize": "peace"
+  },
+  {
+    "year": 2011,
+    "prize": "physics"
+  },
+  {
+    "year": 2011,
+    "prize": "medicine"
+  },
+  {
+    "year": 2010,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2010,
+    "prize": "economics"
+  },
+  {
+    "year": 2010,
+    "prize": "literature"
+  },
+  {
+    "year": 2010,
+    "prize": "peace"
+  },
+  {
+    "year": 2010,
+    "prize": "physics"
+  },
+  {
+    "year": 2010,
+    "prize": "medicine"
+  },
+  {
+    "year": 2009,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2009,
+    "prize": "economics"
+  },
+  {
+    "year": 2009,
+    "prize": "literature"
+  },
+  {
+    "year": 2009,
+    "prize": "peace"
+  },
+  {
+    "year": 2009,
+    "prize": "physics"
+  },
+  {
+    "year": 2009,
+    "prize": "medicine"
+  },
+  {
+    "year": 2008,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2008,
+    "prize": "economics"
+  },
+  {
+    "year": 2008,
+    "prize": "literature"
+  },
+  {
+    "year": 2008,
+    "prize": "peace"
+  },
+  {
+    "year": 2008,
+    "prize": "physics"
+  },
+  {
+    "year": 2008,
+    "prize": "medicine"
+  },
+  {
+    "year": 2007,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2007,
+    "prize": "economics"
+  },
+  {
+    "year": 2007,
+    "prize": "literature"
+  },
+  {
+    "year": 2007,
+    "prize": "peace"
+  },
+  {
+    "year": 2007,
+    "prize": "physics"
+  },
+  {
+    "year": 2007,
+    "prize": "medicine"
+  },
+  {
+    "year": 2006,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2006,
+    "prize": "economics"
+  },
+  {
+    "year": 2006,
+    "prize": "literature"
+  },
+  {
+    "year": 2006,
+    "prize": "peace"
+  },
+  {
+    "year": 2006,
+    "prize": "physics"
+  },
+  {
+    "year": 2006,
+    "prize": "medicine"
+  },
+  {
+    "year": 2005,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2005,
+    "prize": "economics"
+  },
+  {
+    "year": 2005,
+    "prize": "literature"
+  },
+  {
+    "year": 2005,
+    "prize": "peace"
+  },
+  {
+    "year": 2005,
+    "prize": "physics"
+  },
+  {
+    "year": 2005,
+    "prize": "medicine"
+  },
+  {
+    "year": 2004,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2004,
+    "prize": "economics"
+  },
+  {
+    "year": 2004,
+    "prize": "literature"
+  },
+  {
+    "year": 2004,
+    "prize": "peace"
+  },
+  {
+    "year": 2004,
+    "prize": "physics"
+  },
+  {
+    "year": 2004,
+    "prize": "medicine"
+  },
+  {
+    "year": 2003,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2003,
+    "prize": "economics"
+  },
+  {
+    "year": 2003,
+    "prize": "literature"
+  },
+  {
+    "year": 2003,
+    "prize": "peace"
+  },
+  {
+    "year": 2003,
+    "prize": "physics"
+  },
+  {
+    "year": 2003,
+    "prize": "medicine"
+  },
+  {
+    "year": 2002,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2002,
+    "prize": "economics"
+  },
+  {
+    "year": 2002,
+    "prize": "literature"
+  },
+  {
+    "year": 2002,
+    "prize": "peace"
+  },
+  {
+    "year": 2002,
+    "prize": "physics"
+  },
+  {
+    "year": 2002,
+    "prize": "medicine"
+  },
+  {
+    "year": 2001,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2001,
+    "prize": "economics"
+  },
+  {
+    "year": 2001,
+    "prize": "literature"
+  },
+  {
+    "year": 2001,
+    "prize": "peace"
+  },
+  {
+    "year": 2001,
+    "prize": "physics"
+  },
+  {
+    "year": 2001,
+    "prize": "medicine"
+  },
+  {
+    "year": 2000,
+    "prize": "chemistry"
+  },
+  {
+    "year": 2000,
+    "prize": "economics"
+  },
+  {
+    "year": 2000,
+    "prize": "literature"
+  },
+  {
+    "year": 2000,
+    "prize": "peace"
+  },
+  {
+    "year": 2000,
+    "prize": "physics"
+  },
+  {
+    "year": 2000,
+    "prize": "medicine"
+  },
+  {
+    "year": 1999,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1999,
+    "prize": "economics"
+  },
+  {
+    "year": 1999,
+    "prize": "literature"
+  },
+  {
+    "year": 1999,
+    "prize": "physics"
+  },
+  {
+    "year": 1999,
+    "prize": "medicine"
+  },
+  {
+    "year": 1998,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1998,
+    "prize": "economics"
+  },
+  {
+    "year": 1998,
+    "prize": "literature"
+  },
+  {
+    "year": 1998,
+    "prize": "peace"
+  },
+  {
+    "year": 1998,
+    "prize": "physics"
+  },
+  {
+    "year": 1998,
+    "prize": "medicine"
+  },
+  {
+    "year": 1997,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1997,
+    "prize": "economics"
+  },
+  {
+    "year": 1997,
+    "prize": "literature"
+  },
+  {
+    "year": 1997,
+    "prize": "peace"
+  },
+  {
+    "year": 1997,
+    "prize": "physics"
+  },
+  {
+    "year": 1997,
+    "prize": "medicine"
+  },
+  {
+    "year": 1996,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1996,
+    "prize": "economics"
+  },
+  {
+    "year": 1996,
+    "prize": "literature"
+  },
+  {
+    "year": 1996,
+    "prize": "peace"
+  },
+  {
+    "year": 1996,
+    "prize": "physics"
+  },
+  {
+    "year": 1996,
+    "prize": "medicine"
+  },
+  {
+    "year": 1995,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1995,
+    "prize": "economics"
+  },
+  {
+    "year": 1995,
+    "prize": "literature"
+  },
+  {
+    "year": 1995,
+    "prize": "peace"
+  },
+  {
+    "year": 1995,
+    "prize": "physics"
+  },
+  {
+    "year": 1995,
+    "prize": "medicine"
+  },
+  {
+    "year": 1994,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1994,
+    "prize": "economics"
+  },
+  {
+    "year": 1994,
+    "prize": "literature"
+  },
+  {
+    "year": 1994,
+    "prize": "peace"
+  },
+  {
+    "year": 1994,
+    "prize": "physics"
+  },
+  {
+    "year": 1994,
+    "prize": "medicine"
+  },
+  {
+    "year": 1993,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1993,
+    "prize": "economics"
+  },
+  {
+    "year": 1993,
+    "prize": "literature"
+  },
+  {
+    "year": 1993,
+    "prize": "peace"
+  },
+  {
+    "year": 1993,
+    "prize": "physics"
+  },
+  {
+    "year": 1993,
+    "prize": "medicine"
+  },
+  {
+    "year": 1992,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1992,
+    "prize": "economics"
+  },
+  {
+    "year": 1992,
+    "prize": "literature"
+  },
+  {
+    "year": 1992,
+    "prize": "peace"
+  },
+  {
+    "year": 1992,
+    "prize": "physics"
+  },
+  {
+    "year": 1992,
+    "prize": "medicine"
+  },
+  {
+    "year": 1991,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1991,
+    "prize": "economics"
+  },
+  {
+    "year": 1991,
+    "prize": "literature"
+  },
+  {
+    "year": 1991,
+    "prize": "physics"
+  },
+  {
+    "year": 1991,
+    "prize": "medicine"
+  },
+  {
+    "year": 1990,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1990,
+    "prize": "economics"
+  },
+  {
+    "year": 1990,
+    "prize": "literature"
+  },
+  {
+    "year": 1990,
+    "prize": "peace"
+  },
+  {
+    "year": 1990,
+    "prize": "physics"
+  },
+  {
+    "year": 1990,
+    "prize": "medicine"
+  },
+  {
+    "year": 1989,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1989,
+    "prize": "economics"
+  },
+  {
+    "year": 1989,
+    "prize": "literature"
+  },
+  {
+    "year": 1989,
+    "prize": "peace"
+  },
+  {
+    "year": 1989,
+    "prize": "physics"
+  },
+  {
+    "year": 1989,
+    "prize": "medicine"
+  },
+  {
+    "year": 1988,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1988,
+    "prize": "economics"
+  },
+  {
+    "year": 1988,
+    "prize": "literature"
+  },
+  {
+    "year": 1988,
+    "prize": "physics"
+  },
+  {
+    "year": 1988,
+    "prize": "medicine"
+  },
+  {
+    "year": 1987,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1987,
+    "prize": "economics"
+  },
+  {
+    "year": 1987,
+    "prize": "literature"
+  },
+  {
+    "year": 1987,
+    "prize": "peace"
+  },
+  {
+    "year": 1987,
+    "prize": "physics"
+  },
+  {
+    "year": 1987,
+    "prize": "medicine"
+  },
+  {
+    "year": 1986,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1986,
+    "prize": "economics"
+  },
+  {
+    "year": 1986,
+    "prize": "literature"
+  },
+  {
+    "year": 1986,
+    "prize": "peace"
+  },
+  {
+    "year": 1986,
+    "prize": "physics"
+  },
+  {
+    "year": 1986,
+    "prize": "medicine"
+  },
+  {
+    "year": 1985,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1985,
+    "prize": "economics"
+  },
+  {
+    "year": 1985,
+    "prize": "literature"
+  },
+  {
+    "year": 1985,
+    "prize": "physics"
+  },
+  {
+    "year": 1985,
+    "prize": "medicine"
+  },
+  {
+    "year": 1984,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1984,
+    "prize": "economics"
+  },
+  {
+    "year": 1984,
+    "prize": "literature"
+  },
+  {
+    "year": 1984,
+    "prize": "peace"
+  },
+  {
+    "year": 1984,
+    "prize": "physics"
+  },
+  {
+    "year": 1984,
+    "prize": "medicine"
+  },
+  {
+    "year": 1983,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1983,
+    "prize": "economics"
+  },
+  {
+    "year": 1983,
+    "prize": "literature"
+  },
+  {
+    "year": 1983,
+    "prize": "peace"
+  },
+  {
+    "year": 1983,
+    "prize": "physics"
+  },
+  {
+    "year": 1983,
+    "prize": "medicine"
+  },
+  {
+    "year": 1982,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1982,
+    "prize": "economics"
+  },
+  {
+    "year": 1982,
+    "prize": "literature"
+  },
+  {
+    "year": 1982,
+    "prize": "peace"
+  },
+  {
+    "year": 1982,
+    "prize": "physics"
+  },
+  {
+    "year": 1982,
+    "prize": "medicine"
+  },
+  {
+    "year": 1981,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1981,
+    "prize": "economics"
+  },
+  {
+    "year": 1981,
+    "prize": "literature"
+  },
+  {
+    "year": 1981,
+    "prize": "physics"
+  },
+  {
+    "year": 1981,
+    "prize": "medicine"
+  },
+  {
+    "year": 1980,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1980,
+    "prize": "economics"
+  },
+  {
+    "year": 1980,
+    "prize": "literature"
+  },
+  {
+    "year": 1980,
+    "prize": "peace"
+  },
+  {
+    "year": 1980,
+    "prize": "physics"
+  },
+  {
+    "year": 1980,
+    "prize": "medicine"
+  },
+  {
+    "year": 1979,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1979,
+    "prize": "economics"
+  },
+  {
+    "year": 1979,
+    "prize": "literature"
+  },
+  {
+    "year": 1979,
+    "prize": "peace"
+  },
+  {
+    "year": 1979,
+    "prize": "physics"
+  },
+  {
+    "year": 1979,
+    "prize": "medicine"
+  },
+  {
+    "year": 1978,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1978,
+    "prize": "economics"
+  },
+  {
+    "year": 1978,
+    "prize": "literature"
+  },
+  {
+    "year": 1978,
+    "prize": "peace"
+  },
+  {
+    "year": 1978,
+    "prize": "physics"
+  },
+  {
+    "year": 1978,
+    "prize": "medicine"
+  },
+  {
+    "year": 1977,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1977,
+    "prize": "economics"
+  },
+  {
+    "year": 1977,
+    "prize": "literature"
+  },
+  {
+    "year": 1977,
+    "prize": "physics"
+  },
+  {
+    "year": 1977,
+    "prize": "medicine"
+  },
+  {
+    "year": 1976,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1976,
+    "prize": "economics"
+  },
+  {
+    "year": 1976,
+    "prize": "literature"
+  },
+  {
+    "year": 1976,
+    "prize": "peace"
+  },
+  {
+    "year": 1976,
+    "prize": "physics"
+  },
+  {
+    "year": 1976,
+    "prize": "medicine"
+  },
+  {
+    "year": 1975,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1975,
+    "prize": "economics"
+  },
+  {
+    "year": 1975,
+    "prize": "literature"
+  },
+  {
+    "year": 1975,
+    "prize": "peace"
+  },
+  {
+    "year": 1975,
+    "prize": "physics"
+  },
+  {
+    "year": 1975,
+    "prize": "medicine"
+  },
+  {
+    "year": 1974,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1974,
+    "prize": "economics"
+  },
+  {
+    "year": 1974,
+    "prize": "literature"
+  },
+  {
+    "year": 1974,
+    "prize": "peace"
+  },
+  {
+    "year": 1974,
+    "prize": "physics"
+  },
+  {
+    "year": 1974,
+    "prize": "medicine"
+  },
+  {
+    "year": 1973,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1973,
+    "prize": "economics"
+  },
+  {
+    "year": 1973,
+    "prize": "literature"
+  },
+  {
+    "year": 1973,
+    "prize": "peace"
+  },
+  {
+    "year": 1973,
+    "prize": "physics"
+  },
+  {
+    "year": 1973,
+    "prize": "medicine"
+  },
+  {
+    "year": 1972,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1972,
+    "prize": "economics"
+  },
+  {
+    "year": 1972,
+    "prize": "literature"
+  },
+  {
+    "year": 1972,
+    "prize": "physics"
+  },
+  {
+    "year": 1972,
+    "prize": "medicine"
+  },
+  {
+    "year": 1971,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1971,
+    "prize": "economics"
+  },
+  {
+    "year": 1971,
+    "prize": "literature"
+  },
+  {
+    "year": 1971,
+    "prize": "peace"
+  },
+  {
+    "year": 1971,
+    "prize": "physics"
+  },
+  {
+    "year": 1971,
+    "prize": "medicine"
+  },
+  {
+    "year": 1970,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1970,
+    "prize": "economics"
+  },
+  {
+    "year": 1970,
+    "prize": "literature"
+  },
+  {
+    "year": 1970,
+    "prize": "peace"
+  },
+  {
+    "year": 1970,
+    "prize": "physics"
+  },
+  {
+    "year": 1970,
+    "prize": "medicine"
+  },
+  {
+    "year": 1969,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1969,
+    "prize": "economics"
+  },
+  {
+    "year": 1969,
+    "prize": "literature"
+  },
+  {
+    "year": 1969,
+    "prize": "physics"
+  },
+  {
+    "year": 1969,
+    "prize": "medicine"
+  },
+  {
+    "year": 1968,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1968,
+    "prize": "literature"
+  },
+  {
+    "year": 1968,
+    "prize": "peace"
+  },
+  {
+    "year": 1968,
+    "prize": "physics"
+  },
+  {
+    "year": 1968,
+    "prize": "medicine"
+  },
+  {
+    "year": 1967,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1967,
+    "prize": "literature"
+  },
+  {
+    "year": 1967,
+    "prize": "physics"
+  },
+  {
+    "year": 1967,
+    "prize": "medicine"
+  },
+  {
+    "year": 1966,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1966,
+    "prize": "literature"
+  },
+  {
+    "year": 1966,
+    "prize": "physics"
+  },
+  {
+    "year": 1966,
+    "prize": "medicine"
+  },
+  {
+    "year": 1965,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1965,
+    "prize": "literature"
+  },
+  {
+    "year": 1965,
+    "prize": "physics"
+  },
+  {
+    "year": 1965,
+    "prize": "medicine"
+  },
+  {
+    "year": 1964,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1964,
+    "prize": "literature"
+  },
+  {
+    "year": 1964,
+    "prize": "peace"
+  },
+  {
+    "year": 1964,
+    "prize": "physics"
+  },
+  {
+    "year": 1964,
+    "prize": "medicine"
+  },
+  {
+    "year": 1963,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1963,
+    "prize": "literature"
+  },
+  {
+    "year": 1963,
+    "prize": "physics"
+  },
+  {
+    "year": 1963,
+    "prize": "medicine"
+  },
+  {
+    "year": 1962,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1962,
+    "prize": "literature"
+  },
+  {
+    "year": 1962,
+    "prize": "peace"
+  },
+  {
+    "year": 1962,
+    "prize": "physics"
+  },
+  {
+    "year": 1962,
+    "prize": "medicine"
+  },
+  {
+    "year": 1961,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1961,
+    "prize": "literature"
+  },
+  {
+    "year": 1961,
+    "prize": "peace"
+  },
+  {
+    "year": 1961,
+    "prize": "physics"
+  },
+  {
+    "year": 1961,
+    "prize": "medicine"
+  },
+  {
+    "year": 1960,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1960,
+    "prize": "literature"
+  },
+  {
+    "year": 1960,
+    "prize": "peace"
+  },
+  {
+    "year": 1960,
+    "prize": "physics"
+  },
+  {
+    "year": 1960,
+    "prize": "medicine"
+  },
+  {
+    "year": 1959,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1959,
+    "prize": "literature"
+  },
+  {
+    "year": 1959,
+    "prize": "peace"
+  },
+  {
+    "year": 1959,
+    "prize": "physics"
+  },
+  {
+    "year": 1959,
+    "prize": "medicine"
+  },
+  {
+    "year": 1958,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1958,
+    "prize": "literature"
+  },
+  {
+    "year": 1958,
+    "prize": "peace"
+  },
+  {
+    "year": 1958,
+    "prize": "physics"
+  },
+  {
+    "year": 1958,
+    "prize": "medicine"
+  },
+  {
+    "year": 1957,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1957,
+    "prize": "literature"
+  },
+  {
+    "year": 1957,
+    "prize": "peace"
+  },
+  {
+    "year": 1957,
+    "prize": "physics"
+  },
+  {
+    "year": 1957,
+    "prize": "medicine"
+  },
+  {
+    "year": 1956,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1956,
+    "prize": "literature"
+  },
+  {
+    "year": 1956,
+    "prize": "physics"
+  },
+  {
+    "year": 1956,
+    "prize": "medicine"
+  },
+  {
+    "year": 1955,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1955,
+    "prize": "literature"
+  },
+  {
+    "year": 1955,
+    "prize": "physics"
+  },
+  {
+    "year": 1955,
+    "prize": "medicine"
+  },
+  {
+    "year": 1954,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1954,
+    "prize": "literature"
+  },
+  {
+    "year": 1954,
+    "prize": "physics"
+  },
+  {
+    "year": 1954,
+    "prize": "medicine"
+  },
+  {
+    "year": 1953,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1953,
+    "prize": "literature"
+  },
+  {
+    "year": 1953,
+    "prize": "peace"
+  },
+  {
+    "year": 1953,
+    "prize": "physics"
+  },
+  {
+    "year": 1953,
+    "prize": "medicine"
+  },
+  {
+    "year": 1952,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1952,
+    "prize": "literature"
+  },
+  {
+    "year": 1952,
+    "prize": "peace"
+  },
+  {
+    "year": 1952,
+    "prize": "physics"
+  },
+  {
+    "year": 1952,
+    "prize": "medicine"
+  },
+  {
+    "year": 1951,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1951,
+    "prize": "literature"
+  },
+  {
+    "year": 1951,
+    "prize": "peace"
+  },
+  {
+    "year": 1951,
+    "prize": "physics"
+  },
+  {
+    "year": 1951,
+    "prize": "medicine"
+  },
+  {
+    "year": 1950,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1950,
+    "prize": "literature"
+  },
+  {
+    "year": 1950,
+    "prize": "peace"
+  },
+  {
+    "year": 1950,
+    "prize": "physics"
+  },
+  {
+    "year": 1950,
+    "prize": "medicine"
+  },
+  {
+    "year": 1949,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1949,
+    "prize": "literature"
+  },
+  {
+    "year": 1949,
+    "prize": "peace"
+  },
+  {
+    "year": 1949,
+    "prize": "physics"
+  },
+  {
+    "year": 1949,
+    "prize": "medicine"
+  },
+  {
+    "year": 1948,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1948,
+    "prize": "literature"
+  },
+  {
+    "year": 1948,
+    "prize": "physics"
+  },
+  {
+    "year": 1948,
+    "prize": "medicine"
+  },
+  {
+    "year": 1947,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1947,
+    "prize": "literature"
+  },
+  {
+    "year": 1947,
+    "prize": "physics"
+  },
+  {
+    "year": 1947,
+    "prize": "medicine"
+  },
+  {
+    "year": 1946,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1946,
+    "prize": "literature"
+  },
+  {
+    "year": 1946,
+    "prize": "peace"
+  },
+  {
+    "year": 1946,
+    "prize": "physics"
+  },
+  {
+    "year": 1946,
+    "prize": "medicine"
+  },
+  {
+    "year": 1945,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1945,
+    "prize": "literature"
+  },
+  {
+    "year": 1945,
+    "prize": "peace"
+  },
+  {
+    "year": 1945,
+    "prize": "physics"
+  },
+  {
+    "year": 1945,
+    "prize": "medicine"
+  },
+  {
+    "year": 1944,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1944,
+    "prize": "literature"
+  },
+  {
+    "year": 1944,
+    "prize": "physics"
+  },
+  {
+    "year": 1944,
+    "prize": "medicine"
+  },
+  {
+    "year": 1943,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1943,
+    "prize": "physics"
+  },
+  {
+    "year": 1943,
+    "prize": "medicine"
+  },
+  {
+    "year": 1939,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1939,
+    "prize": "literature"
+  },
+  {
+    "year": 1939,
+    "prize": "physics"
+  },
+  {
+    "year": 1939,
+    "prize": "medicine"
+  },
+  {
+    "year": 1938,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1938,
+    "prize": "literature"
+  },
+  {
+    "year": 1938,
+    "prize": "physics"
+  },
+  {
+    "year": 1938,
+    "prize": "medicine"
+  },
+  {
+    "year": 1937,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1937,
+    "prize": "literature"
+  },
+  {
+    "year": 1937,
+    "prize": "peace"
+  },
+  {
+    "year": 1937,
+    "prize": "physics"
+  },
+  {
+    "year": 1937,
+    "prize": "medicine"
+  },
+  {
+    "year": 1936,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1936,
+    "prize": "literature"
+  },
+  {
+    "year": 1936,
+    "prize": "peace"
+  },
+  {
+    "year": 1936,
+    "prize": "physics"
+  },
+  {
+    "year": 1936,
+    "prize": "medicine"
+  },
+  {
+    "year": 1935,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1935,
+    "prize": "peace"
+  },
+  {
+    "year": 1935,
+    "prize": "physics"
+  },
+  {
+    "year": 1935,
+    "prize": "medicine"
+  },
+  {
+    "year": 1934,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1934,
+    "prize": "literature"
+  },
+  {
+    "year": 1934,
+    "prize": "peace"
+  },
+  {
+    "year": 1934,
+    "prize": "medicine"
+  },
+  {
+    "year": 1933,
+    "prize": "literature"
+  },
+  {
+    "year": 1933,
+    "prize": "peace"
+  },
+  {
+    "year": 1933,
+    "prize": "physics"
+  },
+  {
+    "year": 1933,
+    "prize": "medicine"
+  },
+  {
+    "year": 1932,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1932,
+    "prize": "literature"
+  },
+  {
+    "year": 1932,
+    "prize": "physics"
+  },
+  {
+    "year": 1932,
+    "prize": "medicine"
+  },
+  {
+    "year": 1931,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1931,
+    "prize": "literature"
+  },
+  {
+    "year": 1931,
+    "prize": "peace"
+  },
+  {
+    "year": 1931,
+    "prize": "medicine"
+  },
+  {
+    "year": 1930,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1930,
+    "prize": "literature"
+  },
+  {
+    "year": 1930,
+    "prize": "peace"
+  },
+  {
+    "year": 1930,
+    "prize": "physics"
+  },
+  {
+    "year": 1930,
+    "prize": "medicine"
+  },
+  {
+    "year": 1929,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1929,
+    "prize": "literature"
+  },
+  {
+    "year": 1929,
+    "prize": "peace"
+  },
+  {
+    "year": 1929,
+    "prize": "physics"
+  },
+  {
+    "year": 1929,
+    "prize": "medicine"
+  },
+  {
+    "year": 1928,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1928,
+    "prize": "literature"
+  },
+  {
+    "year": 1928,
+    "prize": "physics"
+  },
+  {
+    "year": 1928,
+    "prize": "medicine"
+  },
+  {
+    "year": 1927,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1927,
+    "prize": "literature"
+  },
+  {
+    "year": 1927,
+    "prize": "peace"
+  },
+  {
+    "year": 1927,
+    "prize": "physics"
+  },
+  {
+    "year": 1927,
+    "prize": "medicine"
+  },
+  {
+    "year": 1926,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1926,
+    "prize": "literature"
+  },
+  {
+    "year": 1926,
+    "prize": "peace"
+  },
+  {
+    "year": 1926,
+    "prize": "physics"
+  },
+  {
+    "year": 1926,
+    "prize": "medicine"
+  },
+  {
+    "year": 1925,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1925,
+    "prize": "literature"
+  },
+  {
+    "year": 1925,
+    "prize": "peace"
+  },
+  {
+    "year": 1925,
+    "prize": "physics"
+  },
+  {
+    "year": 1924,
+    "prize": "literature"
+  },
+  {
+    "year": 1924,
+    "prize": "physics"
+  },
+  {
+    "year": 1924,
+    "prize": "medicine"
+  },
+  {
+    "year": 1923,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1923,
+    "prize": "literature"
+  },
+  {
+    "year": 1923,
+    "prize": "physics"
+  },
+  {
+    "year": 1923,
+    "prize": "medicine"
+  },
+  {
+    "year": 1922,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1922,
+    "prize": "literature"
+  },
+  {
+    "year": 1922,
+    "prize": "peace"
+  },
+  {
+    "year": 1922,
+    "prize": "physics"
+  },
+  {
+    "year": 1922,
+    "prize": "medicine"
+  },
+  {
+    "year": 1921,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1921,
+    "prize": "literature"
+  },
+  {
+    "year": 1921,
+    "prize": "peace"
+  },
+  {
+    "year": 1921,
+    "prize": "physics"
+  },
+  {
+    "year": 1920,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1920,
+    "prize": "literature"
+  },
+  {
+    "year": 1920,
+    "prize": "peace"
+  },
+  {
+    "year": 1920,
+    "prize": "physics"
+  },
+  {
+    "year": 1920,
+    "prize": "medicine"
+  },
+  {
+    "year": 1919,
+    "prize": "literature"
+  },
+  {
+    "year": 1919,
+    "prize": "peace"
+  },
+  {
+    "year": 1919,
+    "prize": "physics"
+  },
+  {
+    "year": 1919,
+    "prize": "medicine"
+  },
+  {
+    "year": 1918,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1918,
+    "prize": "physics"
+  },
+  {
+    "year": 1917,
+    "prize": "literature"
+  },
+  {
+    "year": 1917,
+    "prize": "physics"
+  },
+  {
+    "year": 1916,
+    "prize": "literature"
+  },
+  {
+    "year": 1915,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1915,
+    "prize": "literature"
+  },
+  {
+    "year": 1915,
+    "prize": "physics"
+  },
+  {
+    "year": 1914,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1914,
+    "prize": "physics"
+  },
+  {
+    "year": 1914,
+    "prize": "medicine"
+  },
+  {
+    "year": 1913,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1913,
+    "prize": "literature"
+  },
+  {
+    "year": 1913,
+    "prize": "peace"
+  },
+  {
+    "year": 1913,
+    "prize": "physics"
+  },
+  {
+    "year": 1913,
+    "prize": "medicine"
+  },
+  {
+    "year": 1912,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1912,
+    "prize": "literature"
+  },
+  {
+    "year": 1912,
+    "prize": "peace"
+  },
+  {
+    "year": 1912,
+    "prize": "physics"
+  },
+  {
+    "year": 1912,
+    "prize": "medicine"
+  },
+  {
+    "year": 1911,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1911,
+    "prize": "literature"
+  },
+  {
+    "year": 1911,
+    "prize": "peace"
+  },
+  {
+    "year": 1911,
+    "prize": "physics"
+  },
+  {
+    "year": 1911,
+    "prize": "medicine"
+  },
+  {
+    "year": 1910,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1910,
+    "prize": "literature"
+  },
+  {
+    "year": 1910,
+    "prize": "physics"
+  },
+  {
+    "year": 1910,
+    "prize": "medicine"
+  },
+  {
+    "year": 1909,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1909,
+    "prize": "literature"
+  },
+  {
+    "year": 1909,
+    "prize": "peace"
+  },
+  {
+    "year": 1909,
+    "prize": "physics"
+  },
+  {
+    "year": 1909,
+    "prize": "medicine"
+  },
+  {
+    "year": 1908,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1908,
+    "prize": "literature"
+  },
+  {
+    "year": 1908,
+    "prize": "peace"
+  },
+  {
+    "year": 1908,
+    "prize": "physics"
+  },
+  {
+    "year": 1908,
+    "prize": "medicine"
+  },
+  {
+    "year": 1907,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1907,
+    "prize": "literature"
+  },
+  {
+    "year": 1907,
+    "prize": "peace"
+  },
+  {
+    "year": 1907,
+    "prize": "physics"
+  },
+  {
+    "year": 1907,
+    "prize": "medicine"
+  },
+  {
+    "year": 1906,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1906,
+    "prize": "literature"
+  },
+  {
+    "year": 1906,
+    "prize": "peace"
+  },
+  {
+    "year": 1906,
+    "prize": "physics"
+  },
+  {
+    "year": 1906,
+    "prize": "medicine"
+  },
+  {
+    "year": 1905,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1905,
+    "prize": "literature"
+  },
+  {
+    "year": 1905,
+    "prize": "peace"
+  },
+  {
+    "year": 1905,
+    "prize": "physics"
+  },
+  {
+    "year": 1905,
+    "prize": "medicine"
+  },
+  {
+    "year": 1904,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1904,
+    "prize": "literature"
+  },
+  {
+    "year": 1904,
+    "prize": "physics"
+  },
+  {
+    "year": 1904,
+    "prize": "medicine"
+  },
+  {
+    "year": 1903,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1903,
+    "prize": "literature"
+  },
+  {
+    "year": 1903,
+    "prize": "peace"
+  },
+  {
+    "year": 1903,
+    "prize": "physics"
+  },
+  {
+    "year": 1903,
+    "prize": "medicine"
+  },
+  {
+    "year": 1902,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1902,
+    "prize": "literature"
+  },
+  {
+    "year": 1902,
+    "prize": "peace"
+  },
+  {
+    "year": 1902,
+    "prize": "physics"
+  },
+  {
+    "year": 1902,
+    "prize": "medicine"
+  },
+  {
+    "year": 1901,
+    "prize": "chemistry"
+  },
+  {
+    "year": 1901,
+    "prize": "literature"
+  },
+  {
+    "year": 1901,
+    "prize": "peace"
+  },
+  {
+    "year": 1901,
+    "prize": "physics"
+  },
+  {
+    "year": 1901,
+    "prize": "medicine"
+  }
+]
