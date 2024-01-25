@@ -19,7 +19,9 @@
     "winners": [
       "Aleksey Yekimov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "chemistry",
@@ -40,7 +42,9 @@
     "winners": [
       "Aleksey Yekimov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "chemistry",
@@ -61,28 +65,36 @@
     "winners": [
       "Aleksey Yekimov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "economics",
     "winners": [
       "Claudia Goldin"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "literature",
     "winners": [
       "Jon Fosse"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "peace",
     "winners": [
       "Narges Mohammadi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "physics",
@@ -103,7 +115,9 @@
     "winners": [
       "Anne L’Huillier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "physics",
@@ -124,7 +138,9 @@
     "winners": [
       "Anne L’Huillier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "physics",
@@ -145,7 +161,9 @@
     "winners": [
       "Anne L’Huillier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "medicine",
@@ -159,7 +177,9 @@
     "winners": [
       "Drew Weissman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2023,
     "prize": "medicine",
@@ -173,7 +193,9 @@
     "winners": [
       "Drew Weissman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "chemistry",
@@ -194,7 +216,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "chemistry",
@@ -215,7 +239,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "chemistry",
@@ -236,7 +262,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "economics",
@@ -257,7 +285,9 @@
     "winners": [
       "Philip Dybvig"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "economics",
@@ -278,7 +308,9 @@
     "winners": [
       "Philip Dybvig"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "economics",
@@ -299,14 +331,18 @@
     "winners": [
       "Philip Dybvig"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "literature",
     "winners": [
       "Annie Ernaux"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "peace",
@@ -327,7 +363,9 @@
     "winners": [
       "Center for Civil Liberties null"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "physics",
@@ -348,7 +386,9 @@
     "winners": [
       "Anton Zeilinger"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "physics",
@@ -369,7 +409,9 @@
     "winners": [
       "Anton Zeilinger"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "physics",
@@ -390,14 +432,18 @@
     "winners": [
       "Anton Zeilinger"
     ]
-  },
+  }
+]
+[
   {
     "year": 2022,
     "prize": "medicine",
     "winners": [
       "Svante Pääbo"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "chemistry",
@@ -411,7 +457,9 @@
     "winners": [
       "David MacMillan"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "chemistry",
@@ -425,7 +473,9 @@
     "winners": [
       "David MacMillan"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "economics",
@@ -446,7 +496,9 @@
     "winners": [
       "Guido Imbens"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "economics",
@@ -467,7 +519,9 @@
     "winners": [
       "Guido Imbens"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "economics",
@@ -488,14 +542,18 @@
     "winners": [
       "Guido Imbens"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "literature",
     "winners": [
       "Abdulrazak Gurnah"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "peace",
@@ -509,7 +567,9 @@
     "winners": [
       "Dmitry Muratov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "peace",
@@ -523,7 +583,9 @@
     "winners": [
       "Dmitry Muratov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "physics",
@@ -544,7 +606,9 @@
     "winners": [
       "Giorgio Parisi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "physics",
@@ -565,7 +629,9 @@
     "winners": [
       "Giorgio Parisi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "physics",
@@ -586,7 +652,9 @@
     "winners": [
       "Giorgio Parisi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "medicine",
@@ -600,7 +668,9 @@
     "winners": [
       "Ardem Patapoutian"
     ]
-  },
+  }
+]
+[
   {
     "year": 2021,
     "prize": "medicine",
@@ -614,7 +684,9 @@
     "winners": [
       "Ardem Patapoutian"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "chemistry",
@@ -628,7 +700,9 @@
     "winners": [
       "Jennifer A. Doudna"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "chemistry",
@@ -642,7 +716,9 @@
     "winners": [
       "Jennifer A. Doudna"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "economics",
@@ -656,7 +732,9 @@
     "winners": [
       "Robert Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "economics",
@@ -670,14 +748,18 @@
     "winners": [
       "Robert Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "literature",
     "winners": [
       "Louise Glück"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "physics",
@@ -698,7 +780,9 @@
     "winners": [
       "Andrea Ghez"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "physics",
@@ -719,7 +803,9 @@
     "winners": [
       "Andrea Ghez"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "physics",
@@ -740,7 +826,9 @@
     "winners": [
       "Andrea Ghez"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "medicine",
@@ -761,7 +849,9 @@
     "winners": [
       "Charles Rice"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "medicine",
@@ -782,7 +872,9 @@
     "winners": [
       "Charles Rice"
     ]
-  },
+  }
+]
+[
   {
     "year": 2020,
     "prize": "medicine",
@@ -803,7 +895,9 @@
     "winners": [
       "Charles Rice"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "chemistry",
@@ -824,7 +918,9 @@
     "winners": [
       "Akira Yoshino"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "chemistry",
@@ -845,7 +941,9 @@
     "winners": [
       "Akira Yoshino"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "chemistry",
@@ -866,7 +964,9 @@
     "winners": [
       "Akira Yoshino"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "economics",
@@ -887,7 +987,9 @@
     "winners": [
       "Michael Kremer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "economics",
@@ -908,7 +1010,9 @@
     "winners": [
       "Michael Kremer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "economics",
@@ -929,21 +1033,27 @@
     "winners": [
       "Michael Kremer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "literature",
     "winners": [
       "Peter Handke"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "peace",
     "winners": [
       "Abiy Ahmed Ali"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "physics",
@@ -964,7 +1074,9 @@
     "winners": [
       "Didier Queloz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "physics",
@@ -985,7 +1097,9 @@
     "winners": [
       "Didier Queloz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "physics",
@@ -1006,7 +1120,9 @@
     "winners": [
       "Didier Queloz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "medicine",
@@ -1027,7 +1143,9 @@
     "winners": [
       "Gregg Semenza"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "medicine",
@@ -1048,7 +1166,9 @@
     "winners": [
       "Gregg Semenza"
     ]
-  },
+  }
+]
+[
   {
     "year": 2019,
     "prize": "medicine",
@@ -1069,7 +1189,9 @@
     "winners": [
       "Gregg Semenza"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "chemistry",
@@ -1090,7 +1212,9 @@
     "winners": [
       "Sir Gregory P. Winter"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "chemistry",
@@ -1111,7 +1235,9 @@
     "winners": [
       "Sir Gregory P. Winter"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "chemistry",
@@ -1132,7 +1258,9 @@
     "winners": [
       "Sir Gregory P. Winter"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "economics",
@@ -1146,7 +1274,9 @@
     "winners": [
       "Paul M. Romer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "economics",
@@ -1160,14 +1290,18 @@
     "winners": [
       "Paul M. Romer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "literature",
     "winners": [
       "Olga Tokarczuk"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "peace",
@@ -1181,7 +1315,9 @@
     "winners": [
       "Nadia Murad"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "peace",
@@ -1195,7 +1331,9 @@
     "winners": [
       "Nadia Murad"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "physics",
@@ -1216,7 +1354,9 @@
     "winners": [
       "Donna Strickland"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "physics",
@@ -1237,7 +1377,9 @@
     "winners": [
       "Donna Strickland"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "physics",
@@ -1258,7 +1400,9 @@
     "winners": [
       "Donna Strickland"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "medicine",
@@ -1272,7 +1416,9 @@
     "winners": [
       "Tasuku Honjo"
     ]
-  },
+  }
+]
+[
   {
     "year": 2018,
     "prize": "medicine",
@@ -1286,7 +1432,9 @@
     "winners": [
       "Tasuku Honjo"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "chemistry",
@@ -1307,7 +1455,9 @@
     "winners": [
       "Richard Henderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "chemistry",
@@ -1328,7 +1478,9 @@
     "winners": [
       "Richard Henderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "chemistry",
@@ -1349,21 +1501,27 @@
     "winners": [
       "Richard Henderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "economics",
     "winners": [
       "Richard H. Thaler"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "literature",
     "winners": [
       "Kazuo Ishiguro"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "physics",
@@ -1384,7 +1542,9 @@
     "winners": [
       "Kip S. Thorne"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "physics",
@@ -1405,7 +1565,9 @@
     "winners": [
       "Kip S. Thorne"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "physics",
@@ -1426,7 +1588,9 @@
     "winners": [
       "Kip S. Thorne"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "medicine",
@@ -1447,7 +1611,9 @@
     "winners": [
       "Michael W. Young"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "medicine",
@@ -1468,7 +1634,9 @@
     "winners": [
       "Michael W. Young"
     ]
-  },
+  }
+]
+[
   {
     "year": 2017,
     "prize": "medicine",
@@ -1489,7 +1657,9 @@
     "winners": [
       "Michael W. Young"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "chemistry",
@@ -1510,7 +1680,9 @@
     "winners": [
       "Bernard L. Feringa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "chemistry",
@@ -1531,7 +1703,9 @@
     "winners": [
       "Bernard L. Feringa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "chemistry",
@@ -1552,7 +1726,9 @@
     "winners": [
       "Bernard L. Feringa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "economics",
@@ -1566,7 +1742,9 @@
     "winners": [
       "Bengt Holmström"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "economics",
@@ -1580,21 +1758,27 @@
     "winners": [
       "Bengt Holmström"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "literature",
     "winners": [
       "Bob Dylan"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "peace",
     "winners": [
       "Juan Manuel Santos"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "physics",
@@ -1615,7 +1799,9 @@
     "winners": [
       "J. Michael Kosterlitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "physics",
@@ -1636,7 +1822,9 @@
     "winners": [
       "J. Michael Kosterlitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "physics",
@@ -1657,14 +1845,18 @@
     "winners": [
       "J. Michael Kosterlitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2016,
     "prize": "medicine",
     "winners": [
       "Yoshinori Ohsumi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "chemistry",
@@ -1685,7 +1877,9 @@
     "winners": [
       "Aziz Sancar"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "chemistry",
@@ -1706,7 +1900,9 @@
     "winners": [
       "Aziz Sancar"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "chemistry",
@@ -1727,21 +1923,27 @@
     "winners": [
       "Aziz Sancar"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "economics",
     "winners": [
       "Angus Deaton"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "literature",
     "winners": [
       "Svetlana Alexievich"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "physics",
@@ -1755,7 +1957,9 @@
     "winners": [
       "Arthur B. McDonald"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "physics",
@@ -1769,7 +1973,9 @@
     "winners": [
       "Arthur B. McDonald"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "medicine",
@@ -1790,7 +1996,9 @@
     "winners": [
       "Youyou Tu"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "medicine",
@@ -1811,7 +2019,9 @@
     "winners": [
       "Youyou Tu"
     ]
-  },
+  }
+]
+[
   {
     "year": 2015,
     "prize": "medicine",
@@ -1832,7 +2042,9 @@
     "winners": [
       "Youyou Tu"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "chemistry",
@@ -1853,7 +2065,9 @@
     "winners": [
       "William E. Moerner"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "chemistry",
@@ -1874,7 +2088,9 @@
     "winners": [
       "William E. Moerner"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "chemistry",
@@ -1895,21 +2111,27 @@
     "winners": [
       "William E. Moerner"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "economics",
     "winners": [
       "Jean Tirole"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "literature",
     "winners": [
       "Patrick Modiano"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "peace",
@@ -1923,7 +2145,9 @@
     "winners": [
       "Malala Yousafzai"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "peace",
@@ -1937,7 +2161,9 @@
     "winners": [
       "Malala Yousafzai"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "physics",
@@ -1958,7 +2184,9 @@
     "winners": [
       "Shuji Nakamura"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "physics",
@@ -1979,7 +2207,9 @@
     "winners": [
       "Shuji Nakamura"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "physics",
@@ -2000,7 +2230,9 @@
     "winners": [
       "Shuji Nakamura"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "medicine",
@@ -2021,7 +2253,9 @@
     "winners": [
       "Edvard I. Moser"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "medicine",
@@ -2042,7 +2276,9 @@
     "winners": [
       "Edvard I. Moser"
     ]
-  },
+  }
+]
+[
   {
     "year": 2014,
     "prize": "medicine",
@@ -2063,7 +2299,9 @@
     "winners": [
       "Edvard I. Moser"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "chemistry",
@@ -2084,7 +2322,9 @@
     "winners": [
       "Arieh Warshel"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "chemistry",
@@ -2105,7 +2345,9 @@
     "winners": [
       "Arieh Warshel"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "chemistry",
@@ -2126,7 +2368,9 @@
     "winners": [
       "Arieh Warshel"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "economics",
@@ -2147,7 +2391,9 @@
     "winners": [
       "Robert J. Shiller"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "economics",
@@ -2168,7 +2414,9 @@
     "winners": [
       "Robert J. Shiller"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "economics",
@@ -2189,14 +2437,18 @@
     "winners": [
       "Robert J. Shiller"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "literature",
     "winners": [
       "Alice Munro"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "physics",
@@ -2210,7 +2462,9 @@
     "winners": [
       "Peter Higgs"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "physics",
@@ -2224,7 +2478,9 @@
     "winners": [
       "Peter Higgs"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "medicine",
@@ -2245,7 +2501,9 @@
     "winners": [
       "Thomas C. Südhof"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "medicine",
@@ -2266,7 +2524,9 @@
     "winners": [
       "Thomas C. Südhof"
     ]
-  },
+  }
+]
+[
   {
     "year": 2013,
     "prize": "medicine",
@@ -2287,7 +2547,9 @@
     "winners": [
       "Thomas C. Südhof"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "chemistry",
@@ -2301,7 +2563,9 @@
     "winners": [
       "Brian Kobilka"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "chemistry",
@@ -2315,7 +2579,9 @@
     "winners": [
       "Brian Kobilka"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "economics",
@@ -2329,7 +2595,9 @@
     "winners": [
       "Lloyd S. Shapley"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "economics",
@@ -2343,14 +2611,18 @@
     "winners": [
       "Lloyd S. Shapley"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "literature",
     "winners": [
       "Mo Yan"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "physics",
@@ -2364,7 +2636,9 @@
     "winners": [
       "David J. Wineland"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "physics",
@@ -2378,7 +2652,9 @@
     "winners": [
       "David J. Wineland"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "medicine",
@@ -2392,7 +2668,9 @@
     "winners": [
       "Shinya Yamanaka"
     ]
-  },
+  }
+]
+[
   {
     "year": 2012,
     "prize": "medicine",
@@ -2406,14 +2684,18 @@
     "winners": [
       "Shinya Yamanaka"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "chemistry",
     "winners": [
       "Dan Shechtman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "economics",
@@ -2427,7 +2709,9 @@
     "winners": [
       "Christopher A. Sims"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "economics",
@@ -2441,14 +2725,18 @@
     "winners": [
       "Christopher A. Sims"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "literature",
     "winners": [
       "Tomas Tranströmer"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "peace",
@@ -2469,7 +2757,9 @@
     "winners": [
       "Tawakkol Karman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "peace",
@@ -2490,7 +2780,9 @@
     "winners": [
       "Tawakkol Karman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "peace",
@@ -2511,7 +2803,9 @@
     "winners": [
       "Tawakkol Karman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "physics",
@@ -2532,7 +2826,9 @@
     "winners": [
       "Adam G. Riess"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "physics",
@@ -2553,7 +2849,9 @@
     "winners": [
       "Adam G. Riess"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "physics",
@@ -2574,7 +2872,9 @@
     "winners": [
       "Adam G. Riess"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "medicine",
@@ -2595,7 +2895,9 @@
     "winners": [
       "Ralph M. Steinman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "medicine",
@@ -2616,7 +2918,9 @@
     "winners": [
       "Ralph M. Steinman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2011,
     "prize": "medicine",
@@ -2637,7 +2941,9 @@
     "winners": [
       "Ralph M. Steinman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "chemistry",
@@ -2658,7 +2964,9 @@
     "winners": [
       "Akira Suzuki"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "chemistry",
@@ -2679,7 +2987,9 @@
     "winners": [
       "Akira Suzuki"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "chemistry",
@@ -2700,7 +3010,9 @@
     "winners": [
       "Akira Suzuki"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "economics",
@@ -2721,7 +3033,9 @@
     "winners": [
       "Christopher A. Pissarides"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "economics",
@@ -2742,7 +3056,9 @@
     "winners": [
       "Christopher A. Pissarides"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "economics",
@@ -2763,21 +3079,27 @@
     "winners": [
       "Christopher A. Pissarides"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "literature",
     "winners": [
       "Mario Vargas Llosa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "peace",
     "winners": [
       "Xiaobo Liu"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "physics",
@@ -2791,7 +3113,9 @@
     "winners": [
       "Konstantin Novoselov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "physics",
@@ -2805,14 +3129,18 @@
     "winners": [
       "Konstantin Novoselov"
     ]
-  },
+  }
+]
+[
   {
     "year": 2010,
     "prize": "medicine",
     "winners": [
       "Robert G. Edwards"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "chemistry",
@@ -2833,7 +3161,9 @@
     "winners": [
       "Ada E. Yonath"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "chemistry",
@@ -2854,7 +3184,9 @@
     "winners": [
       "Ada E. Yonath"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "chemistry",
@@ -2875,7 +3207,9 @@
     "winners": [
       "Ada E. Yonath"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "economics",
@@ -2889,7 +3223,9 @@
     "winners": [
       "Oliver E. Williamson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "economics",
@@ -2903,21 +3239,27 @@
     "winners": [
       "Oliver E. Williamson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "literature",
     "winners": [
       "Herta Müller"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "peace",
     "winners": [
       "Barack Obama"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "physics",
@@ -2938,7 +3280,9 @@
     "winners": [
       "George E. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "physics",
@@ -2959,7 +3303,9 @@
     "winners": [
       "George E. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "physics",
@@ -2980,7 +3326,9 @@
     "winners": [
       "George E. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "medicine",
@@ -3001,7 +3349,9 @@
     "winners": [
       "Jack W. Szostak"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "medicine",
@@ -3022,7 +3372,9 @@
     "winners": [
       "Jack W. Szostak"
     ]
-  },
+  }
+]
+[
   {
     "year": 2009,
     "prize": "medicine",
@@ -3043,7 +3395,9 @@
     "winners": [
       "Jack W. Szostak"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "chemistry",
@@ -3064,7 +3418,9 @@
     "winners": [
       "Roger Y. Tsien"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "chemistry",
@@ -3085,7 +3441,9 @@
     "winners": [
       "Roger Y. Tsien"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "chemistry",
@@ -3106,28 +3464,36 @@
     "winners": [
       "Roger Y. Tsien"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "economics",
     "winners": [
       "Paul Krugman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "literature",
     "winners": [
       "Jean-Marie Gustave Le Clézio"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "peace",
     "winners": [
       "Martti Ahtisaari"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "physics",
@@ -3148,7 +3514,9 @@
     "winners": [
       "Toshihide Maskawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "physics",
@@ -3169,7 +3537,9 @@
     "winners": [
       "Toshihide Maskawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "physics",
@@ -3190,7 +3560,9 @@
     "winners": [
       "Toshihide Maskawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "medicine",
@@ -3211,7 +3583,9 @@
     "winners": [
       "Luc Montagnier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "medicine",
@@ -3232,7 +3606,9 @@
     "winners": [
       "Luc Montagnier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2008,
     "prize": "medicine",
@@ -3253,14 +3629,18 @@
     "winners": [
       "Luc Montagnier"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "chemistry",
     "winners": [
       "Gerhard Ertl"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "economics",
@@ -3281,7 +3661,9 @@
     "winners": [
       "Roger B. Myerson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "economics",
@@ -3302,7 +3684,9 @@
     "winners": [
       "Roger B. Myerson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "economics",
@@ -3323,14 +3707,18 @@
     "winners": [
       "Roger B. Myerson"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "literature",
     "winners": [
       "Doris Lessing"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "peace",
@@ -3344,7 +3732,9 @@
     "winners": [
       "Al Gore"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "physics",
@@ -3358,7 +3748,9 @@
     "winners": [
       "Peter Grünberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "physics",
@@ -3372,7 +3764,9 @@
     "winners": [
       "Peter Grünberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "medicine",
@@ -3393,7 +3787,9 @@
     "winners": [
       "Oliver Smithies"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "medicine",
@@ -3414,7 +3810,9 @@
     "winners": [
       "Oliver Smithies"
     ]
-  },
+  }
+]
+[
   {
     "year": 2007,
     "prize": "medicine",
@@ -3435,28 +3833,36 @@
     "winners": [
       "Oliver Smithies"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "chemistry",
     "winners": [
       "Roger D. Kornberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "economics",
     "winners": [
       "Edmund S. Phelps"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "literature",
     "winners": [
       "Orhan Pamuk"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "peace",
@@ -3470,7 +3876,9 @@
     "winners": [
       "Grameen Bank null"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "physics",
@@ -3484,7 +3892,9 @@
     "winners": [
       "George F. Smoot"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "physics",
@@ -3498,7 +3908,9 @@
     "winners": [
       "George F. Smoot"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "medicine",
@@ -3512,7 +3924,9 @@
     "winners": [
       "Craig C. Mello"
     ]
-  },
+  }
+]
+[
   {
     "year": 2006,
     "prize": "medicine",
@@ -3526,7 +3940,9 @@
     "winners": [
       "Craig C. Mello"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "chemistry",
@@ -3547,7 +3963,9 @@
     "winners": [
       "Richard R. Schrock"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "chemistry",
@@ -3568,7 +3986,9 @@
     "winners": [
       "Richard R. Schrock"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "chemistry",
@@ -3589,7 +4009,9 @@
     "winners": [
       "Richard R. Schrock"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "economics",
@@ -3603,7 +4025,9 @@
     "winners": [
       "Thomas C. Schelling"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "economics",
@@ -3617,14 +4041,18 @@
     "winners": [
       "Thomas C. Schelling"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "literature",
     "winners": [
       "Harold Pinter"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "peace",
@@ -3638,7 +4066,9 @@
     "winners": [
       "Mohamed ElBaradei"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "physics",
@@ -3659,7 +4089,9 @@
     "winners": [
       "Theodor W. Hänsch"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "physics",
@@ -3680,7 +4112,9 @@
     "winners": [
       "Theodor W. Hänsch"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "physics",
@@ -3701,7 +4135,9 @@
     "winners": [
       "Theodor W. Hänsch"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "medicine",
@@ -3715,7 +4151,9 @@
     "winners": [
       "J. Robin Warren"
     ]
-  },
+  }
+]
+[
   {
     "year": 2005,
     "prize": "medicine",
@@ -3729,7 +4167,9 @@
     "winners": [
       "J. Robin Warren"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "chemistry",
@@ -3750,7 +4190,9 @@
     "winners": [
       "Irwin Rose"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "chemistry",
@@ -3771,7 +4213,9 @@
     "winners": [
       "Irwin Rose"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "chemistry",
@@ -3792,7 +4236,9 @@
     "winners": [
       "Irwin Rose"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "economics",
@@ -3806,7 +4252,9 @@
     "winners": [
       "Edward C. Prescott"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "economics",
@@ -3820,21 +4268,27 @@
     "winners": [
       "Edward C. Prescott"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "literature",
     "winners": [
       "Elfriede Jelinek"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "peace",
     "winners": [
       "Wangari Maathai"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "physics",
@@ -3855,7 +4309,9 @@
     "winners": [
       "Frank Wilczek"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "physics",
@@ -3876,7 +4332,9 @@
     "winners": [
       "Frank Wilczek"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "physics",
@@ -3897,7 +4355,9 @@
     "winners": [
       "Frank Wilczek"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "medicine",
@@ -3911,7 +4371,9 @@
     "winners": [
       "Linda B. Buck"
     ]
-  },
+  }
+]
+[
   {
     "year": 2004,
     "prize": "medicine",
@@ -3925,7 +4387,9 @@
     "winners": [
       "Linda B. Buck"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "chemistry",
@@ -3939,7 +4403,9 @@
     "winners": [
       "Roderick MacKinnon"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "chemistry",
@@ -3953,7 +4419,9 @@
     "winners": [
       "Roderick MacKinnon"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "economics",
@@ -3967,7 +4435,9 @@
     "winners": [
       "Clive W.J. Granger"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "economics",
@@ -3981,21 +4451,27 @@
     "winners": [
       "Clive W.J. Granger"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "literature",
     "winners": [
       "J. M. Coetzee"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "peace",
     "winners": [
       "Shirin Ebadi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "physics",
@@ -4016,7 +4492,9 @@
     "winners": [
       "Anthony J. Leggett"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "physics",
@@ -4037,7 +4515,9 @@
     "winners": [
       "Anthony J. Leggett"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "physics",
@@ -4058,7 +4538,9 @@
     "winners": [
       "Anthony J. Leggett"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "medicine",
@@ -4072,7 +4554,9 @@
     "winners": [
       "Sir Peter Mansfield"
     ]
-  },
+  }
+]
+[
   {
     "year": 2003,
     "prize": "medicine",
@@ -4086,7 +4570,9 @@
     "winners": [
       "Sir Peter Mansfield"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "chemistry",
@@ -4107,7 +4593,9 @@
     "winners": [
       "Kurt Wüthrich"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "chemistry",
@@ -4128,7 +4616,9 @@
     "winners": [
       "Kurt Wüthrich"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "chemistry",
@@ -4149,7 +4639,9 @@
     "winners": [
       "Kurt Wüthrich"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "economics",
@@ -4163,7 +4655,9 @@
     "winners": [
       "Vernon L. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "economics",
@@ -4177,21 +4671,27 @@
     "winners": [
       "Vernon L. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "literature",
     "winners": [
       "Imre Kertész"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "peace",
     "winners": [
       "Jimmy Carter"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "physics",
@@ -4212,7 +4712,9 @@
     "winners": [
       "Riccardo Giacconi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "physics",
@@ -4233,7 +4735,9 @@
     "winners": [
       "Riccardo Giacconi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "physics",
@@ -4254,7 +4758,9 @@
     "winners": [
       "Riccardo Giacconi"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "medicine",
@@ -4275,7 +4781,9 @@
     "winners": [
       "John E. Sulston"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "medicine",
@@ -4296,7 +4804,9 @@
     "winners": [
       "John E. Sulston"
     ]
-  },
+  }
+]
+[
   {
     "year": 2002,
     "prize": "medicine",
@@ -4317,7 +4827,9 @@
     "winners": [
       "John E. Sulston"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "chemistry",
@@ -4338,7 +4850,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "chemistry",
@@ -4359,7 +4873,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "chemistry",
@@ -4380,7 +4896,9 @@
     "winners": [
       "Barry Sharpless"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "economics",
@@ -4401,7 +4919,9 @@
     "winners": [
       "Joseph E. Stiglitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "economics",
@@ -4422,7 +4942,9 @@
     "winners": [
       "Joseph E. Stiglitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "economics",
@@ -4443,14 +4965,18 @@
     "winners": [
       "Joseph E. Stiglitz"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "literature",
     "winners": [
       "V. S. Naipaul"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "peace",
@@ -4464,7 +4990,9 @@
     "winners": [
       "Kofi Annan"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "physics",
@@ -4485,7 +5013,9 @@
     "winners": [
       "Carl Wieman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "physics",
@@ -4506,7 +5036,9 @@
     "winners": [
       "Carl Wieman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "physics",
@@ -4527,7 +5059,9 @@
     "winners": [
       "Carl Wieman"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "medicine",
@@ -4548,7 +5082,9 @@
     "winners": [
       "Tim Hunt"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "medicine",
@@ -4569,7 +5105,9 @@
     "winners": [
       "Tim Hunt"
     ]
-  },
+  }
+]
+[
   {
     "year": 2001,
     "prize": "medicine",
@@ -4590,7 +5128,9 @@
     "winners": [
       "Tim Hunt"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "chemistry",
@@ -4611,7 +5151,9 @@
     "winners": [
       "Hideki Shirakawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "chemistry",
@@ -4632,7 +5174,9 @@
     "winners": [
       "Hideki Shirakawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "chemistry",
@@ -4653,7 +5197,9 @@
     "winners": [
       "Hideki Shirakawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "economics",
@@ -4667,7 +5213,9 @@
     "winners": [
       "Daniel L. McFadden"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "economics",
@@ -4681,21 +5229,27 @@
     "winners": [
       "Daniel L. McFadden"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "literature",
     "winners": [
       "Xingjian Gao"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "peace",
     "winners": [
       "Kim Dae-jung"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "physics",
@@ -4716,7 +5270,9 @@
     "winners": [
       "Jack Kilby"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "physics",
@@ -4737,7 +5293,9 @@
     "winners": [
       "Jack Kilby"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "physics",
@@ -4758,7 +5316,9 @@
     "winners": [
       "Jack Kilby"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "medicine",
@@ -4779,7 +5339,9 @@
     "winners": [
       "Eric Kandel"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "medicine",
@@ -4800,7 +5362,9 @@
     "winners": [
       "Eric Kandel"
     ]
-  },
+  }
+]
+[
   {
     "year": 2000,
     "prize": "medicine",
@@ -4821,28 +5385,36 @@
     "winners": [
       "Eric Kandel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "chemistry",
     "winners": [
       "Ahmed Zewail"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "economics",
     "winners": [
       "Robert Mundell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "literature",
     "winners": [
       "Günter Grass"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "physics",
@@ -4856,7 +5428,9 @@
     "winners": [
       "Martinus J.G. Veltman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "physics",
@@ -4870,14 +5444,18 @@
     "winners": [
       "Martinus J.G. Veltman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1999,
     "prize": "medicine",
     "winners": [
       "Günter Blobel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "chemistry",
@@ -4891,7 +5469,9 @@
     "winners": [
       "John Pople"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "chemistry",
@@ -4905,21 +5485,27 @@
     "winners": [
       "John Pople"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "economics",
     "winners": [
       "Amartya Sen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "literature",
     "winners": [
       "José Saramago"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "peace",
@@ -4933,7 +5519,9 @@
     "winners": [
       "David Trimble"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "peace",
@@ -4947,7 +5535,9 @@
     "winners": [
       "David Trimble"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "physics",
@@ -4968,7 +5558,9 @@
     "winners": [
       "Daniel C. Tsui"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "physics",
@@ -4989,7 +5581,9 @@
     "winners": [
       "Daniel C. Tsui"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "physics",
@@ -5010,7 +5604,9 @@
     "winners": [
       "Daniel C. Tsui"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "medicine",
@@ -5031,7 +5627,9 @@
     "winners": [
       "Ferid Murad"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "medicine",
@@ -5052,7 +5650,9 @@
     "winners": [
       "Ferid Murad"
     ]
-  },
+  }
+]
+[
   {
     "year": 1998,
     "prize": "medicine",
@@ -5073,7 +5673,9 @@
     "winners": [
       "Ferid Murad"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "chemistry",
@@ -5094,7 +5696,9 @@
     "winners": [
       "Jens C. Skou"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "chemistry",
@@ -5115,7 +5719,9 @@
     "winners": [
       "Jens C. Skou"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "chemistry",
@@ -5136,7 +5742,9 @@
     "winners": [
       "Jens C. Skou"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "economics",
@@ -5150,7 +5758,9 @@
     "winners": [
       "Myron Scholes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "economics",
@@ -5164,14 +5774,18 @@
     "winners": [
       "Myron Scholes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "literature",
     "winners": [
       "Dario Fo"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "peace",
@@ -5185,7 +5799,9 @@
     "winners": [
       "Jody Williams"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "physics",
@@ -5206,7 +5822,9 @@
     "winners": [
       "William D. Phillips"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "physics",
@@ -5227,7 +5845,9 @@
     "winners": [
       "William D. Phillips"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "physics",
@@ -5248,14 +5868,18 @@
     "winners": [
       "William D. Phillips"
     ]
-  },
+  }
+]
+[
   {
     "year": 1997,
     "prize": "medicine",
     "winners": [
       "Stanley B. Prusiner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "chemistry",
@@ -5276,7 +5900,9 @@
     "winners": [
       "Richard E. Smalley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "chemistry",
@@ -5297,7 +5923,9 @@
     "winners": [
       "Richard E. Smalley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "chemistry",
@@ -5318,7 +5946,9 @@
     "winners": [
       "Richard E. Smalley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "economics",
@@ -5332,7 +5962,9 @@
     "winners": [
       "William Vickrey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "economics",
@@ -5346,14 +5978,18 @@
     "winners": [
       "William Vickrey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "literature",
     "winners": [
       "Wislawa Szymborska"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "peace",
@@ -5367,7 +6003,9 @@
     "winners": [
       "José Ramos-Horta"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "peace",
@@ -5381,7 +6019,9 @@
     "winners": [
       "José Ramos-Horta"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "physics",
@@ -5402,7 +6042,9 @@
     "winners": [
       "Robert C. Richardson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "physics",
@@ -5423,7 +6065,9 @@
     "winners": [
       "Robert C. Richardson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "physics",
@@ -5444,7 +6088,9 @@
     "winners": [
       "Robert C. Richardson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "medicine",
@@ -5458,7 +6104,9 @@
     "winners": [
       "Rolf M. Zinkernagel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1996,
     "prize": "medicine",
@@ -5472,7 +6120,9 @@
     "winners": [
       "Rolf M. Zinkernagel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "chemistry",
@@ -5493,7 +6143,9 @@
     "winners": [
       "F. Sherwood Rowland"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "chemistry",
@@ -5514,7 +6166,9 @@
     "winners": [
       "F. Sherwood Rowland"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "chemistry",
@@ -5535,21 +6189,27 @@
     "winners": [
       "F. Sherwood Rowland"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "economics",
     "winners": [
       "Robert E. Lucas Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "literature",
     "winners": [
       "Seamus Heaney"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "peace",
@@ -5563,7 +6223,9 @@
     "winners": [
       "Pugwash Conferences on Science and World Affairs null"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "physics",
@@ -5577,7 +6239,9 @@
     "winners": [
       "Frederick Reines"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "physics",
@@ -5591,7 +6255,9 @@
     "winners": [
       "Frederick Reines"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "medicine",
@@ -5612,7 +6278,9 @@
     "winners": [
       "Eric F. Wieschaus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "medicine",
@@ -5633,7 +6301,9 @@
     "winners": [
       "Eric F. Wieschaus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1995,
     "prize": "medicine",
@@ -5654,14 +6324,18 @@
     "winners": [
       "Eric F. Wieschaus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "chemistry",
     "winners": [
       "George A. Olah"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "economics",
@@ -5682,7 +6356,9 @@
     "winners": [
       "Reinhard Selten"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "economics",
@@ -5703,7 +6379,9 @@
     "winners": [
       "Reinhard Selten"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "economics",
@@ -5724,14 +6402,18 @@
     "winners": [
       "Reinhard Selten"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "literature",
     "winners": [
       "Kenzaburo Oe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "peace",
@@ -5752,7 +6434,9 @@
     "winners": [
       "Yitzhak Rabin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "peace",
@@ -5773,7 +6457,9 @@
     "winners": [
       "Yitzhak Rabin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "peace",
@@ -5794,7 +6480,9 @@
     "winners": [
       "Yitzhak Rabin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "physics",
@@ -5808,7 +6496,9 @@
     "winners": [
       "Clifford G. Shull"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "physics",
@@ -5822,7 +6512,9 @@
     "winners": [
       "Clifford G. Shull"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "medicine",
@@ -5836,7 +6528,9 @@
     "winners": [
       "Martin Rodbell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1994,
     "prize": "medicine",
@@ -5850,7 +6544,9 @@
     "winners": [
       "Martin Rodbell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "chemistry",
@@ -5864,7 +6560,9 @@
     "winners": [
       "Michael Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "chemistry",
@@ -5878,7 +6576,9 @@
     "winners": [
       "Michael Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "economics",
@@ -5892,7 +6592,9 @@
     "winners": [
       "Douglass C. North"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "economics",
@@ -5906,14 +6608,18 @@
     "winners": [
       "Douglass C. North"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "literature",
     "winners": [
       "Toni Morrison"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "peace",
@@ -5927,7 +6633,9 @@
     "winners": [
       "F.W. de Klerk"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "peace",
@@ -5941,7 +6649,9 @@
     "winners": [
       "F.W. de Klerk"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "physics",
@@ -5955,7 +6665,9 @@
     "winners": [
       "Joseph H. Taylor Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "physics",
@@ -5969,7 +6681,9 @@
     "winners": [
       "Joseph H. Taylor Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "medicine",
@@ -5983,7 +6697,9 @@
     "winners": [
       "Phillip A. Sharp"
     ]
-  },
+  }
+]
+[
   {
     "year": 1993,
     "prize": "medicine",
@@ -5997,42 +6713,54 @@
     "winners": [
       "Phillip A. Sharp"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "chemistry",
     "winners": [
       "Rudolph A. Marcus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "economics",
     "winners": [
       "Gary Becker"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "literature",
     "winners": [
       "Derek Walcott"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "peace",
     "winners": [
       "Rigoberta Menchú Tum"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "physics",
     "winners": [
       "Georges Charpak"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "medicine",
@@ -6046,7 +6774,9 @@
     "winners": [
       "Edwin G. Krebs"
     ]
-  },
+  }
+]
+[
   {
     "year": 1992,
     "prize": "medicine",
@@ -6060,35 +6790,45 @@
     "winners": [
       "Edwin G. Krebs"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "chemistry",
     "winners": [
       "Richard R. Ernst"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "economics",
     "winners": [
       "Ronald H. Coase"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "literature",
     "winners": [
       "Nadine Gordimer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "physics",
     "winners": [
       "Pierre-Gilles de Gennes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "medicine",
@@ -6102,7 +6842,9 @@
     "winners": [
       "Bert Sakmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1991,
     "prize": "medicine",
@@ -6116,14 +6858,18 @@
     "winners": [
       "Bert Sakmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "chemistry",
     "winners": [
       "Elias James Corey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "economics",
@@ -6144,7 +6890,9 @@
     "winners": [
       "William F. Sharpe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "economics",
@@ -6165,7 +6913,9 @@
     "winners": [
       "William F. Sharpe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "economics",
@@ -6186,21 +6936,27 @@
     "winners": [
       "William F. Sharpe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "literature",
     "winners": [
       "Octavio Paz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "peace",
     "winners": [
       "Mikhail Gorbachev"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "physics",
@@ -6221,7 +6977,9 @@
     "winners": [
       "Richard E. Taylor"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "physics",
@@ -6242,7 +7000,9 @@
     "winners": [
       "Richard E. Taylor"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "physics",
@@ -6263,7 +7023,9 @@
     "winners": [
       "Richard E. Taylor"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "medicine",
@@ -6277,7 +7039,9 @@
     "winners": [
       "E. Donnall Thomas"
     ]
-  },
+  }
+]
+[
   {
     "year": 1990,
     "prize": "medicine",
@@ -6291,7 +7055,9 @@
     "winners": [
       "E. Donnall Thomas"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "chemistry",
@@ -6305,7 +7071,9 @@
     "winners": [
       "Thomas R. Cech"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "chemistry",
@@ -6319,28 +7087,36 @@
     "winners": [
       "Thomas R. Cech"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "economics",
     "winners": [
       "Trygve Haavelmo"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "literature",
     "winners": [
       "Camilo José Cela"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "peace",
     "winners": [
       "Lhamo Thondup"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "physics",
@@ -6361,7 +7137,9 @@
     "winners": [
       "Wolfgang Paul"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "physics",
@@ -6382,7 +7160,9 @@
     "winners": [
       "Wolfgang Paul"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "physics",
@@ -6403,7 +7183,9 @@
     "winners": [
       "Wolfgang Paul"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "medicine",
@@ -6417,7 +7199,9 @@
     "winners": [
       "Harold E. Varmus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1989,
     "prize": "medicine",
@@ -6431,7 +7215,9 @@
     "winners": [
       "Harold E. Varmus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "chemistry",
@@ -6452,7 +7238,9 @@
     "winners": [
       "Hartmut Michel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "chemistry",
@@ -6473,7 +7261,9 @@
     "winners": [
       "Hartmut Michel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "chemistry",
@@ -6494,21 +7284,27 @@
     "winners": [
       "Hartmut Michel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "economics",
     "winners": [
       "Maurice Allais"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "literature",
     "winners": [
       "Naguib Mahfouz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "physics",
@@ -6529,7 +7325,9 @@
     "winners": [
       "Jack Steinberger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "physics",
@@ -6550,7 +7348,9 @@
     "winners": [
       "Jack Steinberger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "physics",
@@ -6571,7 +7371,9 @@
     "winners": [
       "Jack Steinberger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "medicine",
@@ -6592,7 +7394,9 @@
     "winners": [
       "George H. Hitchings"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "medicine",
@@ -6613,7 +7417,9 @@
     "winners": [
       "George H. Hitchings"
     ]
-  },
+  }
+]
+[
   {
     "year": 1988,
     "prize": "medicine",
@@ -6634,7 +7440,9 @@
     "winners": [
       "George H. Hitchings"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "chemistry",
@@ -6655,7 +7463,9 @@
     "winners": [
       "Charles J. Pedersen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "chemistry",
@@ -6676,7 +7486,9 @@
     "winners": [
       "Charles J. Pedersen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "chemistry",
@@ -6697,28 +7509,36 @@
     "winners": [
       "Charles J. Pedersen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "economics",
     "winners": [
       "Robert M. Solow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "literature",
     "winners": [
       "Joseph Brodsky"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "peace",
     "winners": [
       "Oscar Arias Sánchez"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "physics",
@@ -6732,7 +7552,9 @@
     "winners": [
       "K. Alex Müller"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "physics",
@@ -6746,14 +7568,18 @@
     "winners": [
       "K. Alex Müller"
     ]
-  },
+  }
+]
+[
   {
     "year": 1987,
     "prize": "medicine",
     "winners": [
       "Susumu Tonegawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "chemistry",
@@ -6774,7 +7600,9 @@
     "winners": [
       "John C. Polanyi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "chemistry",
@@ -6795,7 +7623,9 @@
     "winners": [
       "John C. Polanyi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "chemistry",
@@ -6816,28 +7646,36 @@
     "winners": [
       "John C. Polanyi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "economics",
     "winners": [
       "James M. Buchanan Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "literature",
     "winners": [
       "Wole Soyinka"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "peace",
     "winners": [
       "Elie Wiesel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "physics",
@@ -6858,7 +7696,9 @@
     "winners": [
       "Heinrich Rohrer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "physics",
@@ -6879,7 +7719,9 @@
     "winners": [
       "Heinrich Rohrer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "physics",
@@ -6900,7 +7742,9 @@
     "winners": [
       "Heinrich Rohrer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "medicine",
@@ -6914,7 +7758,9 @@
     "winners": [
       "Rita Levi-Montalcini"
     ]
-  },
+  }
+]
+[
   {
     "year": 1986,
     "prize": "medicine",
@@ -6928,7 +7774,9 @@
     "winners": [
       "Rita Levi-Montalcini"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "chemistry",
@@ -6942,7 +7790,9 @@
     "winners": [
       "Jerome Karle"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "chemistry",
@@ -6956,28 +7806,36 @@
     "winners": [
       "Jerome Karle"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "economics",
     "winners": [
       "Franco Modigliani"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "literature",
     "winners": [
       "Claude Simon"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "physics",
     "winners": [
       "Klaus von Klitzing"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "medicine",
@@ -6991,7 +7849,9 @@
     "winners": [
       "Joseph L. Goldstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1985,
     "prize": "medicine",
@@ -7005,35 +7865,45 @@
     "winners": [
       "Joseph L. Goldstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "chemistry",
     "winners": [
       "Bruce Merrifield"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "economics",
     "winners": [
       "Richard Stone"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "literature",
     "winners": [
       "Jaroslav Seifert"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "peace",
     "winners": [
       "Desmond Tutu"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "physics",
@@ -7047,7 +7917,9 @@
     "winners": [
       "Simon van der Meer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "physics",
@@ -7061,7 +7933,9 @@
     "winners": [
       "Simon van der Meer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "medicine",
@@ -7082,7 +7956,9 @@
     "winners": [
       "César Milstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "medicine",
@@ -7103,7 +7979,9 @@
     "winners": [
       "César Milstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1984,
     "prize": "medicine",
@@ -7124,35 +8002,45 @@
     "winners": [
       "César Milstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "chemistry",
     "winners": [
       "Henry Taube"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "economics",
     "winners": [
       "Gerard Debreu"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "literature",
     "winners": [
       "William Golding"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "peace",
     "winners": [
       "Lech Walesa"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "physics",
@@ -7166,7 +8054,9 @@
     "winners": [
       "William A. Fowler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "physics",
@@ -7180,35 +8070,45 @@
     "winners": [
       "William A. Fowler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1983,
     "prize": "medicine",
     "winners": [
       "Barbara McClintock"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "chemistry",
     "winners": [
       "Aaron Klug"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "economics",
     "winners": [
       "George J. Stigler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "literature",
     "winners": [
       "Gabriel García Márquez"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "peace",
@@ -7222,7 +8122,9 @@
     "winners": [
       "Alfonso García Robles"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "peace",
@@ -7236,14 +8138,18 @@
     "winners": [
       "Alfonso García Robles"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "physics",
     "winners": [
       "Kenneth G. Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "medicine",
@@ -7264,7 +8170,9 @@
     "winners": [
       "John R. Vane"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "medicine",
@@ -7285,7 +8193,9 @@
     "winners": [
       "John R. Vane"
     ]
-  },
+  }
+]
+[
   {
     "year": 1982,
     "prize": "medicine",
@@ -7306,7 +8216,9 @@
     "winners": [
       "John R. Vane"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "chemistry",
@@ -7320,7 +8232,9 @@
     "winners": [
       "Roald Hoffmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "chemistry",
@@ -7334,21 +8248,27 @@
     "winners": [
       "Roald Hoffmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "economics",
     "winners": [
       "James Tobin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "literature",
     "winners": [
       "Elias Canetti"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "physics",
@@ -7369,7 +8289,9 @@
     "winners": [
       "Kai M. Siegbahn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "physics",
@@ -7390,7 +8312,9 @@
     "winners": [
       "Kai M. Siegbahn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "physics",
@@ -7411,7 +8335,9 @@
     "winners": [
       "Kai M. Siegbahn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "medicine",
@@ -7432,7 +8358,9 @@
     "winners": [
       "Torsten N. Wiesel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "medicine",
@@ -7453,7 +8381,9 @@
     "winners": [
       "Torsten N. Wiesel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1981,
     "prize": "medicine",
@@ -7474,7 +8404,9 @@
     "winners": [
       "Torsten N. Wiesel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "chemistry",
@@ -7495,7 +8427,9 @@
     "winners": [
       "Frederick Sanger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "chemistry",
@@ -7516,7 +8450,9 @@
     "winners": [
       "Frederick Sanger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "chemistry",
@@ -7537,28 +8473,36 @@
     "winners": [
       "Frederick Sanger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "economics",
     "winners": [
       "Lawrence R. Klein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "literature",
     "winners": [
       "Czeslaw Milosz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "peace",
     "winners": [
       "Adolfo Pérez Esquivel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "physics",
@@ -7572,7 +8516,9 @@
     "winners": [
       "Val Fitch"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "physics",
@@ -7586,7 +8532,9 @@
     "winners": [
       "Val Fitch"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "medicine",
@@ -7607,7 +8555,9 @@
     "winners": [
       "George D. Snell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "medicine",
@@ -7628,7 +8578,9 @@
     "winners": [
       "George D. Snell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1980,
     "prize": "medicine",
@@ -7649,7 +8601,9 @@
     "winners": [
       "George D. Snell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "chemistry",
@@ -7663,7 +8617,9 @@
     "winners": [
       "Georg Wittig"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "chemistry",
@@ -7677,7 +8633,9 @@
     "winners": [
       "Georg Wittig"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "economics",
@@ -7691,7 +8649,9 @@
     "winners": [
       "Sir Arthur Lewis"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "economics",
@@ -7705,21 +8665,27 @@
     "winners": [
       "Sir Arthur Lewis"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "literature",
     "winners": [
       "Odysseus Elytis"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "peace",
     "winners": [
       "Anjezë Gonxhe Bojaxhiu"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "physics",
@@ -7740,7 +8706,9 @@
     "winners": [
       "Steven Weinberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "physics",
@@ -7761,7 +8729,9 @@
     "winners": [
       "Steven Weinberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "physics",
@@ -7782,7 +8752,9 @@
     "winners": [
       "Steven Weinberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "medicine",
@@ -7796,7 +8768,9 @@
     "winners": [
       "Godfrey N. Hounsfield"
     ]
-  },
+  }
+]
+[
   {
     "year": 1979,
     "prize": "medicine",
@@ -7810,28 +8784,36 @@
     "winners": [
       "Godfrey N. Hounsfield"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "chemistry",
     "winners": [
       "Peter Mitchell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "economics",
     "winners": [
       "Herbert Simon"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "literature",
     "winners": [
       "Isaac Bashevis Singer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "peace",
@@ -7845,7 +8827,9 @@
     "winners": [
       "Menachem Begin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "peace",
@@ -7859,7 +8843,9 @@
     "winners": [
       "Menachem Begin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "physics",
@@ -7880,7 +8866,9 @@
     "winners": [
       "Robert Woodrow Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "physics",
@@ -7901,7 +8889,9 @@
     "winners": [
       "Robert Woodrow Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "physics",
@@ -7922,7 +8912,9 @@
     "winners": [
       "Robert Woodrow Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "medicine",
@@ -7943,7 +8935,9 @@
     "winners": [
       "Hamilton O. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "medicine",
@@ -7964,7 +8958,9 @@
     "winners": [
       "Hamilton O. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 1978,
     "prize": "medicine",
@@ -7985,14 +8981,18 @@
     "winners": [
       "Hamilton O. Smith"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "chemistry",
     "winners": [
       "Ilya Prigogine"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "economics",
@@ -8006,7 +9006,9 @@
     "winners": [
       "James E. Meade"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "economics",
@@ -8020,14 +9022,18 @@
     "winners": [
       "James E. Meade"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "literature",
     "winners": [
       "Vicente Aleixandre"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "physics",
@@ -8048,7 +9054,9 @@
     "winners": [
       "John H. Van Vleck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "physics",
@@ -8069,7 +9077,9 @@
     "winners": [
       "John H. Van Vleck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "physics",
@@ -8090,7 +9100,9 @@
     "winners": [
       "John H. Van Vleck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "medicine",
@@ -8111,7 +9123,9 @@
     "winners": [
       "Rosalyn Yalow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "medicine",
@@ -8132,7 +9146,9 @@
     "winners": [
       "Rosalyn Yalow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1977,
     "prize": "medicine",
@@ -8153,28 +9169,36 @@
     "winners": [
       "Rosalyn Yalow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "chemistry",
     "winners": [
       "William Lipscomb"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "economics",
     "winners": [
       "Milton Friedman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "literature",
     "winners": [
       "Saul Bellow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "peace",
@@ -8188,7 +9212,9 @@
     "winners": [
       "Mairead Corrigan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "peace",
@@ -8202,7 +9228,9 @@
     "winners": [
       "Mairead Corrigan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "physics",
@@ -8216,7 +9244,9 @@
     "winners": [
       "Samuel C.C. Ting"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "physics",
@@ -8230,7 +9260,9 @@
     "winners": [
       "Samuel C.C. Ting"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "medicine",
@@ -8244,7 +9276,9 @@
     "winners": [
       "D. Carleton Gajdusek"
     ]
-  },
+  }
+]
+[
   {
     "year": 1976,
     "prize": "medicine",
@@ -8258,7 +9292,9 @@
     "winners": [
       "D. Carleton Gajdusek"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "chemistry",
@@ -8272,7 +9308,9 @@
     "winners": [
       "Vladimir Prelog"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "chemistry",
@@ -8286,7 +9324,9 @@
     "winners": [
       "Vladimir Prelog"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "economics",
@@ -8300,7 +9340,9 @@
     "winners": [
       "Tjalling C. Koopmans"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "economics",
@@ -8314,21 +9356,27 @@
     "winners": [
       "Tjalling C. Koopmans"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "literature",
     "winners": [
       "Eugenio Montale"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "peace",
     "winners": [
       "Andrei Sakharov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "physics",
@@ -8349,7 +9397,9 @@
     "winners": [
       "James Rainwater"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "physics",
@@ -8370,7 +9420,9 @@
     "winners": [
       "James Rainwater"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "physics",
@@ -8391,7 +9443,9 @@
     "winners": [
       "James Rainwater"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "medicine",
@@ -8412,7 +9466,9 @@
     "winners": [
       "Howard M. Temin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "medicine",
@@ -8433,7 +9489,9 @@
     "winners": [
       "Howard M. Temin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1975,
     "prize": "medicine",
@@ -8454,14 +9512,18 @@
     "winners": [
       "Howard M. Temin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "chemistry",
     "winners": [
       "Paul J. Flory"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "economics",
@@ -8475,7 +9537,9 @@
     "winners": [
       "Friedrich von Hayek"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "economics",
@@ -8489,7 +9553,9 @@
     "winners": [
       "Friedrich von Hayek"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "literature",
@@ -8503,7 +9569,9 @@
     "winners": [
       "Harry Martinson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "literature",
@@ -8517,7 +9585,9 @@
     "winners": [
       "Harry Martinson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "peace",
@@ -8531,7 +9601,9 @@
     "winners": [
       "Eisaku Sato"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "peace",
@@ -8545,7 +9617,9 @@
     "winners": [
       "Eisaku Sato"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "physics",
@@ -8559,7 +9633,9 @@
     "winners": [
       "Antony Hewish"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "physics",
@@ -8573,7 +9649,9 @@
     "winners": [
       "Antony Hewish"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "medicine",
@@ -8594,7 +9672,9 @@
     "winners": [
       "George E. Palade"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "medicine",
@@ -8615,7 +9695,9 @@
     "winners": [
       "George E. Palade"
     ]
-  },
+  }
+]
+[
   {
     "year": 1974,
     "prize": "medicine",
@@ -8636,7 +9718,9 @@
     "winners": [
       "George E. Palade"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "chemistry",
@@ -8650,7 +9734,9 @@
     "winners": [
       "Geoffrey Wilkinson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "chemistry",
@@ -8664,21 +9750,27 @@
     "winners": [
       "Geoffrey Wilkinson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "economics",
     "winners": [
       "Wassily Leontief"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "literature",
     "winners": [
       "Patrick White"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "peace",
@@ -8692,7 +9784,9 @@
     "winners": [
       "Le Duc Tho null"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "physics",
@@ -8713,7 +9807,9 @@
     "winners": [
       "Brian D. Josephson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "physics",
@@ -8734,7 +9830,9 @@
     "winners": [
       "Brian D. Josephson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "physics",
@@ -8755,7 +9853,9 @@
     "winners": [
       "Brian D. Josephson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "medicine",
@@ -8776,7 +9876,9 @@
     "winners": [
       "Nikolaas Tinbergen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "medicine",
@@ -8797,7 +9899,9 @@
     "winners": [
       "Nikolaas Tinbergen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1973,
     "prize": "medicine",
@@ -8818,7 +9922,9 @@
     "winners": [
       "Nikolaas Tinbergen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "chemistry",
@@ -8839,7 +9945,9 @@
     "winners": [
       "William H. Stein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "chemistry",
@@ -8860,7 +9968,9 @@
     "winners": [
       "William H. Stein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "chemistry",
@@ -8881,7 +9991,9 @@
     "winners": [
       "William H. Stein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "economics",
@@ -8895,7 +10007,9 @@
     "winners": [
       "Kenneth J. Arrow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "economics",
@@ -8909,14 +10023,18 @@
     "winners": [
       "Kenneth J. Arrow"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "literature",
     "winners": [
       "Heinrich Böll"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "physics",
@@ -8937,7 +10055,9 @@
     "winners": [
       "Robert Schrieffer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "physics",
@@ -8958,7 +10078,9 @@
     "winners": [
       "Robert Schrieffer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "physics",
@@ -8979,7 +10101,9 @@
     "winners": [
       "Robert Schrieffer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "medicine",
@@ -8993,7 +10117,9 @@
     "winners": [
       "Rodney R. Porter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1972,
     "prize": "medicine",
@@ -9007,77 +10133,99 @@
     "winners": [
       "Rodney R. Porter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "chemistry",
     "winners": [
       "Gerhard Herzberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "economics",
     "winners": [
       "Simon Kuznets"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "literature",
     "winners": [
       "Pablo Neruda"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "peace",
     "winners": [
       "Willy Brandt"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "physics",
     "winners": [
       "Dennis Gabor"
     ]
-  },
+  }
+]
+[
   {
     "year": 1971,
     "prize": "medicine",
     "winners": [
       "Earl W. Sutherland, Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "chemistry",
     "winners": [
       "Luis Leloir"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "economics",
     "winners": [
       "Paul A. Samuelson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "literature",
     "winners": [
       "Alexandr Solzhenitsyn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "peace",
     "winners": [
       "Norman Borlaug"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "physics",
@@ -9091,7 +10239,9 @@
     "winners": [
       "Louis Néel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "physics",
@@ -9105,7 +10255,9 @@
     "winners": [
       "Louis Néel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "medicine",
@@ -9126,7 +10278,9 @@
     "winners": [
       "Julius Axelrod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "medicine",
@@ -9147,7 +10301,9 @@
     "winners": [
       "Julius Axelrod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1970,
     "prize": "medicine",
@@ -9168,7 +10324,9 @@
     "winners": [
       "Julius Axelrod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "chemistry",
@@ -9182,7 +10340,9 @@
     "winners": [
       "Odd Hassel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "chemistry",
@@ -9196,7 +10356,9 @@
     "winners": [
       "Odd Hassel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "economics",
@@ -9210,7 +10372,9 @@
     "winners": [
       "Jan Tinbergen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "economics",
@@ -9224,21 +10388,27 @@
     "winners": [
       "Jan Tinbergen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "literature",
     "winners": [
       "Samuel Beckett"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "physics",
     "winners": [
       "Murray Gell-Mann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "medicine",
@@ -9259,7 +10429,9 @@
     "winners": [
       "Salvador E. Luria"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "medicine",
@@ -9280,7 +10452,9 @@
     "winners": [
       "Salvador E. Luria"
     ]
-  },
+  }
+]
+[
   {
     "year": 1969,
     "prize": "medicine",
@@ -9301,35 +10475,45 @@
     "winners": [
       "Salvador E. Luria"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "chemistry",
     "winners": [
       "Lars Onsager"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "literature",
     "winners": [
       "Yasunari Kawabata"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "peace",
     "winners": [
       "René Cassin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "physics",
     "winners": [
       "Luis Alvarez"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "medicine",
@@ -9350,7 +10534,9 @@
     "winners": [
       "Marshall W. Nirenberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "medicine",
@@ -9371,7 +10557,9 @@
     "winners": [
       "Marshall W. Nirenberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1968,
     "prize": "medicine",
@@ -9392,7 +10580,9 @@
     "winners": [
       "Marshall W. Nirenberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "chemistry",
@@ -9413,7 +10603,9 @@
     "winners": [
       "George Porter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "chemistry",
@@ -9434,7 +10626,9 @@
     "winners": [
       "George Porter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "chemistry",
@@ -9455,21 +10649,27 @@
     "winners": [
       "George Porter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "literature",
     "winners": [
       "Miguel Angel Asturias"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "physics",
     "winners": [
       "Hans Bethe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "medicine",
@@ -9490,7 +10690,9 @@
     "winners": [
       "George Wald"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "medicine",
@@ -9511,7 +10713,9 @@
     "winners": [
       "George Wald"
     ]
-  },
+  }
+]
+[
   {
     "year": 1967,
     "prize": "medicine",
@@ -9532,14 +10736,18 @@
     "winners": [
       "George Wald"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "chemistry",
     "winners": [
       "Robert S. Mulliken"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "literature",
@@ -9553,7 +10761,9 @@
     "winners": [
       "Nelly Sachs"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "literature",
@@ -9567,14 +10777,18 @@
     "winners": [
       "Nelly Sachs"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "physics",
     "winners": [
       "Alfred Kastler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "medicine",
@@ -9588,7 +10802,9 @@
     "winners": [
       "Charles B. Huggins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1966,
     "prize": "medicine",
@@ -9602,21 +10818,27 @@
     "winners": [
       "Charles B. Huggins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "chemistry",
     "winners": [
       "Robert B. Woodward"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "literature",
     "winners": [
       "Mikhail Sholokhov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "physics",
@@ -9637,7 +10859,9 @@
     "winners": [
       "Richard P. Feynman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "physics",
@@ -9658,7 +10882,9 @@
     "winners": [
       "Richard P. Feynman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "physics",
@@ -9679,7 +10905,9 @@
     "winners": [
       "Richard P. Feynman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "medicine",
@@ -9700,7 +10928,9 @@
     "winners": [
       "Jacques Monod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "medicine",
@@ -9721,7 +10951,9 @@
     "winners": [
       "Jacques Monod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1965,
     "prize": "medicine",
@@ -9742,28 +10974,36 @@
     "winners": [
       "Jacques Monod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "chemistry",
     "winners": [
       "Dorothy Crowfoot Hodgkin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "literature",
     "winners": [
       "Jean-Paul Sartre"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "peace",
     "winners": [
       "Martin Luther King Jr."
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "physics",
@@ -9784,7 +11024,9 @@
     "winners": [
       "Aleksandr M. Prokhorov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "physics",
@@ -9805,7 +11047,9 @@
     "winners": [
       "Aleksandr M. Prokhorov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "physics",
@@ -9826,7 +11070,9 @@
     "winners": [
       "Aleksandr M. Prokhorov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "medicine",
@@ -9840,7 +11086,9 @@
     "winners": [
       "Feodor Lynen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1964,
     "prize": "medicine",
@@ -9854,7 +11102,9 @@
     "winners": [
       "Feodor Lynen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "chemistry",
@@ -9868,7 +11118,9 @@
     "winners": [
       "Giulio Natta"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "chemistry",
@@ -9882,14 +11134,18 @@
     "winners": [
       "Giulio Natta"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "literature",
     "winners": [
       "Giorgos Seferis"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "physics",
@@ -9910,7 +11166,9 @@
     "winners": [
       "J. Hans D. Jensen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "physics",
@@ -9931,7 +11189,9 @@
     "winners": [
       "J. Hans D. Jensen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "physics",
@@ -9952,7 +11212,9 @@
     "winners": [
       "J. Hans D. Jensen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "medicine",
@@ -9973,7 +11235,9 @@
     "winners": [
       "Andrew Huxley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "medicine",
@@ -9994,7 +11258,9 @@
     "winners": [
       "Andrew Huxley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1963,
     "prize": "medicine",
@@ -10015,7 +11281,9 @@
     "winners": [
       "Andrew Huxley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "chemistry",
@@ -10029,7 +11297,9 @@
     "winners": [
       "John C. Kendrew"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "chemistry",
@@ -10043,28 +11313,36 @@
     "winners": [
       "John C. Kendrew"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "literature",
     "winners": [
       "John Steinbeck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "peace",
     "winners": [
       "Linus Pauling"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "physics",
     "winners": [
       "Lev Landau"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "medicine",
@@ -10085,7 +11363,9 @@
     "winners": [
       "Maurice Wilkins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "medicine",
@@ -10106,7 +11386,9 @@
     "winners": [
       "Maurice Wilkins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1962,
     "prize": "medicine",
@@ -10127,28 +11409,36 @@
     "winners": [
       "Maurice Wilkins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "chemistry",
     "winners": [
       "Melvin Calvin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "literature",
     "winners": [
       "Ivo Andric"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "peace",
     "winners": [
       "Dag Hammarskjöld"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "physics",
@@ -10162,7 +11452,9 @@
     "winners": [
       "Rudolf Mössbauer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "physics",
@@ -10176,42 +11468,54 @@
     "winners": [
       "Rudolf Mössbauer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1961,
     "prize": "medicine",
     "winners": [
       "Georg von Békésy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "chemistry",
     "winners": [
       "Willard F. Libby"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "literature",
     "winners": [
       "Saint-John Perse"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "peace",
     "winners": [
       "Albert Lutuli"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "physics",
     "winners": [
       "Donald A. Glaser"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "medicine",
@@ -10225,7 +11529,9 @@
     "winners": [
       "Peter Medawar"
     ]
-  },
+  }
+]
+[
   {
     "year": 1960,
     "prize": "medicine",
@@ -10239,28 +11545,36 @@
     "winners": [
       "Peter Medawar"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "chemistry",
     "winners": [
       "Jaroslav Heyrovsky"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "literature",
     "winners": [
       "Salvatore Quasimodo"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "peace",
     "winners": [
       "Philip Noel-Baker"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "physics",
@@ -10274,7 +11588,9 @@
     "winners": [
       "Owen Chamberlain"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "physics",
@@ -10288,7 +11604,9 @@
     "winners": [
       "Owen Chamberlain"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "medicine",
@@ -10302,7 +11620,9 @@
     "winners": [
       "Arthur Kornberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1959,
     "prize": "medicine",
@@ -10316,28 +11636,36 @@
     "winners": [
       "Arthur Kornberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "chemistry",
     "winners": [
       "Frederick Sanger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "literature",
     "winners": [
       "Boris Pasternak"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "peace",
     "winners": [
       "Georges Pire"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "physics",
@@ -10358,7 +11686,9 @@
     "winners": [
       "Il´ja M. Frank"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "physics",
@@ -10379,7 +11709,9 @@
     "winners": [
       "Il´ja M. Frank"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "physics",
@@ -10400,7 +11732,9 @@
     "winners": [
       "Il´ja M. Frank"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "medicine",
@@ -10421,7 +11755,9 @@
     "winners": [
       "Joshua Lederberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "medicine",
@@ -10442,7 +11778,9 @@
     "winners": [
       "Joshua Lederberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1958,
     "prize": "medicine",
@@ -10463,28 +11801,36 @@
     "winners": [
       "Joshua Lederberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "chemistry",
     "winners": [
       "Lord Todd"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "literature",
     "winners": [
       "Albert Camus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "peace",
     "winners": [
       "Lester Bowles Pearson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "physics",
@@ -10498,7 +11844,9 @@
     "winners": [
       "Tsung-Dao Lee"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "physics",
@@ -10512,14 +11860,18 @@
     "winners": [
       "Tsung-Dao Lee"
     ]
-  },
+  }
+]
+[
   {
     "year": 1957,
     "prize": "medicine",
     "winners": [
       "Daniel Bovet"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "chemistry",
@@ -10533,7 +11885,9 @@
     "winners": [
       "Nikolay Semenov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "chemistry",
@@ -10547,14 +11901,18 @@
     "winners": [
       "Nikolay Semenov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "literature",
     "winners": [
       "Juan Ramón Jiménez"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "physics",
@@ -10575,7 +11933,9 @@
     "winners": [
       "Walter H. Brattain"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "physics",
@@ -10596,7 +11956,9 @@
     "winners": [
       "Walter H. Brattain"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "physics",
@@ -10617,7 +11979,9 @@
     "winners": [
       "Walter H. Brattain"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "medicine",
@@ -10638,7 +12002,9 @@
     "winners": [
       "Dickinson W. Richards"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "medicine",
@@ -10659,7 +12025,9 @@
     "winners": [
       "Dickinson W. Richards"
     ]
-  },
+  }
+]
+[
   {
     "year": 1956,
     "prize": "medicine",
@@ -10680,21 +12048,27 @@
     "winners": [
       "Dickinson W. Richards"
     ]
-  },
+  }
+]
+[
   {
     "year": 1955,
     "prize": "chemistry",
     "winners": [
       "Vincent du Vigneaud"
     ]
-  },
+  }
+]
+[
   {
     "year": 1955,
     "prize": "literature",
     "winners": [
       "Halldór Laxness"
     ]
-  },
+  }
+]
+[
   {
     "year": 1955,
     "prize": "physics",
@@ -10708,7 +12082,9 @@
     "winners": [
       "Polykarp Kusch"
     ]
-  },
+  }
+]
+[
   {
     "year": 1955,
     "prize": "physics",
@@ -10722,28 +12098,36 @@
     "winners": [
       "Polykarp Kusch"
     ]
-  },
+  }
+]
+[
   {
     "year": 1955,
     "prize": "medicine",
     "winners": [
       "Hugo Theorell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "chemistry",
     "winners": [
       "Linus Pauling"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "literature",
     "winners": [
       "Ernest Hemingway"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "physics",
@@ -10757,7 +12141,9 @@
     "winners": [
       "Walther Bothe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "physics",
@@ -10771,7 +12157,9 @@
     "winners": [
       "Walther Bothe"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "medicine",
@@ -10792,7 +12180,9 @@
     "winners": [
       "Frederick C. Robbins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "medicine",
@@ -10813,7 +12203,9 @@
     "winners": [
       "Frederick C. Robbins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1954,
     "prize": "medicine",
@@ -10834,35 +12226,45 @@
     "winners": [
       "Frederick C. Robbins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "chemistry",
     "winners": [
       "Hermann Staudinger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "literature",
     "winners": [
       "Winston Churchill"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "peace",
     "winners": [
       "George C. Marshall"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "physics",
     "winners": [
       "Frits Zernike"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "medicine",
@@ -10876,7 +12278,9 @@
     "winners": [
       "Fritz Lipmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1953,
     "prize": "medicine",
@@ -10890,7 +12294,9 @@
     "winners": [
       "Fritz Lipmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "chemistry",
@@ -10904,7 +12310,9 @@
     "winners": [
       "Richard L.M. Synge"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "chemistry",
@@ -10918,21 +12326,27 @@
     "winners": [
       "Richard L.M. Synge"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "literature",
     "winners": [
       "François Mauriac"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "peace",
     "winners": [
       "Albert Schweitzer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "physics",
@@ -10946,7 +12360,9 @@
     "winners": [
       "E. M. Purcell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "physics",
@@ -10960,14 +12376,18 @@
     "winners": [
       "E. M. Purcell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1952,
     "prize": "medicine",
     "winners": [
       "Selman A. Waksman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "chemistry",
@@ -10981,7 +12401,9 @@
     "winners": [
       "Glenn T. Seaborg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "chemistry",
@@ -10995,21 +12417,27 @@
     "winners": [
       "Glenn T. Seaborg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "literature",
     "winners": [
       "Pär Lagerkvist"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "peace",
     "winners": [
       "Léon Jouhaux"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "physics",
@@ -11023,7 +12451,9 @@
     "winners": [
       "Ernest T.S. Walton"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "physics",
@@ -11037,14 +12467,18 @@
     "winners": [
       "Ernest T.S. Walton"
     ]
-  },
+  }
+]
+[
   {
     "year": 1951,
     "prize": "medicine",
     "winners": [
       "Max Theiler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "chemistry",
@@ -11058,7 +12492,9 @@
     "winners": [
       "Kurt Alder"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "chemistry",
@@ -11072,28 +12508,36 @@
     "winners": [
       "Kurt Alder"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "literature",
     "winners": [
       "Bertrand Russell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "peace",
     "winners": [
       "Ralph Bunche"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "physics",
     "winners": [
       "Cecil Powell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "medicine",
@@ -11114,7 +12558,9 @@
     "winners": [
       "Philip S. Hench"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "medicine",
@@ -11135,7 +12581,9 @@
     "winners": [
       "Philip S. Hench"
     ]
-  },
+  }
+]
+[
   {
     "year": 1950,
     "prize": "medicine",
@@ -11156,35 +12604,45 @@
     "winners": [
       "Philip S. Hench"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "chemistry",
     "winners": [
       "William F. Giauque"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "literature",
     "winners": [
       "William Faulkner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "peace",
     "winners": [
       "John Boyd Orr"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "physics",
     "winners": [
       "Hideki Yukawa"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "medicine",
@@ -11198,7 +12656,9 @@
     "winners": [
       "Egas Moniz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1949,
     "prize": "medicine",
@@ -11212,56 +12672,72 @@
     "winners": [
       "Egas Moniz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1948,
     "prize": "chemistry",
     "winners": [
       "Arne Tiselius"
     ]
-  },
+  }
+]
+[
   {
     "year": 1948,
     "prize": "literature",
     "winners": [
       "T.S. Eliot"
     ]
-  },
+  }
+]
+[
   {
     "year": 1948,
     "prize": "physics",
     "winners": [
       "Patrick M.S. Blackett"
     ]
-  },
+  }
+]
+[
   {
     "year": 1948,
     "prize": "medicine",
     "winners": [
       "Paul Müller"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "chemistry",
     "winners": [
       "Sir Robert Robinson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "literature",
     "winners": [
       "André Gide"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "physics",
     "winners": [
       "Edward V. Appleton"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "medicine",
@@ -11282,7 +12758,9 @@
     "winners": [
       "Bernardo Houssay"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "medicine",
@@ -11303,7 +12781,9 @@
     "winners": [
       "Bernardo Houssay"
     ]
-  },
+  }
+]
+[
   {
     "year": 1947,
     "prize": "medicine",
@@ -11324,7 +12804,9 @@
     "winners": [
       "Bernardo Houssay"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "chemistry",
@@ -11345,7 +12827,9 @@
     "winners": [
       "Wendell M. Stanley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "chemistry",
@@ -11366,7 +12850,9 @@
     "winners": [
       "Wendell M. Stanley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "chemistry",
@@ -11387,14 +12873,18 @@
     "winners": [
       "Wendell M. Stanley"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "literature",
     "winners": [
       "Hermann Hesse"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "peace",
@@ -11408,7 +12898,9 @@
     "winners": [
       "John R. Mott"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "peace",
@@ -11422,49 +12914,63 @@
     "winners": [
       "John R. Mott"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "physics",
     "winners": [
       "Percy W. Bridgman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1946,
     "prize": "medicine",
     "winners": [
       "Hermann J. Muller"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "chemistry",
     "winners": [
       "Artturi Virtanen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "literature",
     "winners": [
       "Gabriela Mistral"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "peace",
     "winners": [
       "Cordell Hull"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "physics",
     "winners": [
       "Wolfgang Pauli"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "medicine",
@@ -11485,7 +12991,9 @@
     "winners": [
       "Sir Howard Florey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "medicine",
@@ -11506,7 +13014,9 @@
     "winners": [
       "Sir Howard Florey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1945,
     "prize": "medicine",
@@ -11527,28 +13037,36 @@
     "winners": [
       "Sir Howard Florey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1944,
     "prize": "chemistry",
     "winners": [
       "Otto Hahn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1944,
     "prize": "literature",
     "winners": [
       "Johannes V. Jensen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1944,
     "prize": "physics",
     "winners": [
       "Isidor Isaac Rabi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1944,
     "prize": "medicine",
@@ -11562,7 +13080,9 @@
     "winners": [
       "Herbert S. Gasser"
     ]
-  },
+  }
+]
+[
   {
     "year": 1944,
     "prize": "medicine",
@@ -11576,21 +13096,27 @@
     "winners": [
       "Herbert S. Gasser"
     ]
-  },
+  }
+]
+[
   {
     "year": 1943,
     "prize": "chemistry",
     "winners": [
       "George de Hevesy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1943,
     "prize": "physics",
     "winners": [
       "Otto Stern"
     ]
-  },
+  }
+]
+[
   {
     "year": 1943,
     "prize": "medicine",
@@ -11604,7 +13130,9 @@
     "winners": [
       "Edward A. Doisy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1943,
     "prize": "medicine",
@@ -11618,7 +13146,9 @@
     "winners": [
       "Edward A. Doisy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1939,
     "prize": "chemistry",
@@ -11632,7 +13162,9 @@
     "winners": [
       "Leopold Ruzicka"
     ]
-  },
+  }
+]
+[
   {
     "year": 1939,
     "prize": "chemistry",
@@ -11646,56 +13178,72 @@
     "winners": [
       "Leopold Ruzicka"
     ]
-  },
+  }
+]
+[
   {
     "year": 1939,
     "prize": "literature",
     "winners": [
       "Frans Eemil Sillanpää"
     ]
-  },
+  }
+]
+[
   {
     "year": 1939,
     "prize": "physics",
     "winners": [
       "Ernest Lawrence"
     ]
-  },
+  }
+]
+[
   {
     "year": 1939,
     "prize": "medicine",
     "winners": [
       "Gerhard Domagk"
     ]
-  },
+  }
+]
+[
   {
     "year": 1938,
     "prize": "chemistry",
     "winners": [
       "Richard Kuhn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1938,
     "prize": "literature",
     "winners": [
       "Pearl Buck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1938,
     "prize": "physics",
     "winners": [
       "Enrico Fermi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1938,
     "prize": "medicine",
     "winners": [
       "Corneille Heymans"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "chemistry",
@@ -11709,7 +13257,9 @@
     "winners": [
       "Paul Karrer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "chemistry",
@@ -11723,21 +13273,27 @@
     "winners": [
       "Paul Karrer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "literature",
     "winners": [
       "Roger Martin du Gard"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "peace",
     "winners": [
       "Robert Cecil"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "physics",
@@ -11751,7 +13307,9 @@
     "winners": [
       "George Paget Thomson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "physics",
@@ -11765,35 +13323,45 @@
     "winners": [
       "George Paget Thomson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1937,
     "prize": "medicine",
     "winners": [
       "Albert Szent-Györgyi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "chemistry",
     "winners": [
       "Peter Debye"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "literature",
     "winners": [
       "Eugene O'Neill"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "peace",
     "winners": [
       "Carlos Saavedra Lamas"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "physics",
@@ -11807,7 +13375,9 @@
     "winners": [
       "Carl D. Anderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "physics",
@@ -11821,7 +13391,9 @@
     "winners": [
       "Carl D. Anderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "medicine",
@@ -11835,7 +13407,9 @@
     "winners": [
       "Otto Loewi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1936,
     "prize": "medicine",
@@ -11849,7 +13423,9 @@
     "winners": [
       "Otto Loewi"
     ]
-  },
+  }
+]
+[
   {
     "year": 1935,
     "prize": "chemistry",
@@ -11863,7 +13439,9 @@
     "winners": [
       "Irène Joliot-Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1935,
     "prize": "chemistry",
@@ -11877,49 +13455,63 @@
     "winners": [
       "Irène Joliot-Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1935,
     "prize": "peace",
     "winners": [
       "Carl von Ossietzky"
     ]
-  },
+  }
+]
+[
   {
     "year": 1935,
     "prize": "physics",
     "winners": [
       "James Chadwick"
     ]
-  },
+  }
+]
+[
   {
     "year": 1935,
     "prize": "medicine",
     "winners": [
       "Hans Spemann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "chemistry",
     "winners": [
       "Harold C. Urey"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "literature",
     "winners": [
       "Luigi Pirandello"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "peace",
     "winners": [
       "Arthur Henderson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "medicine",
@@ -11940,7 +13532,9 @@
     "winners": [
       "William P. Murphy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "medicine",
@@ -11961,7 +13555,9 @@
     "winners": [
       "William P. Murphy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1934,
     "prize": "medicine",
@@ -11982,21 +13578,27 @@
     "winners": [
       "William P. Murphy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1933,
     "prize": "literature",
     "winners": [
       "Ivan Bunin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1933,
     "prize": "peace",
     "winners": [
       "Sir Norman Angell"
     ]
-  },
+  }
+]
+[
   {
     "year": 1933,
     "prize": "physics",
@@ -12010,7 +13612,9 @@
     "winners": [
       "Paul A.M. Dirac"
     ]
-  },
+  }
+]
+[
   {
     "year": 1933,
     "prize": "physics",
@@ -12024,35 +13628,45 @@
     "winners": [
       "Paul A.M. Dirac"
     ]
-  },
+  }
+]
+[
   {
     "year": 1933,
     "prize": "medicine",
     "winners": [
       "Thomas H. Morgan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1932,
     "prize": "chemistry",
     "winners": [
       "Irving Langmuir"
     ]
-  },
+  }
+]
+[
   {
     "year": 1932,
     "prize": "literature",
     "winners": [
       "John Galsworthy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1932,
     "prize": "physics",
     "winners": [
       "Werner Heisenberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1932,
     "prize": "medicine",
@@ -12066,7 +13680,9 @@
     "winners": [
       "Edgar Adrian"
     ]
-  },
+  }
+]
+[
   {
     "year": 1932,
     "prize": "medicine",
@@ -12080,7 +13696,9 @@
     "winners": [
       "Edgar Adrian"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "chemistry",
@@ -12094,7 +13712,9 @@
     "winners": [
       "Friedrich Bergius"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "chemistry",
@@ -12108,14 +13728,18 @@
     "winners": [
       "Friedrich Bergius"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "literature",
     "winners": [
       "Erik Axel Karlfeldt"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "peace",
@@ -12129,7 +13753,9 @@
     "winners": [
       "Nicholas Murray Butler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "peace",
@@ -12143,49 +13769,63 @@
     "winners": [
       "Nicholas Murray Butler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1931,
     "prize": "medicine",
     "winners": [
       "Otto Warburg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1930,
     "prize": "chemistry",
     "winners": [
       "Hans Fischer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1930,
     "prize": "literature",
     "winners": [
       "Sinclair Lewis"
     ]
-  },
+  }
+]
+[
   {
     "year": 1930,
     "prize": "peace",
     "winners": [
       "Nathan Söderblom"
     ]
-  },
+  }
+]
+[
   {
     "year": 1930,
     "prize": "physics",
     "winners": [
       "Sir Chandrasekhara Venkata Raman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1930,
     "prize": "medicine",
     "winners": [
       "Karl Landsteiner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "chemistry",
@@ -12199,7 +13839,9 @@
     "winners": [
       "Hans von Euler-Chelpin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "chemistry",
@@ -12213,28 +13855,36 @@
     "winners": [
       "Hans von Euler-Chelpin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "literature",
     "winners": [
       "Thomas Mann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "peace",
     "winners": [
       "Frank B. Kellogg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "physics",
     "winners": [
       "Louis de Broglie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "medicine",
@@ -12248,7 +13898,9 @@
     "winners": [
       "Sir Frederick Hopkins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1929,
     "prize": "medicine",
@@ -12262,49 +13914,63 @@
     "winners": [
       "Sir Frederick Hopkins"
     ]
-  },
+  }
+]
+[
   {
     "year": 1928,
     "prize": "chemistry",
     "winners": [
       "Adolf Windaus"
     ]
-  },
+  }
+]
+[
   {
     "year": 1928,
     "prize": "literature",
     "winners": [
       "Sigrid Undset"
     ]
-  },
+  }
+]
+[
   {
     "year": 1928,
     "prize": "physics",
     "winners": [
       "Owen Willans Richardson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1928,
     "prize": "medicine",
     "winners": [
       "Charles Nicolle"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "chemistry",
     "winners": [
       "Heinrich Wieland"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "literature",
     "winners": [
       "Henri Bergson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "peace",
@@ -12318,7 +13984,9 @@
     "winners": [
       "Ludwig Quidde"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "peace",
@@ -12332,7 +14000,9 @@
     "winners": [
       "Ludwig Quidde"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "physics",
@@ -12346,7 +14016,9 @@
     "winners": [
       "C.T.R. Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "physics",
@@ -12360,28 +14032,36 @@
     "winners": [
       "C.T.R. Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1927,
     "prize": "medicine",
     "winners": [
       "Julius Wagner-Jauregg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "chemistry",
     "winners": [
       "The Svedberg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "literature",
     "winners": [
       "Grazia Deledda"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "peace",
@@ -12395,7 +14075,9 @@
     "winners": [
       "Gustav Stresemann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "peace",
@@ -12409,35 +14091,45 @@
     "winners": [
       "Gustav Stresemann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "physics",
     "winners": [
       "Jean Baptiste Perrin"
     ]
-  },
+  }
+]
+[
   {
     "year": 1926,
     "prize": "medicine",
     "winners": [
       "Johannes Fibiger"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "chemistry",
     "winners": [
       "Richard Zsigmondy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "literature",
     "winners": [
       "George Bernard Shaw"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "peace",
@@ -12451,7 +14143,9 @@
     "winners": [
       "Charles G. Dawes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "peace",
@@ -12465,7 +14159,9 @@
     "winners": [
       "Charles G. Dawes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "physics",
@@ -12479,7 +14175,9 @@
     "winners": [
       "Gustav Hertz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1925,
     "prize": "physics",
@@ -12493,49 +14191,63 @@
     "winners": [
       "Gustav Hertz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1924,
     "prize": "literature",
     "winners": [
       "Wladyslaw Reymont"
     ]
-  },
+  }
+]
+[
   {
     "year": 1924,
     "prize": "physics",
     "winners": [
       "Manne Siegbahn"
     ]
-  },
+  }
+]
+[
   {
     "year": 1924,
     "prize": "medicine",
     "winners": [
       "Willem Einthoven"
     ]
-  },
+  }
+]
+[
   {
     "year": 1923,
     "prize": "chemistry",
     "winners": [
       "Fritz Pregl"
     ]
-  },
+  }
+]
+[
   {
     "year": 1923,
     "prize": "literature",
     "winners": [
       "William Butler Yeats"
     ]
-  },
+  }
+]
+[
   {
     "year": 1923,
     "prize": "physics",
     "winners": [
       "Robert A. Millikan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1923,
     "prize": "medicine",
@@ -12549,7 +14261,9 @@
     "winners": [
       "John Macleod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1923,
     "prize": "medicine",
@@ -12563,35 +14277,45 @@
     "winners": [
       "John Macleod"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "chemistry",
     "winners": [
       "Francis W. Aston"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "literature",
     "winners": [
       "Jacinto Benavente"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "peace",
     "winners": [
       "Fridtjof Nansen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "physics",
     "winners": [
       "Niels Bohr"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "medicine",
@@ -12605,7 +14329,9 @@
     "winners": [
       "Otto Meyerhof"
     ]
-  },
+  }
+]
+[
   {
     "year": 1922,
     "prize": "medicine",
@@ -12619,21 +14345,27 @@
     "winners": [
       "Otto Meyerhof"
     ]
-  },
+  }
+]
+[
   {
     "year": 1921,
     "prize": "chemistry",
     "winners": [
       "Frederick Soddy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1921,
     "prize": "literature",
     "winners": [
       "Anatole France"
     ]
-  },
+  }
+]
+[
   {
     "year": 1921,
     "prize": "peace",
@@ -12647,7 +14379,9 @@
     "winners": [
       "Christian Lange"
     ]
-  },
+  }
+]
+[
   {
     "year": 1921,
     "prize": "peace",
@@ -12661,91 +14395,117 @@
     "winners": [
       "Christian Lange"
     ]
-  },
+  }
+]
+[
   {
     "year": 1921,
     "prize": "physics",
     "winners": [
       "Albert Einstein"
     ]
-  },
+  }
+]
+[
   {
     "year": 1920,
     "prize": "chemistry",
     "winners": [
       "Walther Nernst"
     ]
-  },
+  }
+]
+[
   {
     "year": 1920,
     "prize": "literature",
     "winners": [
       "Knut Hamsun"
     ]
-  },
+  }
+]
+[
   {
     "year": 1920,
     "prize": "peace",
     "winners": [
       "Léon Bourgeois"
     ]
-  },
+  }
+]
+[
   {
     "year": 1920,
     "prize": "physics",
     "winners": [
       "Charles Edouard Guillaume"
     ]
-  },
+  }
+]
+[
   {
     "year": 1920,
     "prize": "medicine",
     "winners": [
       "August Krogh"
     ]
-  },
+  }
+]
+[
   {
     "year": 1919,
     "prize": "literature",
     "winners": [
       "Carl Spitteler"
     ]
-  },
+  }
+]
+[
   {
     "year": 1919,
     "prize": "peace",
     "winners": [
       "Woodrow Wilson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1919,
     "prize": "physics",
     "winners": [
       "Johannes Stark"
     ]
-  },
+  }
+]
+[
   {
     "year": 1919,
     "prize": "medicine",
     "winners": [
       "Jules Bordet"
     ]
-  },
+  }
+]
+[
   {
     "year": 1918,
     "prize": "chemistry",
     "winners": [
       "Fritz Haber"
     ]
-  },
+  }
+]
+[
   {
     "year": 1918,
     "prize": "physics",
     "winners": [
       "Max Planck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1917,
     "prize": "literature",
@@ -12759,7 +14519,9 @@
     "winners": [
       "Henrik Pontoppidan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1917,
     "prize": "literature",
@@ -12773,35 +14535,45 @@
     "winners": [
       "Henrik Pontoppidan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1917,
     "prize": "physics",
     "winners": [
       "Charles Glover Barkla"
     ]
-  },
+  }
+]
+[
   {
     "year": 1916,
     "prize": "literature",
     "winners": [
       "Verner von Heidenstam"
     ]
-  },
+  }
+]
+[
   {
     "year": 1915,
     "prize": "chemistry",
     "winners": [
       "Richard Willstätter"
     ]
-  },
+  }
+]
+[
   {
     "year": 1915,
     "prize": "literature",
     "winners": [
       "Romain Rolland"
     ]
-  },
+  }
+]
+[
   {
     "year": 1915,
     "prize": "physics",
@@ -12815,7 +14587,9 @@
     "winners": [
       "Lawrence Bragg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1915,
     "prize": "physics",
@@ -12829,63 +14603,81 @@
     "winners": [
       "Lawrence Bragg"
     ]
-  },
+  }
+]
+[
   {
     "year": 1914,
     "prize": "chemistry",
     "winners": [
       "Theodore W. Richards"
     ]
-  },
+  }
+]
+[
   {
     "year": 1914,
     "prize": "physics",
     "winners": [
       "Max von Laue"
     ]
-  },
+  }
+]
+[
   {
     "year": 1914,
     "prize": "medicine",
     "winners": [
       "Robert Bárány"
     ]
-  },
+  }
+]
+[
   {
     "year": 1913,
     "prize": "chemistry",
     "winners": [
       "Alfred Werner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1913,
     "prize": "literature",
     "winners": [
       "Rabindranath Tagore"
     ]
-  },
+  }
+]
+[
   {
     "year": 1913,
     "prize": "peace",
     "winners": [
       "Henri La Fontaine"
     ]
-  },
+  }
+]
+[
   {
     "year": 1913,
     "prize": "physics",
     "winners": [
       "Heike Kamerlingh Onnes"
     ]
-  },
+  }
+]
+[
   {
     "year": 1913,
     "prize": "medicine",
     "winners": [
       "Charles Richet"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "chemistry",
@@ -12899,7 +14691,9 @@
     "winners": [
       "Paul Sabatier"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "chemistry",
@@ -12913,49 +14707,63 @@
     "winners": [
       "Paul Sabatier"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "literature",
     "winners": [
       "Gerhart Hauptmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "peace",
     "winners": [
       "Elihu Root"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "physics",
     "winners": [
       "Gustaf Dalén"
     ]
-  },
+  }
+]
+[
   {
     "year": 1912,
     "prize": "medicine",
     "winners": [
       "Alexis Carrel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "chemistry",
     "winners": [
       "Marie Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "literature",
     "winners": [
       "Maurice Maeterlinck"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "peace",
@@ -12969,7 +14777,9 @@
     "winners": [
       "Alfred Fried"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "peace",
@@ -12983,63 +14793,81 @@
     "winners": [
       "Alfred Fried"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "physics",
     "winners": [
       "Wilhelm Wien"
     ]
-  },
+  }
+]
+[
   {
     "year": 1911,
     "prize": "medicine",
     "winners": [
       "Allvar Gullstrand"
     ]
-  },
+  }
+]
+[
   {
     "year": 1910,
     "prize": "chemistry",
     "winners": [
       "Otto Wallach"
     ]
-  },
+  }
+]
+[
   {
     "year": 1910,
     "prize": "literature",
     "winners": [
       "Paul Heyse"
     ]
-  },
+  }
+]
+[
   {
     "year": 1910,
     "prize": "physics",
     "winners": [
       "Johannes Diderik van der Waals"
     ]
-  },
+  }
+]
+[
   {
     "year": 1910,
     "prize": "medicine",
     "winners": [
       "Albrecht Kossel"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "chemistry",
     "winners": [
       "Wilhelm Ostwald"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "literature",
     "winners": [
       "Selma Lagerlöf"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "peace",
@@ -13053,7 +14881,9 @@
     "winners": [
       "Paul Henri d'Estournelles de Constant"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "peace",
@@ -13067,7 +14897,9 @@
     "winners": [
       "Paul Henri d'Estournelles de Constant"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "physics",
@@ -13081,7 +14913,9 @@
     "winners": [
       "Ferdinand Braun"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "physics",
@@ -13095,28 +14929,36 @@
     "winners": [
       "Ferdinand Braun"
     ]
-  },
+  }
+]
+[
   {
     "year": 1909,
     "prize": "medicine",
     "winners": [
       "Theodor Kocher"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "chemistry",
     "winners": [
       "Ernest Rutherford"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "literature",
     "winners": [
       "Rudolf Eucken"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "peace",
@@ -13130,7 +14972,9 @@
     "winners": [
       "Fredrik Bajer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "peace",
@@ -13144,14 +14988,18 @@
     "winners": [
       "Fredrik Bajer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "physics",
     "winners": [
       "Gabriel Lippmann"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "medicine",
@@ -13165,7 +15013,9 @@
     "winners": [
       "Paul Ehrlich"
     ]
-  },
+  }
+]
+[
   {
     "year": 1908,
     "prize": "medicine",
@@ -13179,21 +15029,27 @@
     "winners": [
       "Paul Ehrlich"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "chemistry",
     "winners": [
       "Eduard Buchner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "literature",
     "winners": [
       "Rudyard Kipling"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "peace",
@@ -13207,7 +15063,9 @@
     "winners": [
       "Louis Renault"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "peace",
@@ -13221,49 +15079,63 @@
     "winners": [
       "Louis Renault"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "physics",
     "winners": [
       "Albert A. Michelson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1907,
     "prize": "medicine",
     "winners": [
       "Alphonse Laveran"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "chemistry",
     "winners": [
       "Henri Moissan"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "literature",
     "winners": [
       "Giosuè Carducci"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "peace",
     "winners": [
       "Theodore Roosevelt"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "physics",
     "winners": [
       "J.J. Thomson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "medicine",
@@ -13277,7 +15149,9 @@
     "winners": [
       "Santiago Ramón y Cajal"
     ]
-  },
+  }
+]
+[
   {
     "year": 1906,
     "prize": "medicine",
@@ -13291,49 +15165,63 @@
     "winners": [
       "Santiago Ramón y Cajal"
     ]
-  },
+  }
+]
+[
   {
     "year": 1905,
     "prize": "chemistry",
     "winners": [
       "Adolf von Baeyer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1905,
     "prize": "literature",
     "winners": [
       "Henryk Sienkiewicz"
     ]
-  },
+  }
+]
+[
   {
     "year": 1905,
     "prize": "peace",
     "winners": [
       "Bertha von Suttner"
     ]
-  },
+  }
+]
+[
   {
     "year": 1905,
     "prize": "physics",
     "winners": [
       "Philipp Lenard"
     ]
-  },
+  }
+]
+[
   {
     "year": 1905,
     "prize": "medicine",
     "winners": [
       "Robert Koch"
     ]
-  },
+  }
+]
+[
   {
     "year": 1904,
     "prize": "chemistry",
     "winners": [
       "Sir William Ramsay"
     ]
-  },
+  }
+]
+[
   {
     "year": 1904,
     "prize": "literature",
@@ -13347,7 +15235,9 @@
     "winners": [
       "José Echegaray"
     ]
-  },
+  }
+]
+[
   {
     "year": 1904,
     "prize": "literature",
@@ -13361,42 +15251,54 @@
     "winners": [
       "José Echegaray"
     ]
-  },
+  }
+]
+[
   {
     "year": 1904,
     "prize": "physics",
     "winners": [
       "Lord Rayleigh"
     ]
-  },
+  }
+]
+[
   {
     "year": 1904,
     "prize": "medicine",
     "winners": [
       "Ivan Pavlov"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "chemistry",
     "winners": [
       "Svante Arrhenius"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "literature",
     "winners": [
       "Bjørnstjerne Bjørnson"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "peace",
     "winners": [
       "Randal Cremer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "physics",
@@ -13417,7 +15319,9 @@
     "winners": [
       "Marie Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "physics",
@@ -13438,7 +15342,9 @@
     "winners": [
       "Marie Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "physics",
@@ -13459,28 +15365,36 @@
     "winners": [
       "Marie Curie"
     ]
-  },
+  }
+]
+[
   {
     "year": 1903,
     "prize": "medicine",
     "winners": [
       "Niels Ryberg Finsen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "chemistry",
     "winners": [
       "Emil Fischer"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "literature",
     "winners": [
       "Theodor Mommsen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "peace",
@@ -13494,7 +15408,9 @@
     "winners": [
       "Albert Gobat"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "peace",
@@ -13508,7 +15424,9 @@
     "winners": [
       "Albert Gobat"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "physics",
@@ -13522,7 +15440,9 @@
     "winners": [
       "Pieter Zeeman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "physics",
@@ -13536,28 +15456,36 @@
     "winners": [
       "Pieter Zeeman"
     ]
-  },
+  }
+]
+[
   {
     "year": 1902,
     "prize": "medicine",
     "winners": [
       "Ronald Ross"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "chemistry",
     "winners": [
       "Jacobus H. van 't Hoff"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "literature",
     "winners": [
       "Sully Prudhomme"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "peace",
@@ -13571,7 +15499,9 @@
     "winners": [
       "Frédéric Passy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "peace",
@@ -13585,14 +15515,18 @@
     "winners": [
       "Frédéric Passy"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "physics",
     "winners": [
       "Wilhelm Conrad Röntgen"
     ]
-  },
+  }
+]
+[
   {
     "year": 1901,
     "prize": "medicine",

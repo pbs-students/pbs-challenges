@@ -83,15 +83,110 @@ jq '[.prizes[] | select(any(.laureates[]?; .surname != null)) | {year: .year | t
 
 # try simplifying to get rid of null surnames:
 jq '[.prizes[] | select(.laureates[]? | .surname != null)]' NobelPrizes.json
-> this worked - sent to a file and searched for null and it didn't find any. full prizes file
+> thought it worked cuz no nulls, but it has prizes with no last names. :-(
 
 # try using the previous syntax to not get null surnames - same results as above
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> still get null as non-people last names
 
-# maybe the select laureates who's surnames aren't null needs to be where .laureates[] is in winners
+# maybe select laureates who's surnames aren't null needs to be where .laureates[] is in winners
 jq '[.prizes[] | {year: .year | tonumber, prize: .category, winners: select(.laureates[]? | .surname != null) | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 > "winners: "null null"
+
+# try to just get the laureates who have a surname
+jq '.prizes[] | .laureates[]? | .surname != null' NobelPrizes.json > people.json
+> long list of "true"
+
+# maybe use the all function?
+jq '.prizes[] | .laureates[]? | all(.surname != null)' NobelPrizes.json > people.json
+> jq: error (at NobelPrizes.json:0): Cannot index string with string "surname"
+
+# need to ask something after true
+jq '.prizes[] | .laureates[]? | .surname != null | .winners' NobelPrizes.json > people.json
+> Cannot index boolean with string "winners"
 
 # Forget fixing null surnames for now. try to make winners in an array
 jq '[.prizes[] | select(any(.laureates[]?; .surname != null)) | {year: .year | tonumber, prize: .category, [winners: .laureates[] | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
 > jq: error: syntax error, unexpected '['
+
+# try to get # winners
+jq '.prizes[] | {numWinners: .laureates | length}' NobelPrizes.json
+> this may have worked?
+{
+  "numWinners": 3
+}
+{
+  "numWinners": 1
+}
+{
+  "numWinners": 1
+}
+{
+  "numWinners": 1
+}
+{
+  "numWinners": 2
+}
+
+# try to add year and category
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: .laureates | length}]' NobelPrizes.json
+> success (verified .prizes[-2]
+{
+    "year": 1901,
+    "prize": "peace",
+    "numWinners": 2
+  },
+  {
+    "year": 1901,
+    "prize": "physics",
+    "numWinners": 1
+  },
+  {
+    "year": 1901,
+    "prize": "medicine",
+    "numWinners": 1
+  }
+]
+
+# add the winners themselves in
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: .laureates | length, winners: [.laureates]}]' NobelPrizes.json
+> too much data in .laureates. need fn and sn 
+
+# try put fn/sn in last element of array
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: .laureates | length, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> jq: error (at NobelPrizes.json:0): Cannot iterate over null (null)
+> Why on this one but not the one above or the one to beat? both of them work
+
+# simplify again
+jq '.prizes[] | {numWinners: .laureates | length, .laureates[] | "\(.firstname) \(.surname)"}' NobelPrizes.json
+> jq: error: syntax error, unexpected FIELD (Unix shell quoting issues?) at <top-level>, line 1:
+
+
+# the one to beat
+jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+<!--{
+    "year": 1901,
+    "prize": "physics",
+    "winners": [
+      "Wilhelm Conrad Röntgen"
+    ]
+  },
+  {
+    "year": 1901,
+    "prize": "medicine",
+    "winners": [
+      "Emil von Behring"
+    ]
+  }
+]-->
+
+
+
+
+
+
+
+
+
+
+
