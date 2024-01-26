@@ -161,6 +161,15 @@ jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: .laureat
 jq '.prizes[] | {numWinners: .laureates | length, .laureates[] | "\(.firstname) \(.surname)"}' NobelPrizes.json
 > jq: error: syntax error, unexpected FIELD (Unix shell quoting issues?) at <top-level>, line 1:
 
+# asked chatGPT on a simple file how to return .firstname only if there is a .surname
+.laureates[] | select(.surname) | .firstname
+
+jq '[.prizes[] | .laureates[]? | select(.surname) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> null (null) cannot be parsed as a number
+
+# Try it without the stuff above laureates
+jq '[.prizes[] | .laureates[]? | select(.surname) | {winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> Cannot iterate over null (null)
 
 # the one to beat
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
@@ -180,7 +189,7 @@ jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonum
   }
 ]-->
 
-
+.laureates[] | select(.surname) | .firstname
 
 
 
