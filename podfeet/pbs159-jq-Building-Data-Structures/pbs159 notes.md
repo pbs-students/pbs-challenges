@@ -171,7 +171,16 @@ jq '[.prizes[] | .laureates[]? | select(.surname) | {year: .year | tonumber, pri
 jq '[.prizes[] | .laureates[]? | select(.surname) | {winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 > Cannot iterate over null (null)
 
+# example from pbs 157
+jq '.prizes[] | .year, .category, (.laureates[]? | .surname)' NobelPrizes.json
+
+# the order looks wrong to select laureates first
+jq '[.prizes[] |  {year: .year | tonumber, prize: .category, select(.laureates[]? ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> error: syntax error, unexpected '(', expecting '}'
+
+
 # the one to beat
+# still has nulls tho
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 <!--{
     "year": 1901,
@@ -189,7 +198,8 @@ jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonum
   }
 ]-->
 
-.laureates[] | select(.surname) | .firstname
+# suggestion from chatGPT
+jq '.laureates[] | select(.surname) | .firstname' file.json
 
 
 
