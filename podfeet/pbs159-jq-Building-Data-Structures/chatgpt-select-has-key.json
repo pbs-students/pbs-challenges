@@ -1,0 +1,26 @@
+I can help you with skipping dictionaries in an array that don’t have a specific key using jq. 😊
+
+One possible jq query that can do this is:
+
+.[] | select(has("key"))
+
+This query filters the array by selecting only the elements that have a given key. For example, if you have an array like this:
+
+JSON
+
+[
+  {"name": "Alice", "age": 25},
+  {"name": "Bob"},
+  {"name": "Charlie", "age": 30}
+]
+AI-generated code. Review and use carefully. More info on FAQ.
+And you want to skip the dictionaries that don’t have the age key, you can write:
+
+.[] | select(has("age"))
+
+This query will output:
+
+JSON
+
+{"name": "Alice", "age": 25}
+{"name": "Charlie", "age": 30}

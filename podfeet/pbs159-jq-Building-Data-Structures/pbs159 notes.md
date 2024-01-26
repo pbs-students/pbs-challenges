@@ -173,14 +173,23 @@ jq '[.prizes[] | .laureates[]? | select(.surname) | {winners: .laureates[] | ["\
 
 # example from pbs 157
 jq '.prizes[] | .year, .category, (.laureates[]? | .surname)' NobelPrizes.json
+jq '[.prizes[] | {.year: .year | tonumber, prize: .category, winners: .laureates[]?}]' NobelPrizes.json
 
 # the order looks wrong to select laureates first
-jq '[.prizes[] |  {year: .year | tonumber, prize: .category, select(.laureates[]? ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+jq '[.prizes[] |  {year: .year | tonumber, prize: .category, .laureates[]? | select(.surname) | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 > error: syntax error, unexpected '(', expecting '}'
 
+# Asked ChatGPT skip dictionaries in array missing specific key
+.[] | select(has("key")) **NOTE: key isn't .key, it's just the word**
+jq '[.prizes[] | .laureates[]? | select(has("surname"))]' NobelPrizes.json
+> This works to eliminate those dictionaries that have no surname entries!
 
-# the one to beat
-# still has nulls tho
+# use select(has("key")) in the one to beat
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, winners: (.laureates[]? | select(has("surname") | ["\(.firstname) \(.surname)")]}]' NobelPrizes.json
+jq: error: syntax error, unexpected INVALID_CHARACTER (Unix shell quoting issues?)
+
+
+# the one to beat (still has nulls & winners aren't in the same array)
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 <!--{
     "year": 1901,
