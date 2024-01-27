@@ -185,10 +185,61 @@ jq '[.prizes[] | .laureates[]? | select(has("surname"))]' NobelPrizes.json
 > This works to eliminate those dictionaries that have no surname entries!
 
 # use select(has("key")) in the one to beat
-jq '[.prizes[] | {year: .year | tonumber, prize: .category, winners: (.laureates[]? | select(has("surname") | ["\(.firstname) \(.surname)")]}]' NobelPrizes.json
-jq: error: syntax error, unexpected INVALID_CHARACTER (Unix shell quoting issues?)
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, winners: (.laureates[]? | select(has("surname")) | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> jq: error: syntax error, unexpected INVALID_CHARACTER (Unix shell quoting issues?)
 
+# Rearrange the deck chairs
+jq '[.prizes[] | .laureates[]? | select(has("surname")) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> jq: error (at NobelPrizes.json:0): null (null) cannot be parsed as a number
 
+# combine select and has more like pbs157 challenge solution
+jq '[.prizes[] | select(any(.laureates[]?; (has("surname"))) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> jq: error: syntax error, unexpected INVALID_CHARACTER expecting ';' or ')'
+
+# simplify to see if I can find error
+jq '[.prizes[] | select(any(.laureates[]?; (has("surname")))]' NobelPrizes.json
+> jq: error: syntax error, unexpected INVALID_CHARACTER expecting ';' or ')'
+
+#
+jq '[.prizes[] | select(has("surname")]' NobelPrizes.json
+> jq: error: syntax error, unexpected INVALID_CHARACTER, expecting ';' or ')'
+
+# Can I check length of surname when it's not even there?
+jq '[.prizes[] | select(any(.laureates[]?; | (.surname | length != null))) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> jq: error: syntax error, unexpected '|' (Unix shell quoting issues?)
+
+# maybe it's type != null
+jq '[.prizes[] | select(.laureates[].surname | type != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+
+# I GIVE UP ON NULL ENTRIES!
+
+# try to count the surnames
+jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> interesting. the count was correct but it caused there to be two dictionaries for each winner now
+
+# moved square bracket to be after winners:
+jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[] | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> w00t! got the winners into the same array now, but there's still two dictionaries for each prize, EXCEPT when the prize had one winner who didn't have a surname. Now THAT'S curious
+
+{
+    "year": 1901,
+    "prize": "peace",
+    "numWinners": 2,
+    "winners": [
+      "Henry Dunant",
+      "Frédéric Passy"
+    ]
+  },
+  {
+    "year": 1901,
+    "prize": "peace",
+    "numWinners": 2,
+    "winners": [
+      "Henry Dunant",
+      "Frédéric Passy"
+    ]
+  },
+  
 # the one to beat (still has nulls & winners aren't in the same array)
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 <!--{
