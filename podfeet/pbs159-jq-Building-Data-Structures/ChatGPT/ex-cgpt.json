@@ -1,0 +1,21 @@
+{"prizes":[
+{
+  "year": "2007",
+  "category": "peace",
+  "laureates": [
+    {
+      "id": "818",
+      "motivation": "\"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change\"",
+      "share": "2",
+      "firstname": "Intergovernmental Panel on Climate Change"
+    },
+    {
+      "id": "819",
+      "firstname": "Al",
+      "surname": "Gore",
+      "motivation": "\"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change\"",
+      "share": "2"
+    }
+  ]
+}
+]}

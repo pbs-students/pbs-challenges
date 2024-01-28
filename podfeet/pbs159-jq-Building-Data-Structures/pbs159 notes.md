@@ -219,7 +219,7 @@ jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonum
 
 # moved square bracket to be after winners:
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[] | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
-> w00t! got the winners into the same array now, but there's still two dictionaries for each prize, EXCEPT when the prize had one winner who didn't have a surname. Now THAT'S curious
+> w00t! got the winners into the same array now, but there are multiple copies of the same dictionary based on the number of winners. so if 3 winners, there's 3 copies of the dictionary. If one of the winners is not a person, so no surname, they're still in here but those dictionaries are NOT replicated.
 
 {
     "year": 1901,
@@ -240,7 +240,48 @@ jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonum
     ]
   },
   
-# the one to beat (still has nulls & winners aren't in the same array)
+  But only one for:
+  {
+    "year": 2007,
+    "prize": "peace",
+    "numWinners": 2,
+    "winners": [
+      "Intergovernmental Panel on Climate Change null",
+      "Al Gore"
+    ]
+},
+
+# try again to remove null
+jq '[.prizes[] | .laureates[]? | select(has("surname")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[] | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> null (null) cannot be parsed as a number
+
+# try without messing with surname existence
+jq '[.prizes[] | .laureates[]? | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[] | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> null (null) cannot be parsed as a number
+> so that .surname != null is doing SOMETHING but it's not doing what I want it to do
+
+# working with simplified version called 2.json in ChatGPT folder
+jq '.prizes[] | .laureates[]? | select(has(surname))' NobelPrizes.json
+> surname/0 is not defined at <top-level>
+
+jq '.prizes[] | select(any(surname(.laureates[]?)))' 2.json
+> surname/1 is not defined at <top-level>
+
+jq '.prizes[] | select(any(.laureates[]?; has(surname)))' 2.json
+> surname/0 is not defined at <top-level>
+
+=== bart ===
+
+# don't try to filter out null surnames, those are still valid just erase (trim right) the word null
+jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
+> no duplicates, format is good, but the non-laureate non-prizes are still there
+
+# get rid of non-laureates by selecting the prizes that do have laureates
+jq '[.prizes[] | select(has("laureates")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
+>  winner winner chicken dinner
+
+======================================================================================================
+# this WAS the one to beat (still has nulls & winners aren't in the same array)
 jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonumber, prize: .category, winners: .laureates[] | ["\(.firstname) \(.surname)"]}]' NobelPrizes.json
 <!--{
     "year": 1901,

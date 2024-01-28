@@ -1,0 +1,10 @@
+{"prizes":
+	[
+		{"year":"2023","category":"chemistry","laureates":[
+			{"id":"1029","firstname":"Moungi","surname":"Bawendi","motivation":"\"for the discovery and synthesis of quantum dots\"","share":"3"},
+			{"id":"1030","firstname":"Louis","surname":"Brus","motivation":"\"for the discovery and synthesis of quantum dots\"","share":"3"},{"id":"463","firstname":"Fr\u00e9d\u00e9ric","surname":"Passy","motivation":"\"for his lifelong work for international peace conferences, diplomacy and arbitration\"","share":"2"}]}
+		{"year":"1901","category":"physics","laureates":[
+			{"id":"1","firstname":"Wilhelm Conrad","surname":"R\u00f6ntgen","motivation":"\"in recognition of the extraordinary services he has rendered by the discovery of the remarkable rays subsequently named after him\"","share":"1"}]},
+		{"year":"1901","category":"medicine","laureates":[
+			{"id":"293","firstname":"Emil","surname":"von Behring","motivation":"\"for his work on serum therapy, especially its application against diphtheria, by which he has opened a new road in the domain of medical science and thereby placed in the hands of the physician a victorious weapon against illness and deaths\"","share":"1"}]}
+	]}
