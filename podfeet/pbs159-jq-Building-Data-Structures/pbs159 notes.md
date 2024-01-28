@@ -1,4 +1,4 @@
-PBS 159 Challenge
+# PBS 159 Challenge - everything I tried but failed till you see SUCCESS
 
 jq '.prizes[] | .year | tonumber' NobelPrizes.json
 > all of the years of all of the prizes as numbers
@@ -276,7 +276,10 @@ jq '.prizes[] | select(any(.laureates[]?; has(surname)))' 2.json
 jq '[.prizes[] | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
 > no duplicates, format is good, but the non-laureate non-prizes are still there
 
-# get rid of non-laureates by selecting the prizes that do have laureates
+*****************
+# SUCCESS!
+*****************
+# get rid of non-laureates by selecting the prizes that do have laureates using what I learned from ChatGPT
 jq '[.prizes[] | select(has("laureates")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
 >  winner winner chicken dinner
 
