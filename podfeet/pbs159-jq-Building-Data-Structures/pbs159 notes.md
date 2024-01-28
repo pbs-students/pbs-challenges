@@ -1,5 +1,12 @@
 # PBS 159 Challenge - everything I tried but failed till you see SUCCESS
 
+*****************
+# SUCCESS!
+*****************
+# get rid of non-laureates by selecting the prizes that do have laureates using what I learned from ChatGPT
+jq '[.prizes[] | select(has("laureates")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
+>  winner winner chicken dinner
+
 jq '.prizes[] | .year | tonumber' NobelPrizes.json
 > all of the years of all of the prizes as numbers
 
@@ -304,6 +311,21 @@ jq '[.prizes[] | select(.laureates[]? | .surname != null) | {year: .year | tonum
 
 # suggestion from chatGPT
 jq '.laureates[] | select(.surname) | .firstname' file.json
+
+===========BONUS CREDIT===================
+**Purely for bonus credit**, you can avoid the need to trim the space from the end of organisational winners by ensuring it never gets added. One way to achieve this is to combine the following jq functions and operators:
+
+1. The alternate operator (`//`)
+2. The `empty` function — we've not seen it yet, but it takes no arguments and returns absolute nothingness
+3. The `join` function
+
+Note that `["Bob", "Dylan"] | join(" ")` results in `"Bob Dylan"`, but `["Bob"] | join(" ")` results in just `"Bob"`.
+
+# translation to my situation
+# I had to remove " null" so I'll try to to use `empty`
+
+
+
 
 
 
