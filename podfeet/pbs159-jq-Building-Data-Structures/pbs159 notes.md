@@ -324,9 +324,27 @@ Note that `["Bob", "Dylan"] | join(" ")` results in `"Bob Dylan"`, but `["Bob"] 
 # translation to my situation
 # I had to remove " null" so I'll try to to use `empty`
 
+# Starting point - my successful query for part one:
+jq '[.prizes[] | select(has("laureates")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
 
+# in sentence form
+* if laureate doesn't have a key for surname, then return just first name, otherwise return both
 
+# try again to get just laureates who have a surname
+jq '[.prizes[] | select(has("laureates")) | {winners: [.laureates[] | .laureates[]? | select (has("surname")) | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+>  {
+    "winners": []
+  },
 
+# exploded .laureates twice
+jq '[.prizes[] | select(has("laureates")) | {winners: [.laureates[]? | select (has("surname")) | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> worked! I think. 
+
+# add in the rest of the glop from the working solution
+jq '[.prizes[] | select(has("laureates")) | {year: (.year | tonumber), prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | select (has("surname")) | "\(.firstname) \(.surname)"]}]' NobelPrizes.json
+> yes! now I can see Al Gore but not the thing without the surname. it says winners 2 since we count the winners before eliminating those without surname (so this isn't a perfect solution if I wanted to stop here
+
+# Now how to put in the "or" with // to get the ones without a surname
 
 
 
