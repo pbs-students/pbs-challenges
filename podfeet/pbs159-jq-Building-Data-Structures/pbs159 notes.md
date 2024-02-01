@@ -1,11 +1,20 @@
-# PBS 159 Challenge - everything I tried but failed till you see SUCCESS
+# PBS 159 Challenge
 
-*****************
-# SUCCESS!
-*****************
+**********************
+# SUCCESS ON CHALLENGE
+**********************
 # get rid of non-laureates by selecting the prizes that do have laureates using what I learned from ChatGPT
 jq '[.prizes[] | select(has("laureates")) | {year: .year | tonumber, prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | "\(.firstname) \(.surname)" | rtrimstr(" null")]}]' NobelPrizes.json
 >  winner winner chicken dinner
+
+*************************
+# SUCCESS ON EXTRA CREDIT
+*************************
+jq '[.prizes[] | select(has("laureates")) | {year: (.year | tonumber), prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | (select (has("surname")) | "\(.firstname) \(.surname)") // "\(.firstname)"]}]' NobelPrizes.json
+
+********************
+EVERYTHING I TRIED
+********************
 
 jq '.prizes[] | .year | tonumber' NobelPrizes.json
 > all of the years of all of the prizes as numbers
@@ -345,7 +354,8 @@ jq '[.prizes[] | select(has("laureates")) | {year: (.year | tonumber), prize: .c
 > yes! now I can see Al Gore but not the thing without the surname. it says winners 2 since we count the winners before eliminating those without surname (so this isn't a perfect solution if I wanted to stop here
 
 # Now how to put in the "or" with // to get the ones without a surname
-
+jq '[.prizes[] | select(has("laureates")) | {year: (.year | tonumber), prize: .category, numWinners: (.laureates | length), winners: [.laureates[]? | (select (has("surname")) | "\(.firstname) \(.surname)") // "\(.firstname)"]}]' NobelPrizes.json
+> WINNER WINNER CHICKEN DINNER!!!
 
 
 
