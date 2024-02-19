@@ -1,0 +1,21 @@
+# Optional Challenge
+Develop a more advanced searching script that expects three variables:
+
+1. search — a search string to check the laureate names against case-insensitively
+2. minYear — an earliest year a matching prize can have been awarded in.
+3. maxYear — a latest year a matching prize can have been awarded in.
+
+For bonus credit, can you make both year arguments effectively optional?
+
+
+
+# Search script to find earliest year a matching prize can have been awarded 
+# Input JSON Nobel.json
+# Output: all prizes awarded on or after a given year and on or before another year
+# Variables: minYear, maxYear
+
+[
+  .prizes[]? 
+  | select((.year | tonumber >= 1950) 
+      and ((.year | tonumber <= 1955)))
+]
