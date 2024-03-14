@@ -85,9 +85,7 @@
     "prize": "peace",
     "numWinners": 3,
     "winners": [
-      "Ales Bialiatski ",
-      "Memorial",
-      "Center for Civil Liberties"
+      "Ales Bialiatski "
     ]
   },
   {
@@ -193,9 +191,7 @@
     "year": 2020,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "World Food Programme"
-    ]
+    "winners": []
   },
   {
     "year": 2020,
@@ -358,9 +354,7 @@
     "year": 2017,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "International Campaign to Abolish Nuclear Weapons"
-    ]
+    "winners": []
   },
   {
     "year": 2017,
@@ -465,9 +459,7 @@
     "year": 2015,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "National Dialogue Quartet"
-    ]
+    "winners": []
   },
   {
     "year": 2015,
@@ -575,9 +567,7 @@
     "year": 2013,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Organisation for the Prohibition of Chemical Weapons"
-    ]
+    "winners": []
   },
   {
     "year": 2013,
@@ -628,9 +618,7 @@
     "year": 2012,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "European Union"
-    ]
+    "winners": []
   },
   {
     "year": 2012,
@@ -898,7 +886,6 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "Intergovernmental Panel on Climate Change",
       "Al Gore"
     ]
   },
@@ -950,8 +937,7 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "Muhammad Yunus",
-      "Grameen Bank"
+      "Muhammad Yunus"
     ]
   },
   {
@@ -1004,7 +990,6 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "International Atomic Energy Agency",
       "Mohamed ElBaradei"
     ]
   },
@@ -1222,7 +1207,6 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "United Nations",
       "Kofi Annan"
     ]
   },
@@ -1329,9 +1313,7 @@
     "year": 1999,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Doctors Without Borders"
-    ]
+    "winners": []
   },
   {
     "year": 1999,
@@ -1436,7 +1418,6 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "International Campaign to Ban Landmines",
       "Jody Williams"
     ]
   },
@@ -1544,8 +1525,7 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "Joseph Rotblat",
-      "Pugwash Conferences on Science and World Affairs"
+      "Joseph Rotblat"
     ]
   },
   {
@@ -1751,9 +1731,7 @@
     "year": 1991,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Aung San Suu Kyi"
-    ]
+    "winners": []
   },
   {
     "year": 1991,
@@ -1907,9 +1885,7 @@
     "year": 1988,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "United Nations Peacekeeping Forces"
-    ]
+    "winners": []
   },
   {
     "year": 1988,
@@ -2064,9 +2040,7 @@
     "year": 1985,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "International Physicians for the Prevention of Nuclear War"
-    ]
+    "winners": []
   },
   {
     "year": 1985,
@@ -2265,9 +2239,7 @@
     "year": 1981,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Office of the United Nations High Commissioner for Refugees"
-    ]
+    "winners": []
   },
   {
     "year": 1981,
@@ -2477,9 +2449,7 @@
     "year": 1977,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Amnesty International"
-    ]
+    "winners": []
   },
   {
     "year": 1977,
@@ -2690,8 +2660,7 @@
     "prize": "peace",
     "numWinners": 2,
     "winners": [
-      "Henry Kissinger",
-      "Le Duc Tho"
+      "Henry Kissinger"
     ]
   },
   {
@@ -2889,9 +2858,7 @@
     "year": 1969,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "International Labour Organization"
-    ]
+    "winners": []
   },
   {
     "year": 1969,
@@ -3043,9 +3010,7 @@
     "year": 1965,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "United Nations Children's Fund"
-    ]
+    "winners": []
   },
   {
     "year": 1965,
@@ -3131,10 +3096,7 @@
     "year": 1963,
     "prize": "peace",
     "numWinners": 2,
-    "winners": [
-      "International Committee of the Red Cross",
-      "League of Red Cross Societies"
-    ]
+    "winners": []
   },
   {
     "year": 1963,
@@ -3498,9 +3460,7 @@
     "year": 1954,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Office of the United Nations High Commissioner for Refugees"
-    ]
+    "winners": []
   },
   {
     "year": 1954,
@@ -3782,10 +3742,7 @@
     "year": 1947,
     "prize": "peace",
     "numWinners": 2,
-    "winners": [
-      "Friends Service Council",
-      "American Friends Service Committee"
-    ]
+    "winners": []
   },
   {
     "year": 1947,
@@ -3910,9 +3867,7 @@
     "year": 1944,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "International Committee of the Red Cross"
-    ]
+    "winners": []
   },
   {
     "year": 1944,
@@ -4009,9 +3964,7 @@
     "year": 1938,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Nansen International Office for Refugees"
-    ]
+    "winners": []
   },
   {
     "year": 1938,
@@ -4743,9 +4696,7 @@
     "year": 1917,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "International Committee of the Red Cross"
-    ]
+    "winners": []
   },
   {
     "year": 1917,
@@ -4954,9 +4905,7 @@
     "year": 1910,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Permanent International Peace Bureau"
-    ]
+    "winners": []
   },
   {
     "year": 1910,
@@ -5201,9 +5150,7 @@
     "year": 1904,
     "prize": "peace",
     "numWinners": 1,
-    "winners": [
-      "Institute of International Law"
-    ]
+    "winners": []
   },
   {
     "year": 1904,
