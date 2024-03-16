@@ -1,0 +1,20 @@
+[
+  {
+    "id": "158",
+    "firstname": "Gerardus",
+    "surname": "'t Hooft",
+    "motivation": "\"for elucidating the quantum structure of electroweak interactions in physics\"",
+    "share": "2",
+    "organisation": false,
+    "displayName": "Gerardus 't Hooft"
+  },
+  {
+    "id": "766",
+    "firstname": "Alexei",
+    "surname": "Abrikosov",
+    "motivation": "\"for pioneering contributions to the theory of superconductors and superfluids\"",
+    "share": "3",
+    "organisation": false,
+    "displayName": "Alexei Abrikosov"
+  }
+  ]
