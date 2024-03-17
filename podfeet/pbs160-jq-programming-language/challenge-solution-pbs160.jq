@@ -59,9 +59,7 @@
 ## Instead of defining the // years like I did, try to use the jq function `max`.
 # jq '[.prizes[] | .year | tonumber] | min' NobelPrizes.json
 # returns 1901
-
-[
-  .prizes[] 
+  
   | select(
     (.year | tonumber >= 
         ($ARGS.named.minYear 

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "hotdogs",
+    "price": 5.99,
+    "stock": 143,
+    "awarded": "yes"
+  },
+  {
+    "name": "pancakes",
+    "price": 3.10,
+    "stock": 43,
+    "awarded": "yes"
+  },
+  {
+    "name": "waffles",
+    "price": 7.50,
+    "stock": 14,
+    "awarded": "yes"
+  }
+]
