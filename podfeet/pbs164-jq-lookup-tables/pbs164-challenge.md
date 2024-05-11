@@ -7,3 +7,7 @@ For bonus credit, update your filter to make use of the breaches data file from 
 # My Approach
 
 Have to have the breach in our demo data sate hibp-pbs.demo.json and since he mentioned LinkedIn, might as well use that.
+
+# bonus
+
+select(any(.value
