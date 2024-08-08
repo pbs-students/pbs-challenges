@@ -22,14 +22,13 @@
      # select only users with "LinkedIn" - does this do “contains”?
      | select(any(.value[]; . == ("LinkedIn"))
      
-     # select only “Dataclasses” that contain “Passwords”
-     | select(any(.Dataclasses contains("Passwords"))
+     # additionally select only “Dataclasses” that contain “Passwords”
+     and ($breachDetails[0][.].Dataclasses | contains["Passwords"])
      
      # filter out just the key
      # | .key
      # Successfully exports an array with just "mwkelly" inside
      
-     ]
-]
+  ]
 
 # run with jq -r -f jq-pbs164-bonus.jq --slurpfile $breachDetails hibp-breaches-202040329.json ./bart-pbs164/hibp-pbs.demo.json
