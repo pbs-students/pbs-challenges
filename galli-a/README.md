@@ -209,3 +209,120 @@ outputs
 	1,000 x  3 =  3,000
 	1,000 x  4 =  4,000
 	1,000 x  5 =  5,000
+
+## [Episode 152 of X — Bash: `xargs` & Easier Arithmetic](https://pbs.bartificer.net/pbs152)
+
+### Optional Challenge
+
+Update your solution to the PBS 151 challenge to make use of arithmetic expressions for all your calculations. Also re-evaluate your code to see if there are any places where using `xargs` could simplify your code.
+
+### Solution
+
+The solution is in the file `pbs152-challenge_solution.sh`.
+
+Apart from copying Bart's handling of the pager options, the only improvement is the handling of negative values for the input, left as a drawback in the previous solution. After some investigation, I took a leaf out of `git`'s book, as explained in [episode 106](https://pbs.bartificer.net/pbs106.html#retrieving-a-file-from-the-past-with-git-checkout) of PBS, where it is explained that `git` uses a special `--` flag to indicate when to move between two different types of arguments.
+
+So now my solution is able to accept negative values as input, provided it is preceded by the special `--` flag which, if present, **must** be after all other flags.
+
+So, in the base case running
+
+	./pbs152-challenge_solution.sh 2
+
+outputs
+
+	2 x  1 =  2
+	2 x  2 =  4
+	2 x  3 =  6
+	2 x  4 =  8
+	2 x  5 = 10
+	2 x  6 = 12
+	2 x  7 = 14
+	2 x  8 = 16
+	2 x  9 = 18
+	2 x 10 = 20
+
+but
+
+	./pbs152-challenge_solution.sh -2
+
+results in an error:
+
+	Usage: pbs152-challenge_solution.sh [-s START_VALUE] [-e END_VALUE] -- base_number
+
+which can be solved using the `--` flag:
+
+	./pbs152-challenge_solution.sh -- -2
+
+<!-- -->
+
+	-2 x  1 =  -2
+	-2 x  2 =  -4
+	-2 x  3 =  -6
+	-2 x  4 =  -8
+	-2 x  5 = -10
+	-2 x  6 = -12
+	-2 x  7 = -14
+	-2 x  8 = -16
+	-2 x  9 = -18
+	-2 x 10 = -20
+
+and, of course, the `-s` and `-e` optional parameters are retained:
+
+	./pbs152-challenge_solution.sh -s -3 -e 12 -- -2
+
+<!-- -->
+
+	-2 x -3 =   6
+	-2 x -2 =   4
+	-2 x -1 =   2
+	-2 x  0 =   0
+	-2 x  1 =  -2
+	-2 x  2 =  -4
+	-2 x  3 =  -6
+	-2 x  4 =  -8
+	-2 x  5 = -10
+	-2 x  6 = -12
+	-2 x  7 = -14
+	-2 x  8 = -16
+	-2 x  9 = -18
+	-2 x 10 = -20
+	-2 x 11 = -22
+	-2 x 12 = -24
+
+The other main difference with respect to Bart's solution is in how the maximum field length for multiplier and result are determined. Since we are using `seq` to create the array of multipliers, and we are only using integer numbers, it is *guaranteed* that largest number, for both multiplier and result, will be in correspondance to one the minimum or maximum values for the multiplier, since either of them can be negative. Therefore, instead of looping through all the sequence to find the widest fieeld, and then looping once again to calculate the results and create the table, I calculate the field width only for the two extremes, and take the maximum as appropriate.
+
+I also kept the possibility of piping from `STDIN`, just in case.
+
+	echo 2 | ./pbs152-challenge_solution.sh
+
+results in
+
+	2 x  1 =  2
+	2 x  2 =  4
+	2 x  3 =  6
+	2 x  4 =  8
+	2 x  5 = 10
+	2 x  6 = 12
+	2 x  7 = 14
+	2 x  8 = 16
+	2 x  9 = 18
+	2 x 10 = 20
+
+and  interestingly,
+
+	echo -2 | ./pbs152-challenge_solution.sh
+
+works as expected, even without specifying the `--` flag
+
+	-2 x  1 =  -2
+	-2 x  2 =  -4
+	-2 x  3 =  -6
+	-2 x  4 =  -8
+	-2 x  5 = -10
+	-2 x  6 = -12
+	-2 x  7 = -14
+	-2 x  8 = -16
+	-2 x  9 = -18
+	-2 x 10 = -20
+
+although it is not clear to me why that is.
