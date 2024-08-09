@@ -87,3 +87,16 @@ Update the breakfast menu script to it can optionally accept an argument — a l
 ### Solution
 
 The solution is in the file `pbs148-challenge_solution.sh`.
+
+## [Episode 149 of X — Bash: Better Arguments with POSIX Special Variables and Options](https://pbs.bartificer.net/pbs149)
+
+### Optional Challenge
+
+Update the breakfast menu script so it accepts two options:
+
+1) `-l LIMIT` where `LIMIT` is the maximum number of items that can be ordered, which must be a whole number greater than or equal to one
+2) `-s` to request some snark
+
+### Solution
+
+Not a native speaker, so not sure how to handle "snark" in messages...
