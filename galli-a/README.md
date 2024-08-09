@@ -142,3 +142,70 @@ In all cases, it is possible to redirect the final output to a file:
 	echo "coffee\ntea\norange juice" | ./pbs150-challenge_solution.sh -m - > order.txt
 
 while, at the same time, using the terminal for interaction with user.
+
+## [Episode 151 of X — Bash: Printf and More](https://pbs.bartificer.net/pbs151)
+
+### Optional Challenge
+
+Write a script to render multiplication tables in a nicely formatted table. Your script should:
+
+1) Require one argument — the number to render the table for
+2) Default to multiplying the number given by 1 to 10 inclusive
+3) Accept the following two optional arguments:
+	* `-m` to specify a minimum value, replacing the default of 1
+	* `-M` to specify a maximum value, replacing the default of 10
+
+### Solution
+
+The solution is in the file `pbs151-challenge_solution.sh`.
+
+There are two points of attention. The first one is the management of the ouput. I added a threshold to the maximum number of lines to be displayed before moving to the pager, but this is hard-coded in the script:
+
+	MAX_LINES_NO_PAGER=10
+
+At the end of the script, I check for both redirection and number of lines, so that I can pipe to the pager or not:
+
+	# check number of lines in output
+	num_output_lines=$(printf "%s" "$output_string" | wc -l | xargs)
+	if [[ $num_output_lines -gt $MAX_LINES_NO_PAGER ]] && [[ -t 1 ]]
+	then
+		# for output longer than limit, pipe to pager
+		printf "%s" "$output_string" | less
+	else
+		# for shorter output, or if we are not redirecting, print directly
+		printf "%s" "$output_string"
+	fi
+
+Not really satisfactory, will have to look for a better way.
+
+The other point is much more subtle: the script uses the first non-optional arguments as the base number for the multiplication table. It also uses `getopts` to handle the optional arguments. If a negative number is passed, it will be intercepted by `getopts`, since it starts with a `-`, and will be treated as a non-valid option. For now, only positive numbers are accepted as valid inputs.
+
+Another caveat: having my locale set to Italian, I do not have by default the thousands separator. So despite having the script account for them, I don't see them in the result unless I set a different locale when running the script.
+
+Running
+
+	./pbs151-challenge_solution.sh -m -1 -M 5 1000
+
+outputs
+
+	1000 x -1 = -1000
+	1000 x  0 =     0
+	1000 x  1 =  1000
+	1000 x  2 =  2000
+	1000 x  3 =  3000
+	1000 x  4 =  4000
+	1000 x  5 =  5000
+
+while running
+
+	env LC_ALL=en_US.UTF-8 ./pbs151-challenge_solution.sh -m -1 -M 5 1000
+
+outputs
+
+	1,000 x -1 = -1,000
+	1,000 x  0 =      0
+	1,000 x  1 =  1,000
+	1,000 x  2 =  2,000
+	1,000 x  3 =  3,000
+	1,000 x  4 =  4,000
+	1,000 x  5 =  5,000
