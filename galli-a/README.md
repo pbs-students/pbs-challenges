@@ -326,3 +326,21 @@ works as expected, even without specifying the `--` flag
 	-2 x 10 = -20
 
 although it is not clear to me why that is.
+
+## [Episode 153 of X — Bash: `xargs` & Easier Arithmetic](https://pbs.bartificer.net/pbs153)
+
+### Optional Challenge
+
+Finally, if you’d like to put your new-found function writing skills to the test, update your multiplication table script to replace duplicated code blocks with functions.
+
+### Solution
+
+The solution is in the file `pbs153-challenge_solution.sh`.
+
+I created three functions, saved in the file `utility_functions.sh`.
+
+The first function is called `is_integer_number`, and is used to check whether a single input is an integer number (either positive or negative) or not. In this case, only the first input is considered, and all others inputs are discarded. The function can accept either an argument, or a value from `STDIN`, and does not have any flags.
+
+The second function is called `is_number`, and is similar to the first one, except that it accepts non-integer numbers, i.e. with a decimal part, again either positive or negative.
+
+The third function is called `find_max`, and is used to identify the maximum value among all the input arguments, discarding those that are not numbers. Uses `is_number` to detect valid arguments, and accepts a flag to display warnings for any non-valid arguments.
