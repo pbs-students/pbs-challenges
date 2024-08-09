@@ -1,0 +1,14 @@
+# this file contains the list of options (menu items) for the script `challenge.sh`
+
+ # sweets
+pancakes
+waffles
+
+ # savory
+eggs
+bacon
+
+ # drinks
+tea
+coffee
+orange juice

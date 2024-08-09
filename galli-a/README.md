@@ -100,3 +100,45 @@ Update the breakfast menu script so it accepts two options:
 ### Solution
 
 Not a native speaker, so not sure how to handle "snark" in messages...
+
+## [Episode 150 of X — Bash: Better Arguments with POSIX Special Variables and Options](https://pbs.bartificer.net/pbs150)
+
+### Optional Challenge
+
+Update your challenge solution from last time so it can ingest its menu in three ways:
+
+1) Default to reading the menu from a file named `menu.txt` in the same folder as the script.
+2) Read the menu from `STDIN` with the optional argument `-m -`.
+3) Read the menu from a file with the optional argument `-m path_to_file.txt`
+
+Regardless of where the menu is coming from, always present the menu interactively, i.e., the user always has to choose using the keyboard.
+
+### Solution
+
+The solution is in the file `pbs150-challenge_solution.sh`.
+
+It can be used in several ways, apart from the `-s` flag and `-l` option from last episode.
+
+By default reads from `menu.txt`, so running:
+
+	./pbs150-challenge_solution.sh
+
+will duse that file as a source.
+
+By running:
+
+	./pbs150-challenge_solution.sh -m breakfast_menu.txt
+
+another file will be used.
+
+Finally, it can be called passing a list of items:
+
+	echo "coffee\ntea\norange juice" | ./pbs150-challenge_solution.sh -m -
+
+and it will use those as source.
+
+In all cases, it is possible to redirect the final output to a file:
+
+	echo "coffee\ntea\norange juice" | ./pbs150-challenge_solution.sh -m - > order.txt
+
+while, at the same time, using the terminal for interaction with user.
