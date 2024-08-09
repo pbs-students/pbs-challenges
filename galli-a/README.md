@@ -76,3 +76,14 @@ The main difficulty was in filling the global array variable from the `while` lo
 	done < <(cat $menu_filename)
 
 Credit to [this answer](https://askubuntu.com/questions/678915/whats-the-difference-between-and-in-bash) on StackOverflow.
+
+
+## [Episode 148 of X — Bash: Potpourri (Subshells, Relative Paths & More)](https://pbs.bartificer.net/pbs148)
+
+### Optional Challenge
+
+Update the breakfast menu script to it can optionally accept an argument — a limit on the number of items you can order.
+
+### Solution
+
+The solution is in the file `pbs148-challenge_solution.sh`.
