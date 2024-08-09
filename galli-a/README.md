@@ -54,3 +54,25 @@ Adding a second argument (again a positive integer number) will change the upper
 	4 × 3 = 12
 	5 × 3 = 15
 
+## [Episode 147 of X — Bash: Arrays](https://pbs.bartificer.net/pbs147)
+
+### Optional challange
+
+Write a script to take the user’s breakfast order.
+
+The script should store the menu items in an array, then use a `select` loop to to present the user with the menu, plus an extra option to indicate they’re done ordering. Each time the user selects an item, append it to an array representing their order. When the user is done adding items, print their order.
+
+For bonus credit, update your script to load the menu into an array from a text file containing one menu item per line, ignoring empty lines and lines starting with a `#` symbol.
+
+### Solution
+
+The solution is in the file `pbs147-challenge_solution.sh`. Went directly for the bonus credit version, so alongside the script there is also the menu definition text file `breakfast_menu.txt`.
+
+The main difficulty was in filling the global array variable from the `while` loop, so used process redirection (`<()`) and an input redirection (`<`) at the end of the loop, like this.
+
+	while read -r line
+	do
+		# ...
+	done < <(cat $menu_filename)
+
+Credit to [this answer](https://askubuntu.com/questions/678915/whats-the-difference-between-and-in-bash) on StackOverflow.
