@@ -1,4 +1,4 @@
-# Programming By Stealth - Challanges solutions
+# Programming By Stealth - Challenges solutions
 
 This folder contains my solutions to the challanges in the instalments for the [Programming By Stealth podcast](https://pbs.bartificer.net), starting from episode 146
 
