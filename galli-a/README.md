@@ -220,9 +220,9 @@ Update your solution to the PBS 151 challenge to make use of arithmetic expressi
 
 The solution is in the file `pbs152-challenge_solution.sh`.
 
-Apart from copying Bart's handling of the pager options, the only improvement is the handling of negative values for the input, left as a drawback in the previous solution. After some investigation, I took a leaf out of `git`'s book, as explained in [episode 106](https://pbs.bartificer.net/pbs106.html#retrieving-a-file-from-the-past-with-git-checkout) of PBS, where it is explained that `git` uses a special `--` flag to indicate when to move between two different types of arguments.
+Apart from copying Bart's handling of the pager options, the only improvement is the handling of negative values for the input, left as a drawback in the previous solution. In fact, argumetns starting with a `-` *can* be used, provided that they are preceded by the `--` flag, which signals to `getopts` to stop processing flags. This is actually a standard feature fo many terminal commands.
 
-So now my solution is able to accept negative values as input, provided it is preceded by the special `--` flag which, if present, **must** be after all other flags.
+So changed my solution to also accept negative number in the regex.
 
 So, in the base case running
 
