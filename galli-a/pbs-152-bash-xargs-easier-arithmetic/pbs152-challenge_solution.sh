@@ -5,7 +5,7 @@
 # 2: invalid value for supported arg
 
 # store the usage string
-usage="Usage: $(basename $0) [-s START_VALUE] [-e END_VALUE] -- base_number"
+usage="Usage: $(basename $0) [-s START_VALUE] [-e END_VALUE] base_number"
 
 # initialize default limits
 start_multiplier=1
@@ -14,7 +14,7 @@ end_multiplier=10
 # accept an optional number (using m) to impose a lower value and
 # another optional numner (using M) to inmpose an upper value
 # save the name of the matched option in $opt (our choice of name)
-while getopts ':s:e:-' opt
+while getopts ':s:e:' opt
 do
     case $opt in
         s)
@@ -45,10 +45,6 @@ do
 				fi
 			fi
             ;;
-        -)
-			# stops reading options, pass the rest as arguments
-			break
-			;;
         ?)
             # render a sane error, then exit
             echo "$usage"  > /dev/tty
