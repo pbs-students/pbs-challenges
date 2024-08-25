@@ -344,3 +344,56 @@ The first function is called `is_integer_number`, and is used to check whether a
 The second function is called `is_number`, and is similar to the first one, except that it accepts non-integer numbers, i.e. with a decimal part, again either positive or negative.
 
 The third function is called `find_max`, and is used to identify the maximum value among all the input arguments, discarding those that are not numbers. Uses `is_number` to detect valid arguments, and accepts a flag to display warnings for any non-valid arguments.
+
+## [Episode 157 of X — Bash: jq: Querying JSON with `jq`](https://pbs.bartificer.net/pbs157)
+
+### Optional Challenge
+
+Can you develop `jq` commands to answer the following questions:
+
+1. What prize did friend of the NosillaCast podcast Dr. Andrea Ghez win? List the year, category, and motivation.
+2. How many laureates were there for each prize? List the year, category, and number of winners for each.
+3. Which prizes were won outright, i.e. not shared? List the year, category, first name, last name, and motivation for each.
+
+### Solution
+
+For each of the questions, there is a separate `bash` script, with name reflecting the question number:
+
+- `pbs147-challange_solution_01.sh`
+- `pbs147-challange_solution_02.sh`
+- `pbs147-challange_solution_03.sh`
+
+Adding a short explanation on how the solutions work.
+
+#### Question 1
+
+    jq '.prizes[] |
+    	select(any(.laureates[]?; .firstname == "Andrea" and .surname == "Ghez")) |
+    	(.year, .category, (.laureates[]? | select(.firstname == "Andrea" and .surname == "Ghez") | .motivation))' \
+    	NobelPrizes.json
+
+For this, started exploding the original array and piping each prize to a `select` function, where we iterate over the `laureates` array (with the `?` to skip zero-length arrays) and use a second input to the `any` function to select only the ones where the first name is "Andrea" surname is "Ghez". Having identified only the relevant prizes, we extract the information using three selectors. The first two are simple: `.year` and `.category`; for the third one, in order to get to the motivation, we need once again to select only the correct laureate, so we use a subgroup to filter the laureates with the correct first and last name, and extract the motivation from those. I used both first and last name in both filters just to make sure to not select any other "Ghez" that might be present.
+
+The result is:
+
+	"2020"
+	"physics"
+	"\"for the discovery of a supermassive compact object at the centre of our galaxy\""
+
+#### Question 2
+
+	jq '.prizes[] |
+		select(any(.laureates; length > 0)) |
+		(.year, .category, (.laureates | length))' \
+		NobelPrizes.json
+
+In this case, I decided to skip the cases where no prize was awarded, so I added a filter on the number of laureates to be greater than 0. After that it was a simple matter to add the requested outputs; as for the previous question, included a grouping for the third piece of information since it is in a sub-array, and this time it must not be exploded, since we want the length of the array of laureates itself, for each prize. The output is too long to be included here.
+
+#### Queston 3
+
+	jq '.prizes[] |
+		select(any(.laureates; length == 1)) |
+		(.year, .category, (.laureates[] | (.firstname, .surname, .motivation)))' \
+		NobelPrizes.json
+
+This is similar to the previous question in the initial filtering, just substituting the condition on the length of the laureates array to have the correct one. For the output, once again need to dig into a sub-array, so a grouping is needed. This time, however, we need information inside each element of the laureates array (even though we know the the array only has a single element), so we can use either `.laureates[]` or `.laureates[0]` with no difference in result. From that element, we extract the remaining information. Again, the output is too long to be included here.
