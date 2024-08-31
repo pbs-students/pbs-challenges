@@ -397,3 +397,25 @@ In this case, I decided to skip the cases where no prize was awarded, so I added
 		NobelPrizes.json
 
 This is similar to the previous question in the initial filtering, just substituting the condition on the length of the laureates array to have the correct one. For the output, once again need to dig into a sub-array, so a grouping is needed. This time, however, we need information inside each element of the laureates array (even though we know the the array only has a single element), so we can use either `.laureates[]` or `.laureates[0]` with no difference in result. From that element, we extract the remaining information. Again, the output is too long to be included here.
+
+## [Episode 158 of X — More Queries (`jq`)](https://pbs.bartificer.net/pbs157)
+
+### Optional Challenge
+
+Find all the laureates awarded their prize for something to do with quantum physics, i.e. the first name, surname, and motivation for each winner where the motivation contains a word that starts with 'quantum' in any case.
+
+### Solution
+
+The solution is included in a `bash` script, named `pbs158-challange_solution.sh`.
+
+The complete solution is:
+
+	jq '.prizes[] |
+    	.laureates[]? |
+    	select(.motivation | test("\\bquantum", "i")) |
+    	(.firstname, .surname // "--", .motivation)' \
+    	NobelPrizes.json
+
+We start by exploding the original array of prizes, and then exploding each respective laureates array, with a question mark to prevent errors when no prize was awarded. We filter with a `select` function using a `test` with regular expression as criteria. The regular expression is "\\bquantum", with the double "\" for escaping, "\b" indicating a word boundary, and the case-insensitive flag to account for any possible spelling, for example if "Quantum" is the first word after a period. After the filtering, for each laureate matching the criteria we extract the first name, the surname, and the motivation. For the surname, we use the alternate operator to account for the possibility of the prize being awarded to a laureate with no surname, or to an organization. In that case, in place of the surname we output "--" as a marker.
+
+In total, there are 23 laureates for quantum *something*.
