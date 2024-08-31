@@ -359,9 +359,9 @@ Can you develop `jq` commands to answer the following questions:
 
 For each of the questions, there is a separate `bash` script, with name reflecting the question number:
 
-- `pbs147-challange_solution_01.sh`
-- `pbs147-challange_solution_02.sh`
-- `pbs147-challange_solution_03.sh`
+- `pbs157-challange_solution_01.sh`
+- `pbs157-challange_solution_02.sh`
+- `pbs157-challange_solution_03.sh`
 
 Adding a short explanation on how the solutions work.
 
