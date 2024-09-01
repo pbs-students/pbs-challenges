@@ -398,7 +398,7 @@ In this case, I decided to skip the cases where no prize was awarded, so I added
 
 This is similar to the previous question in the initial filtering, just substituting the condition on the length of the laureates array to have the correct one. For the output, once again need to dig into a sub-array, so a grouping is needed. This time, however, we need information inside each element of the laureates array (even though we know the the array only has a single element), so we can use either `.laureates[]` or `.laureates[0]` with no difference in result. From that element, we extract the remaining information. Again, the output is too long to be included here.
 
-## [Episode 158 of X — More Queries (`jq`)](https://pbs.bartificer.net/pbs157)
+## [Episode 158 of X — More Queries (`jq`)](https://pbs.bartificer.net/pbs158)
 
 ### Optional Challenge
 
@@ -419,3 +419,131 @@ The complete solution is:
 We start by exploding the original array of prizes, and then exploding each respective laureates array, with a question mark to prevent errors when no prize was awarded. We filter with a `select` function using a `test` with regular expression as criteria. The regular expression is "\\bquantum", with the double "\" for escaping, "\b" indicating a word boundary, and the case-insensitive flag to account for any possible spelling, for example if "Quantum" is the first word after a period. After the filtering, for each laureate matching the criteria we extract the first name, the surname, and the motivation. For the surname, we use the alternate operator to account for the possibility of the prize being awarded to a laureate with no surname, or to an organization. In that case, in place of the surname we output "--" as a marker.
 
 In total, there are 23 laureates for quantum *something*.
+
+## [Episode 159 of X — Building Data Structures (`jq`)](https://pbs.bartificer.net/pbs159)
+
+### Optional Challenge
+
+Using the Nobel Prizes data set as the input, build a simpler data structure to represent just the most important information.
+
+The output data structure should be an array of dictionaries, one for each prize that was actually awarded, indexed by the following fields:
+
+| Field      | Type             | Description                            |
+| ---------- | ---------------- | -------------------------------------- |
+| year       | Number           | The year the prize was awarded.        |
+| prize      | String           | The category the prize was awarded in. |
+| numWinners | Number           | The number of winners.                 |
+| winners    | Array of Strings | The names of all the winners.          |
+
+Years where there were no prizes awarded should be skipped.
+
+As an example, when pretty printed, the entry for the 1907 peace prize should look like this:
+
+	{
+		"year": 1907,
+		"prize": "peace",
+		"numWinners": 2,
+		"winners": [
+			"Ernesto Teodoro Moneta",
+			"Louis Renault"
+		]
+	}
+
+The final output should be in JSON format (all on one line not pretty printed) and should be sent to a file named `NobelPrizeList.json`.
+
+#### A Warning and a Tip
+
+The prizes awarded to organisations rather than specific people are likely to trigger a subtle bug in your output — a trailing space at the end of the name due to the fact that the dictionaries representing laureates that are organisations rather than people have no surnames.
+
+To get full credit you should remove this trailing space using the same technique used to remove the leading and trailing quotation marks in one of the examples in this instalment.
+
+A good test for your logic is the 1904 peace prize, the dictionary for which should look like:
+
+	{
+		"year": 1904,
+		"prize": "peace",
+		"numWinners": 1,
+		"winners": [
+			"Institute of International Law"
+		]
+	}
+
+**Purely for bonus credit**, you can avoid the need to trim the space from the end of organisational winners by ensuring it never gets added. One way to achieve this is to combine the following jq functions and operators:
+
+1. The alternate operator (`//`)
+2. The `empty` function — we’ve not seen it yet, but it takes no arguments and returns absolute nothingness
+3. The `join` function
+
+Note that `["Bob", "Dylan"] | join(" ")` results in `"Bob Dylan"`, but `["Bob"] | join(" ")` results in just `"Bob"`.
+
+### Solution
+
+The solution is included in a `bash` script, named `pbs159-challange_solution.sh`.
+
+The complete solution is:
+
+```bash
+jq -r '[.prizes[] |
+	select(any(.laureates[]?; length > 0)) |
+	{
+		year: .year | tonumber,
+		prize: .category,
+		numWinners: .laureates | length,
+		winners: [.laureates[] | (["\(.firstname)", ("\(.surname // empty)")] | join(" "))]
+	}] | @json' \
+	NobelPrizes.json > NobelPrizeList.json
+```
+
+First of all, we wrap the entire `jq` command chain in a pair of square brackets `[]`, so that the output will be an array. Inside of that, the first action is to explode the original array of prizes, and then filter by selecting only those having more than 0 laureate (i.e. excluding years when the prize was not assigned). The output of the filter is used to build a new dictionary (one dictionary for each prize), so immediately next we wrap anything else inside a pair of curly brackets `{}`. The elements in the dictionary are:
+
+- the year, that needs to be converted to a number
+- the prize, for which we simply take the category of the prize
+- the number of winners, for which we calculate the lenght of the `laureates` array
+- an array with the full names of laureats
+
+For this last piece of information, we need once again to wrap wint square brackets, since we want an array. Inside of those, we explode the array of laureates (and we don't need the `?` since we already know the `laureates` array exists, since we filtered out those prizes with empty array eralier) and construct the string for the full name. The full name is *usually* obtained by `join`ing the `.firstname` and `.surname` fields for each laureate. But in some case the `.surname` is missing, usually for organizations, but in some case people do not have surnames, for example 1991's Peace Nobel Prize winner Aung San Suu Kyi. In those case, `.surname` will return `null`, so we take advantage of the alternate operator `//` to call the `empty` function. So we either will have a 2-element array (containing first name and surname), or a 1-element array (with only the content of `.firstname`). In either case, we pass the array to the `join` function with a single space as separator.
+
+At the end of everything, i.e. after closing both the curly bracket for the dictionary and the square bracket for the overall array, we pass everything to the formatter `@json` to have `jq` output a `json` file. It is important to call the `jq` command with the `-r` option, otherwise the output will contain additional characters, such as escaped double quotes; that would still be valid `json`, but not as lean as it could be.
+
+The script automatically redirects the output to the file `NobelPrizeList.json`, included in the repository alongside the solution.
+
+To double check the solution, let's extract the 1907's Peace prize, using the command:
+
+```bash
+jq '.[] | select(.year == 1907 and .prize == "peace")' NobelPrizeList.json
+```
+
+which returns:
+
+```json
+{
+  "year": 1907,
+  "prize": "peace",
+  "numWinners": 2,
+  "winners": [
+    "Ernesto Teodoro Moneta",
+    "Louis Renault"
+  ]
+}
+```
+
+as requested, and the 1904's Peace prize, using the command:
+
+```bash
+jq '.[] | select(.year == 1904 and .prize == "peace")' NobelPrizeList.json
+```
+
+which returns:
+
+```json
+{
+  "year": 1904,
+  "prize": "peace",
+  "numWinners": 1,
+  "winners": [
+    "Institute of International Law"
+  ]
+}
+```
+
+with no extra space at the end of the string for the winner, as requested.
