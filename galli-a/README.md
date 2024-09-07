@@ -607,3 +607,115 @@ which returns:
 ```
 
 with no extra space at the end of the string for the winner, as requested.
+
+## [Episode 160 of X — jq as a Programming Language (`jq`)](https://pbs.bartificer.net/pbs160)
+
+### Optional Challenge
+
+Develop a more advanced searching script that expects three variables:
+
+1. `search` — a search string to check the laureate names against case-insensitively
+2. `minYear` — an earliest year a matching prize can have been awarded in.
+3. `maxYear` — a latest year a matching prize can have been awarded in.
+
+For bonus credit, can you make both year arguments effectively optional?
+
+### Solution
+
+The first solution, with all the variables required, is contained in the file `pbs160_challenge_solution_01.jq`, and is:
+
+```jq
+# Search the Nobel Prizes data set as published by the Nobel Prize Committee
+# by name, and with a range of years
+# Input:    JSON as published by the Nobel Committee
+# Output:   An array of prize dictionaries
+# Variables:
+#   $search:    The search string, to search in laureates names (both first name and surname)
+#   $minYear    The lower year limit (inclusive) to restrict the results
+#   $maxYear    The upper year limit (inclusive) to restrict the results
+[
+    .prizes[]
+    | select((.year | tonumber) >= ($minYear | tonumber))
+    | select((.year | tonumber) <= ($maxYear | tonumber))
+    | select(any(.laureates[]?;
+        "\(.firstname) \(.surname)"
+        | ascii_downcase
+        | contains($search | ascii_downcase)
+    ))
+]
+```
+
+It is basically the same as the last example in the show notes, but with added two additional `select` filters, to check the prize years, against the minimum and maximum passed as input. The `year` key must be converted to a number because it is encoded as a string in the original `json` file. The variables `$minYear` and `$maxYear` are converted to numbers as well, to allow users to pass them using either `--arg` or `--argjson`, as they prefer.
+
+To test it, since we already know that searching for 'Curie' yields 3 prizes, awarded in 1903, 1911, and 1935, we can call `jq` with this command:
+
+```bash
+jq --from-file challenge_solution_01.jq --arg search Curie --argjson minYear 1910 --argjson maxYear 1920 NobelPrizes.json
+```
+
+that, as expected, only returns one prize, the one for 1911.
+
+For making the variable optional, we observe that piping to `select(true)` is like not filtering at all, so that all elements are passed through. So we can find a chain of functions to yield `true` when a variable is not passed as input. This can be done by using the `has` function on the `$ARGS.named` object, and negating the result:
+
+```jq
+($ARGS.named | has("minYear") | not)
+```
+
+This evaluates to `true` when `minYear` is not present in `$ARGS.named`, and to false when it is. In this second case, we can use the `//` operator to use the select criteria in the original solution:
+
+```jq
+select(($ARGS.named | has("minYear") | not) // ((.year | tonumber) >= ($ARGS.named.minYear | tonumber)))
+```
+
+so that when the variable is not passed, the filter passes everythin, while when the variable is passed, only the prizes matching the criteria are passed on by the filter.
+
+The full solution is therefore:
+
+```jq
+# Search the Nobel Prizes data set as published by the Nobel Prize Committee
+# by name, and optionally with a minimum and/or maximum year
+# Input:    JSON as published by the Nobel Committee
+# Output:   An array of prize dictionaries
+# Variables:
+#   $search:    The search string, to search in laureates names (both first name and surname)
+#   $minYear    Optional: the lower year limit (inclusive) to restrict the results
+#   $maxYear    Optional: the upper year limit (inclusive) to restrict the results
+[
+    .prizes[]
+    | select(($ARGS.named | has("minYear") | not) // ((.year | tonumber) >= ($ARGS.named.minYear | tonumber)))
+    | select(($ARGS.named | has("maxYear") | not) // ((.year | tonumber) <= ($ARGS.named.maxYear | tonumber)))
+    | select(any(.laureates[]?;
+        "\(.firstname) \(.surname)"
+        | ascii_downcase
+        | contains($search | ascii_downcase)
+    ))
+]
+```
+
+and is included in file `pbs160_challenge_solution_02.jq`.
+
+We can test by calling
+
+```bash
+jq --from-file challenge_solution_02.jq --arg search Curie NobelPrizes.json
+```
+
+with no optional variable to yield all 3 prizes;
+
+```bash
+jq --from-file challenge_solution_02.jq --arg search Curie --argjson minYear 1910 --argjson maxYear 1920 NobelPrizes.json
+```
+
+outputs just 1 of the prizes (1911);
+
+```bash
+jq --from-file challenge_solution_02.jq --arg search Curie --argjson minYear 1910 NobelPrizes.json
+```
+
+outputs just 2 of the prizes (1911 and 1935); and
+
+```bash
+jq --from-file challenge_solution_02.jq --arg search Curie --argjson maxYear 1920 NobelPrizes.json
+```
+
+outputs just 2 of the prizes (1903 and 1911)
