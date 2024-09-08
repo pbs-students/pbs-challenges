@@ -719,3 +719,76 @@ jq --from-file challenge_solution_02.jq --arg search Curie --argjson maxYear 192
 ```
 
 outputs just 2 of the prizes (1903 and 1911)
+
+## [Episode 161 of X — Maths, Assignment & String Manipulation (`jq`)](https://pbs.bartificer.net/pbs161)
+
+### Optional Challenge
+
+Write a jq script that will take as its input the Nobel Prizes data set (`NobelPrizes.json`) and sanitises it using the various assignment operators to achieve the following changes:
+
+1. Add a boolean key named `awarded` to every prize dictionary to indicate whether or not it was awarded.
+2. Ensure all prize dictionaries have a `laureates` array. It should be empty for prizes that were not awarded.
+3. Add a boolean key named `organisation` to each laureate dictionary, indicating whether or not the laureate is an organisation rather than a person.
+4. Add a key named `displayName` to each laureate dictionary. For people, it should contain their first & last names, and for organisations, just the organisation name.
+
+### Solution
+
+The full solution is contained in the file TKTKTK, and is reported here:
+
+```jq
+# Sanitises the Nobel Prizes data set as published by the Nobel Prize Committee
+# Input:    JSON as published by the Nobel Committee
+# Output:   the sanitised JSON, in particular
+#   - add a boolean key named `awarded` to every prize dictionary,
+#       to indicate whether or not it was awarded.
+#   - ensure all prize dictionaries have a `laureates` array.
+#       It should be empty for prizes that were not awarded.
+#   - add a boolean key named `organisation` to each laureate dictionary,
+#       indicating whether or not the laureate is an organisation rather than a person.
+#   - add a key named `displayName` to each laureate dictionary. 
+#       For people, it should contain their first & last names, 
+#       and for organisations, just the organisation name.
+#   - convert the year to number
+
+[
+    .prizes[]
+    # the awarded prizes have a `laureates` key
+    | .awarded = has("laureates")
+    # for prizes not awarded, the laureates key is not present, so it would
+    # return `null` when called. We either reassign it to itself if it is present,
+    # or an empty array if it is `null` 
+    | .laureates //= []
+    # to identify organizations, we can check whether or not the laureate has
+    # a surname. However, there are two edge cases, for people who only have
+    # a first name, namely "Aung San Suu Kyi" and "Le Duc Tho"
+    | .laureates[] |= (.organisation = ((has("surname") | not) 
+        and (.firstname != "Aung San Suu Kyi")
+        and (.firstname != "Le Duc Tho")))
+    # create a new key `displayname` for each laureate, containing
+    # both first name and surname (if the latter is present)
+    | .laureates[] |= (.displayname = ([.firstname, (.surname // empty)] | join(" ")))
+    | .year = (.year | tonumber)
+] | @json
+```
+
+First of all, the output should again be an array of objects, so we enclose the whole filter in `[]`. Inside those, we start by exploding the array of prizes, in order to process each individual one.
+
+For the `awarded` key, we can check whether the prize doesn't have a `laureates` key. We assing the result of that check to the new `awarded` key, so we use the `=` operator.
+
+For adding the `laureates` key when missing, we can simply update the key overall, using the `|=` operator; in fact, we will use the `//=` operator, so that we can differentiate the value between present and missing. In particular, the assignment we use is `.laureates //= []` so that when it is already present it is passed unchanged, whereas when it is missing it will be assigned an empty array.
+
+For the `organisation` key, we first have to explode the `laureates` array for each prize, and update its value. The naïve method would be to check whether or not the laureate has a `surname` key, sice organization are only recorded with a first name. However, there are two edge cases in the dataset: Aung San Suu Kyi and Le Duc Tho, winners of the Peace prize in 1991 and 1973 respectively, do *not* have a surname (at least in the dataset; this appears to be correct for the former, but not for the latter, whose surname should be Lê). In any case, we have to add the two additional conditions to account for those, and correctly set them as *not* organisations. We need to update the 
+
+For the `displayname`, we can simply reuse the logic of joining an array containing `.firstname` as the first element and `(.surname // empty)` as the second element with a single space. Again, we need to update the value of each item in the `laureates` array, as for the previous key.
+
+While we are at it, we also converted the year to number.
+
+Finally, the whole dataset is converted to JSON format with a `@json` formatter.
+
+The solution can be called with the command:
+
+```bash
+jq -r --from-file challenge_solution.jq NobelPrizes.json > NobelPrizes_clean.json
+```
+
+The resulting file is includeed.
