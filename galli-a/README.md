@@ -733,7 +733,7 @@ Write a jq script that will take as its input the Nobel Prizes data set (`NobelP
 
 ### Solution
 
-The full solution is contained in the file TKTKTK, and is reported here:
+The full solution is contained in the file `pbs161_challenge_solution.jq`, and is reported here:
 
 ```jq
 # Sanitises the Nobel Prizes data set as published by the Nobel Prize Committee
@@ -792,3 +792,58 @@ jq -r --from-file challenge_solution.jq NobelPrizes.json > NobelPrizes_clean.jso
 ```
 
 The resulting file is includeed.
+
+## [Episode 162 of X — Altering Arrays & Dictionaries (`jq`)](https://pbs.bartificer.net/pbs162)
+
+### Optional Challenge
+
+Build an alphabetical sorted list with the names of all laureates. The list should not contain duplicates, and it should use sensible display names as per the previous challenge.
+
+For bonus credit, can you sort the list so humans get sorted on surname rather than first name, but without affecting how each name is displayed?
+
+### Solution
+
+The full solution is contained in the file `pbs162_challenge_solution.jq`, and is reported here:
+
+```jq
+# creates an array of all Nobel Prize laureates, by extracting the names from the
+# original file publish by the Nobel Prize Committee
+# The output JSON will contain one entry per laureate (even when one laureate
+# was awarded the prize multiple time), sorted by last name for people (excepting
+# the two edge cases) and by first name for organizations 
+# Input:	JSON as published by the Nobel Committee
+# Output:	a JSON file containing only the laureates, de-duplicated and sorted
+
+# the final result must be an array, so enclose everythin in []
+[
+	# we need an intermediate array for deduplication and sorting
+	[
+		# start by exploding the prizes array, to iterate over each prize
+		.prizes[]
+		# extract only the laureates key for each prize, 
+		| .laureates // empty
+		# explode the resulting array, to iterate over the individual laureates
+		| .[]
+		# add a sort_name field, containing the name starting by surname (if present)
+		| .sort_name = ([(.surname // empty), .firstname] | join(" "))
+		# add a displayname field, containing the name starting by first name
+		| .displayname = ([.firstname, (.surname // empty)] | join(" "))
+		# remove motivation and share keys, since those are particular to the prize, not to the laureate
+		| del(.motivation)
+		| del(.share)
+	]
+	# remove duplicates, and sort by sort_name
+	| unique_by(.sort_name)
+	# extract only the display name, from each of the 
+	| .[] | .displayname
+]
+# format as JSON
+| @json
+
+```
+
+We start by enclosing everything in square brackets, since we want to create a JSON array for the result of the processing. Inside of that, we need an intermediate array for de-duplication and sorting, so we again have a pair of square brackets. Then we explode the `prizes` array to get to the individual prizes, and we reach inside to extract the `laureates` array for each, replacing it with `empty` when not present. We immediately explode it, in order to obtain the dictionaries for each of the laureats. To those dictionary, we add a `displayname` as for last time, and a `sort_name` built the same way, but starting from the `surname` preceding the `firstname` one, instead of the other way around, with the same caveat to substitute `empty` when `surname` is missing. We also remove the `motivation` and `share` keys, since those are specific to the prize, not to the laureates, and will be different when the same laureate is awarded the prize multiple times.
+
+After closing the overall array, we de-duplicate and sort using `unique_by`, passing `sort_name` as the key to sort on. Finally, we explode the array and extract only the `displayname` key, putting it all together to be formatted as JSON.
+
+The resulting JSON file with just the requested name list is `Laureates.json` and is enclosed.
