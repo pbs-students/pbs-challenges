@@ -847,3 +847,174 @@ We start by enclosing everything in square brackets, since we want to create a J
 After closing the overall array, we de-duplicate and sort using `unique_by`, passing `sort_name` as the key to sort on. Finally, we explode the array and extract only the `displayname` key, putting it all together to be formatted as JSON.
 
 The resulting JSON file with just the requested name list is `Laureates.json` and is enclosed.
+
+## [Episode 163 of X — Lookup Tables & Records (`jq`)](https://pbs.bartificer.net/pbs163)
+
+### Optional Challenge
+
+Build a lookup-type dictionary of Nobel Prize records by year.
+
+The basic structure of the solution should be:
+
+```json
+{
+  "1901": [
+    { PRIZE RECORD }
+    …
+    { PRIZE RECORD }
+  ],
+	…
+	"2023": [
+    { PRIZE RECORD }
+    …
+    { PRIZE RECORD }
+  ]
+}
+```
+
+For bonus credit, can you build a two-level lookup by year by category?
+
+The basic structure of the solution should be:
+
+```json
+{
+  "1901": {
+    "chemistry": { PRIZE RECORD },
+    …
+    "physics": { PRIZE RECORD }
+  },
+	…
+	"2023": {
+    "chemistry": { PRIZE RECORD },
+    …
+    "physics": { PRIZE RECORD }
+  }
+}
+```
+
+### Solution
+
+#### First part
+
+The full solution to the first part is contained in the file `pbs163_challenge_solution_1.jq`, and is reported here:
+
+```jq
+# creates an lookup table of all Nobel Prizes, indexed by year
+# The output JSON will contain one entry per year, containing all the prizes for that year
+# Input:	JSON as published by the Nobel Committee
+# Output:	a JSON file containing one entry per year, containing all the prizes for that year
+
+# extract the array of prizes from the top-level dictionary
+.prizes
+# group the prizes by year
+| group_by(.year)
+# need to have an array at the end, so enclose in square brackets
+| [
+	# explode the outermost array (the result of group_by, so we have one for each year)
+	.[]
+	# for each year, create a new dictionary
+	| {
+		# extract the year from the first element of the array, since all of them will be the same
+		key: (.[0].year | tostring),
+		# for the value, we simply explode the original entry
+		value : [
+			# and each element is one of the original entries
+			.[]
+		]
+	}
+  ]
+# finally, convert into a lookup using the dedicated function
+| from_entries
+| @json
+```
+
+We start by extracting the `prizes` array from the top-level dictionary, and group it by year.
+Then we enclose everything in square brackets, in order to have an array of dictionaries to pass to the `from_entries` function.
+Inside the array, we explode the outernmost array (the result of the group_by, in order to iterate over the years) and for each element we create a new dictionary. As `key` we take the year from the first element (and convert to string, just to make sure) since all years must be the same. As `value` we create a new array (by enclosign in square brackets) the exploded result of `group_by`. We could simply take `.`, since it was already an array.
+After building the outernmost array of dictionaries, we pass it to `from_entries` and convert everything to JSON.
+
+We run this using the command:
+
+```bash
+jq -r --from-file NobelPrizes-prizeByYear.jq NobelPrizes.json > NobelPrizes_prizeByYear.json
+```
+
+creating the JSON file `NobelPrizes_prizeByYear.json` included in the solution.
+
+To make sure we did everything right, we can test by using the command:
+
+```bash
+jq -r '."2023"' NobelPrizes_prizeByYear.json
+```
+
+whose output is, as expected, the single record for the prizes in year 2023.
+
+#### Second part
+
+For the second part, the logic is very similar. The solution is included in the file `pbs163_challenge_solution_2.jq`, and is reported here:
+
+```jq
+# creates an lookup table of all Nobel Prizes, indexed by year
+# The output JSON will contain one entry per year, containing all the prizes for that year
+# Input:	JSON as published by the Nobel Committee
+# Output:	a JSON file containing one entry per year, containing all the prizes for that year
+
+# extract the array of prizes from the top-level dictionary
+.prizes
+# group the prizes by year
+| group_by(.year)
+# need to have an array at the end, so enclose in square brackets
+| [
+	# explode the outermost array (the result of group_by, so we have one for each year)
+	.[]
+	# for each year, create a new dictionary
+	| {
+		# extract the year from the first element of the array, since all of them will be the same
+		key: (.[0].year | tostring),
+		# for the value, we want to group by category
+		value: group_by(.category)
+		# inside of that, we want again an array, so enclose in square brackets
+		| [
+			# we need to explode the output of the second group_by,
+			# in order to have one element for each category
+			.[]
+			# for each category we create a dictionary
+			| {
+				# for the key, we extract the category from the first element (they must all be the same)
+				key: (.[0].category),
+				# for the value, we want an array of elements, so again enclose in square brackets
+				# there is no need to enclose everything in an array, since for each year and category,
+				# there is only one prize in the original data set
+				value: [
+					# every element of the array is one of the original entry in the prizes
+					.[]
+				]
+			}
+		]
+		# convert this second array into a lookup
+		| from_entries
+	}
+  ]
+# finally, convert into a lookup using the dedicated function
+| from_entries
+| @json
+```
+
+The only difference is that for the `value` in the first dictionary, instead of the original entries, we run a second `group_by`, this time by category. We follow with the same logic as before, by enclosing in square brackets to have an array with one element for each cateogry. Then we explode the results from the second group_by and we create one dictionary for each of the elements. `key` is the category of the first one (same logic as before, all the elements must have the same category) and the value is an array of elements.
+In this case, there is no need of gathering in an array, since for each and category only one prize is awarded. But better to make sure.
+Also this second array of dictionaries must be passed to the `from_entries` function to properly create a lookup.
+
+We run this using the command:
+
+```bash
+jq -r --from-file NobelPrizes-prizeByYearCategory.jq NobelPrizes.json > NobelPrizes_prizeByYearCategory.json
+```
+
+creating the JSON file `NobelPrizes_prizeByYearCategory.json` included in the solution.
+
+To make sure we did everything right, we can test by using the command:
+
+```bash
+jq -r '."2023"."physics' NobelPrizes_prizeByYearCategory.json
+```
+whose output is, as expected, the single record for the physics prize in year 2023.
