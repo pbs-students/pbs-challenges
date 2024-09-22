@@ -1018,3 +1018,177 @@ To make sure we did everything right, we can test by using the command:
 jq -r '."2023"."physics' NobelPrizes_prizeByYearCategory.json
 ```
 whose output is, as expected, the single record for the physics prize in year 2023.
+
+## [Episode 164 of X — Working with Lookup Tables (`jq`)](https://pbs.bartificer.net/pbs164)
+
+### Optional Challenge
+
+Write a jq filter that takes as an argument a search string, and filters a HIBP export down to just the users caught up in any breach that matches the search string. The search should be case-insensitive, so `linkedin` should match all three of the breaches at LinkedIn (from 2012, 2021 & 2023).
+
+For bonus credit, update your filter to make use of the breaches data file from HIBP to ignore any breaches that did not expose passwords.
+
+### Solution
+
+#### First part
+
+The full solution to the first part is contained in the file `hibp-filterByBreach_input_01.jq`, and is reported here:
+
+```jq
+# Filter a HIBP export down to just the accounts caught up a given breach
+# Input:    JSON as downloaded from the HIBP service
+# Output:   The original input with the Breaches lookup table filtered down
+# Variables:
+# - $breach:    The name of the breach to filter by
+
+# select only the Breaches element
+.Breaches
+# start by converting the lookup table to a list of entries
+| to_entries
+# we want the output to be an array
+| [
+	# explode the array of entries
+	.[]
+	# values is the list of breaches for each user;
+	# explode it and check each element against the breach passed as input
+	# convert both to lowercase to make the sarch case-insensitive
+	| select(any(.value[]; . | ascii_downcase | contains($breach | ascii_downcase)))
+	# extract only the key (username)
+	| .key
+]
+
+```
+
+We first select the `Breaches` element in the input file, and convert it to the entries format. We want the output to be an array, so we enclose the rest in square brackets. Inside of those, we explode the array of entries, in order to have one element for each user. The elements are dictionaries, where the key `key` is the username, and the key `value` contains an array of breaches for that user. Run the elements through a `select` where we check that any of the breaches match a condition. So we need to explode the `value` array, and each element of this second array (so each breach) is checked to see whether it contains the string passed as argument and called `$breach`. In order to ensure that the comparison is case-insensitive, we pass both `$breach` and the element in the `value` array to `ascii_downcase` to make them lowercase. After the filtering, we collect only the `key` key, i.e. only the username.
+
+For example, running the command
+
+```bash
+jq -f hibp-filterByBreach_input_01.jq --arg breach linkedin hibp-pbs.demo.json
+```
+
+we obtain
+
+```json
+[
+  "mwkelly"
+]
+```
+
+as expected.
+
+#### Second part
+
+For the second part, the overall logic is slightly different. Since we need to check against known breaches that have a specific property (in this case where passwords were leaked) we take advantage of the `in` function to check whether a user as any breach belonging to a *filtered version* of the full list of breaches. We use the input arguments `$breach` as one of the criteria of the filtering.
+
+In particular, the `in` function can check whether a string is among the keys of a dictionary. So we can work with a lookup, whose keys are the breach's names. In order to filter the whole dataset, we can use the following code:
+
+```jq
+# we start from $breachDetails, taking only element 0, since we
+# are passing a single file
+$breachDetails[0]
+# convert the lookup to an array of entries
+| to_entries
+# we need an array to later pass it to `from_entries`, so enclose
+# in []
+| [
+	# explode all the elements in the original entries
+	.[]
+	# select only the ones whose name (a sub-key of the `value` key)
+	# matches the $breach search term; both are converted to lowercase
+	# to make the comparison case-insensitive
+	| select(.value.Name | ascii_downcase | contains($breach | ascii_downcase))
+	# select only the ones whose DataClasses array (a sub-key of the `value` key)
+	# contains "Passwords"
+	| select(any(.value.DataClasses[]; . | contains("Passwords")))
+]
+# rebuild a lookup, whose keys are the names of the breaches in the original
+# $breachDetails data
+| from_entries
+```
+
+This works in the same way as the lookup filtering example in the show notes: we first take only the first element of `$breachDetails`, since we are passing only one file. We convert the lookup into entries using the `to_entries` function, and then we filter, with the usual *explode and catch* technique. For the filtering, we know that each one of the exploded element is a dictionary with the key `key` as the breach's name, and a bunch of data in the `value` key. Most notably, the name of the breach is replicated here, so that is equivalent to access either `.key` or `.value.Name` at this stage. We check it against `$breach`, both converted to lowercase, for a first filtering. Then we pass to a second filtering where we ensure to retain only those breaches whose `DataClasses` array has the element `"Passwords"`. Finally, we pass the final array to `from_entries` to re-create a lookup dictionary whose keys are once again the breaches' names.
+
+The full solution is therefore:
+
+```jq
+# Filter a HIBP export down to just the accounts caught up a given breach
+# Input:    JSON as downloaded from the HIBP service
+# Output:   The original input with the Breaches lookup table filtered down
+# Variables:
+# - $breach:    The name of the breach to filter by
+# - $breachDetails:	An array containing a single entry, the JSON for the
+#                   latest lookup table of HIBP breaches indexed by breach
+#                   name
+
+# update the Breaches lookup table in place
+.Breaches
+# start by converting the lookup table to a list of entries
+| to_entries
+# filter the entries down to just those caught up on the breach passed as input
+| [
+	# explode the array of entries
+	.[]
+	# values is the list of breaches for each user;
+	# explode it and check each element against a dictionary, which is the
+	# filtered version of the $breachDetails data
+	| select(any(.value[]; . | in(
+			(
+				# inside these grouping parentheses (possibly not needed)
+				# we create the filtered version of the $breachDetails data
+				#
+				# we start from $breachDetails, taking only element 0, since we
+				# are passing a single file
+				$breachDetails[0]
+				# convert the lookup to an array of entries
+				| to_entries
+				# we need an array to later pass it to `from_entries`, so enclose
+				# in []
+				| [
+					# explode all the elements in the original entries
+					.[]
+					# select only the ones whose name (a sub-key of the `value` key)
+					# matches the $breach search term; both are converted to lowercase
+					# to make the comparison case-insensitive
+					| select(.value.Name | ascii_downcase | contains($breach | ascii_downcase))
+					# select only the ones whose DataClasses array (a sub-key of the `value` key)
+					# contains "Passwords"
+					| select(any(.value.DataClasses[]; . | contains("Passwords")))
+				]
+				# rebuild a lookup, whose keys are the names of the breaches in the original
+				# $breachDetails data
+				| from_entries
+			)
+		)))
+	# extract only the key (username)
+	.key
+]
+```
+
+The only difference from the first solution is inside the `select` function, where we now check whether any of the breaches for the user is one of the keys in the filtered lookup we build on the fly.
+
+For example, by running
+
+```bash
+jq -f hibp-filterByBreach_input_02.jq --arg breach linkedin --slurpfile breachDetails hibp-breaches-20240329.json hibp-pbs.demo.json
+
+jq -f hibp-filterByBreach_input_02.jq --arg breach linkedinscrape --slurpfile breachDetails hibp-breaches-20240329.json hibp-pbs.demo.json
+
+jq -f hibp-filterByBreach_input_02.jq --arg breach drop --slurpfile breachDetails hibp-breaches-20240329.json hibp-pbs.demo.json
+```
+
+wo obtain, respectively:
+
+```json
+[
+  "mwkelly"
+]
+```
+```json
+[]
+```
+```json
+[
+  "egreen",
+  "mwkelly"
+]
+```
