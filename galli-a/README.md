@@ -1192,3 +1192,285 @@ wo obtain, respectively:
   "mwkelly"
 ]
 ```
+
+## [Episode 165 of X — Variables (`jq`)](https://pbs.bartificer.net/pbs165)
+
+### Optional Challenge
+
+Starting with `pbs164-challengeSolution-Bonus.jq` (or your own bonus credit solution to the previous challenge), update the script to capture the details from every matched breach for every user. For each matching user+breach combination, return a dictionary indexed by:
+
+1. `AccountName`: the user’s email account name
+2. `BreachName`: the name of the matching breach
+3. `BreachTitle`: the title of the matching breach
+4. `BreachedDataClasses`: the list of breached data classes
+
+**Hint**: you’ll need to explode the list of breaches for each user while retaining their account name in a variable.
+
+For bonus credit, update the matching logic to check both the breach title and breach ID for a case-insensitive match against the search string. **Hint**: you’ll need more parentheses and the `or` operator.
+
+### Solution
+
+#### First part
+
+The full solution to the first part is contained in the file `challenge_solution_01.jq`, and is reported here:
+
+```jq
+# Filter a HIBP export down to just the accounts caught up a given breach
+# Input:    JSON as downloaded from the HIBP service
+# Output:   A list of records with the keys
+#	- AccountName: the user’s email account name
+#	- BreachName: the name of the matching breach
+#	- BreachTitle: the title of the matching breach
+#	- BreachedDataClasses: the list of breached data classes
+# Variables:
+# - $breach:    The name of the breach to filter by
+# - $breachDetails:	An array containing a single entry, the JSON for the
+#                   latest lookup table of HIBP breaches indexed by breach
+#                   name
+
+# update the Breaches lookup table in place
+.Breaches
+# start by converting the lookup table to a list of entries
+| to_entries
+# filter the entries down to just those caught up on the breach passed as input
+| [
+	# explode the array of entries
+	.[]
+	# save the username as a variable, for later reuse
+	| .key as $username
+	# values is the list of breaches for each user;
+	# explode it and check each element against a dictionary, which is the
+	# filtered version of the $breachDetails data
+	| .value[]
+	| select(in(
+			(
+				# inside these grouping parentheses (possibly not needed)
+				# we create the filtered version of the $breachDetails data
+				#
+				# we start from $breachDetails, taking only element 0, since we
+				# are passing a single file
+				$breachDetails[0]
+				# convert the lookup to an array of entries
+				| to_entries
+				# we need an array to later pass it to `from_entries`, so enclose
+				# in []
+				| [
+					# explode all the elements in the original entries
+					.[]
+					# select only the ones whose name (a sub-key of the `value` key)
+					# matches the $breach search term; both are converted to lowercase
+					# to make the comparison case-insensitive
+					| select(.value.Name | ascii_downcase | contains($breach | ascii_downcase))
+					# select only the ones whose DataClasses array (a sub-key of the `value` key)
+					# contains "Passwords"
+					| select(any(.value.DataClasses[]; . | contains("Passwords")))
+				]
+				# rebuild a lookup, whose keys are the names of the breaches in the original
+				# $breachDetails data
+				| from_entries
+			)
+		))
+	# build the output dictionary; at this point, '.' is the breach name, already filtered
+	# according to the requirements. So we can use it directly to index inside '$breachDetails'
+	| {
+		"AccountName": $username,
+		"Breachname": .,
+		"BreachTitle": $breachDetails[0][.].Title,
+		"BreachedDataClasses": $breachDetails[0][.].DataClasses
+	}
+]
+
+```
+
+The overall logic is the same as the second solution for the previous episode. The only difference is at the end, where, instead of rebuilding a lookup with the username as the key and then extracting only the usernames, we build a list of dictionaries with the required keys. It is important to notice that at the end of the `select`, `.` is the name of the individual breach (filtered according to the criteria, so only the matching ones will be present), so we can use that to index inside `$breachDetails`. The username was saved before descending into the least of breaches for each user, so that it is available at the end as a variable.
+
+When running, for example
+
+```bash
+jq -f challenge_solution_01.jq --arg breach linkedin --slurpfile breachDetails hibp-breaches-20240414.json hibp-pbs.demo.json
+```
+
+we get the result
+
+```jq
+[
+  {
+    "AccountName": "mwkelly",
+    "Breachname": "LinkedIn",
+    "BreachTitle": "LinkedIn",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  }
+]
+```
+
+while running
+
+```bash
+jq -f challenge_solution_01.jq --arg breach drop --slurpfile breachDetails hibp-breaches-20240414.json hibp-pbs.demo.json
+```
+
+we get
+
+```jq
+[
+  {
+    "AccountName": "egreen",
+    "Breachname": "Dropbox",
+    "BreachTitle": "Dropbox",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  },
+  {
+    "AccountName": "mwkelly",
+    "Breachname": "Dropbox",
+    "BreachTitle": "Dropbox",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  }
+]
+```
+
+#### Second part
+
+The only difference from the first part is how the breaches are filtered in the innermost `select`. Instead of looking just at the `Name` filed, we look also at the `Title`. The two comparison are exactly the same, changing only the starting value.
+
+The solution is included in the file `challenge_solution_02.jq`, and is reported here:
+
+```jq
+# Filter a HIBP export down to just the accounts caught up a given breach
+# Input:    JSON as downloaded from the HIBP service
+# Output:   A list of records with the keys
+#	- AccountName: the user’s email account name
+#	- BreachName: the name of the matching breach
+#	- BreachTitle: the title of the matching breach
+#	- BreachedDataClasses: the list of breached data classes
+# Variables:
+# - $breach:    The name or title of the breach to filter by
+# - $breachDetails:	An array containing a single entry, the JSON for the
+#                   latest lookup table of HIBP breaches indexed by breach
+#                   name
+
+# extract the Breaches lookup table
+.Breaches
+# start by converting the lookup table to a list of entries
+| to_entries
+# filter the entries down to just those caught up on the breach passed as input
+| [
+	# explode the array of entries, one for each user
+	.[]
+	# save the username as a variable, for later reuse
+	| .key as $username
+	# values is the list of breaches for each user;
+	# explode it and check each element against a dictionary, which is the
+	# filtered version of the $breachDetails data
+	| .value[]
+	| select(in(
+			(
+				# inside these grouping parentheses (possibly not needed)
+				# we create the filtered version of the $breachDetails data
+				#
+				# we start from $breachDetails, taking only element 0, since we
+				# are passing a single file
+				$breachDetails[0]
+				# convert the lookup to an array of entries
+				| to_entries
+				# we need an array to later pass it to `from_entries`, so enclose
+				# in []
+				| [
+					# explode all the elements in the original entries
+					.[]
+					# select only the ones whose name (a sub-key of the `value` key)
+					# matches the $breach search term; both are converted to lowercase
+					# to make the comparison case-insensitive
+					| select((.value.Name | ascii_downcase | contains($breach | ascii_downcase))
+						or
+						(.value.Title | ascii_downcase | contains($breach | ascii_downcase)))
+					# select only the ones whose DataClasses array (a sub-key of the `value` key)
+					# contains "Passwords"
+					| select(any(.value.DataClasses[]; . | contains("Passwords")))
+				]
+				# rebuild a lookup, whose keys are the names of the breaches in the original
+				# $breachDetails data
+				| from_entries
+			)
+		)
+	)
+	# build the output dictionary; at this point, '.' is the breach name, already filtered
+	# according to the requirements. So we can use it directly to index inside '$breachDetails'
+	| {
+		"AccountName": $username,
+		"Breachname": .,
+		"BreachTitle": $breachDetails[0][.].Title,
+		"BreachedDataClasses": $breachDetails[0][.].DataClasses
+	}
+]
+```
+
+Running this second solution with the same search parameter as the first one we obtain the same results:
+
+```bash
+jq -f challenge_solution_02.jq --arg breach linkedin --slurpfile breachDetails hibp-breaches-20240414.json hibp-pbs.demo.json
+jq -f challenge_solution_02.jq --arg breach drop --slurpfile breachDetails hibp-breaches-20240414.json hibp-pbs.demo.json
+```
+
+```jq
+[
+  {
+    "AccountName": "mwkelly",
+    "Breachname": "LinkedIn",
+    "BreachTitle": "LinkedIn",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  }
+]
+```
+
+```jq
+[
+  {
+    "AccountName": "egreen",
+    "Breachname": "Dropbox",
+    "BreachTitle": "Dropbox",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  },
+  {
+    "AccountName": "mwkelly",
+    "Breachname": "Dropbox",
+    "BreachTitle": "Dropbox",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  }
+]
+```
+
+Instead, running it with a string present only in the title (not the name), such as `Kayo.moe`, we get
+
+```jq
+[
+  {
+    "AccountName": "mwkelly",
+    "Breachname": "KayoMoe",
+    "BreachTitle": "Kayo.moe Credential Stuffing List",
+    "BreachedDataClasses": [
+      "Email addresses",
+      "Passwords"
+    ]
+  }
+]
+```
+
+while we would get an empty array using the first solution.
