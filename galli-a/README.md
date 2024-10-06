@@ -1474,3 +1474,163 @@ Instead, running it with a string present only in the title (not the name), such
 ```
 
 while we would get an empty array using the first solution.
+
+## [Episode 166 of X — Processing Arrays & Dictionaries sans Explosions (`jq`)](https://pbs.bartificer.net/pbs166)
+
+### Optional Challenge
+
+Use `map`, `map_values`, and `reduce` to enrich a HIBP export like `hibp-pbs.dmo.json` in two ways:
+
+1. Remove the top-level `.Breaches` and `.Pastes` keys, and have the contents of the `.Breaches` lookup table become the top-level element.
+2. Use `map_values` to replace the value of each key in the new top-level lookup table (initially a simple array of breach names) with a dictionary that contains two keys:
+	1. `Breaches` — an array of dictionaries indexed by `Name`, `Title` & `DataClasses`. Use the `map` function to process the entire array in one step.
+	2. `ExposureScore` — a value calculated from the enriched breach details that starts at 0, and adds 1 for each breach the user is caught up in that does not contain passwords, and 10 for each breach that does. Use the `reduce` function to perform this calculation.
+
+### Solution
+
+The full solution to the first part is contained in the file `challenge_solution.jq`, and is reported here:
+
+```jq
+# Convert a HIBP export into a more useful form
+# Input:    JSON as downloaded from the HIBP service
+# Output:   A lookup table indexed by username, with each value being
+#           a dictionary with two keys:
+#           - Breaches: an array of dictionaries indexed by Name, Title, and DataClasses
+#           - ExposureScore: a value indicating the overall seriousness of the breaches 
+#                            the user has been exposed to
+# Variables:
+# - $breachDetails:	An array containing a single entry, the JSON for the
+#                   latest lookup table of HIBP breaches indexed by breach
+#                   name
+
+# extract the Breaches lookup table
+.Breaches
+# loop over each element in the dictionary
+| map_values(
+	# create a dictionary with two keys; at this point, `.` is the list of
+	# breaches for each user
+	{
+		"Breaches": . 
+					# an array of dictionaries, containing
+					# tha Name, Title, and DataClasses for each breach
+					| map({"Name": $breachDetails[0][.].Name,
+						   "Title": $breachDetails[0][.].Title,
+						   "DataClasses": $breachDetails[0][.].DataClasses})
+						,
+		"ExposureSCore": . 
+			# a single value, calculated based on the severity of the list of breaches
+			# for the user; `.` is still the list of breaches, so we can pass it
+			# directly to the `reduce` function
+			|
+			#(reduce .[] as $breach
+			#	# start the accumulator at 0, and for each breach, sum the corresponding value
+			#	(0; . + 
+			#		# the value for each breach must be calculated inside a pair
+			#		# of grouping parentheses
+			#		(
+			#			# since we don't have an if ... else statement
+			#			# we use the alternative operator to assign either 1 or 10
+
+			#			(
+			#				(
+			#					($breachDetails[0][$breach].DataClasses | contains(["Passwords"]) | not) 
+			#					// empty
+			#				) 
+			#				| not // 1
+			#			) // 10
+			#		)
+			#	)
+			#)
+			(reduce .[] as $breach
+				# start the accumulator at 0, and for each breach, sum the corresponding value
+				(0; . + 
+					# the value for each breach must be calculated inside a pair
+					# of grouping parentheses
+					(
+						# since we don't have an if ... else statement
+						# we use the alternative operator to assign either 1 or 10
+						#
+						# this parenthesis will evaluate to either empty (if $breach contains passwords)
+						# or 1 (if it doesn't), therefore we alternate with 10, getting 10 or 1
+						(
+							# this parenthesis will evaluate to either true (if $breach *does not*
+							# contains passwords) or empty (if it does)
+							(
+								($breachDetails[0][$breach].DataClasses | contains(["Passwords"]) | not) 
+								// empty
+							)
+							# if the output of the previous part is empty, the result of this will be
+							# empty as well, since we are passing empty to a pipe.
+							# So, the output of this next line will be either empty
+							# (if the breach contains passwords, since it receives empty from the 
+							# previous pipe), or 1 (if the breach does not contain passwords, since
+							# the previous pipe outputs true, which we negate, and the alternative
+							# operator selects the 1)
+							| not // 1
+						# here we are receiving either empty (if the breach contains passwords)
+						# or 1 (if it doesn't), but unlike in the line above, we are *not*
+						# passing the result to a pipe. Therefore, in this case empty counts
+						# as a falsy value, so in that case the alternative operator outputs
+						# what is on its right side, i.e. 10. In the other case, 1 is truthy,
+						# so it is passed unaltered
+						) // 10 
+					)
+				)
+			)
+	}
+)
+```
+
+and can be run via the command:
+
+```bash
+jq -f challenge_solution.jq --slurpfile breachDetails hibp-breaches-20240518.json hibp-pbs.demo.json
+```
+
+The solution to the first request can be easily accomplished by just selecting the `.Breaches` key in the original dictionary.
+
+For the second request, the first key (`Breaches`) is simple: we can just select the corresponding key in the data available from the loaded file, using `.` as the indexing varaible, since at that stage `.` is the name of the breach (for each user).
+
+The second key is much more complicated. We are basically trying to implement a 
+
+```javascript
+if ($breachDetails[0][$breach].DataClasses has "Passwords") {
+	10
+} else {
+	1
+}
+```
+
+using only the alternative operator. The working of the full pipe is explained in the solution, and is reported here separately
+
+```jq
+(
+	# since we don't have an if ... else statement
+	# we use the alternative operator to assign either 1 or 10
+	#
+	# this parenthesis will evaluate to either empty (if $breach contains passwords)
+	# or 1 (if it doesn't), therefore we alternate with 10, getting 10 or 1
+	(
+		# this parenthesis will evaluate to either true (if $breach *does not*
+		# contains passwords) or empty (if it does)
+		(
+			($breachDetails[0][$breach].DataClasses | contains(["Passwords"]) | not) 
+			// empty
+		)
+		# if the output of the previous part is empty, the result of this will be
+		# empty as well, since we are passing empty to a pipe.
+		# So, the output of this next line will be either empty
+		# (if the breach contains passwords, since it receives empty from the 
+		# previous pipe), or 1 (if the breach does not contain passwords, since
+		# the previous pipe outputs true, which we negate, and the alternative
+		# operator selects the 1)
+		| not // 1
+	# here we are receiving either empty (if the breach contains passwords)
+	# or 1 (if it doesn't), but unlike in the line above, we are *not*
+	# passing the result to a pipe. Therefore, in this case empty counts
+	# as a falsy value, so in that case the alternative operator outputs
+	# what is on its right side, i.e. 10. In the other case, 1 is truthy,
+	# so it is passed unaltered
+	) // 10 
+)
+```
