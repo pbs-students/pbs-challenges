@@ -35,7 +35,7 @@ rangemin=1
 rangemax=10
 
 # Define the usage string on bad input
-usage="Usage: $(basename $0) [-n NUMBER] [-m MINIMUM] [-M MAXIMUM]"
+usage="Usage: $(basename $0) [-m MINIMUM] [-M MAXIMUM][-n NUMBER] "
 
 # Define a regular expression for a whole number to check each value against
 # Optional + or - sign followed by one or more digits from 0 to 9
