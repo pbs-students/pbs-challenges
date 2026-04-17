@@ -29,14 +29,22 @@
       }
 
       /* 
-       *  Define Editable Look and Feel using Custom Properties — THIS IS WHERE YOU SHOULD BE FOCUSING YOUR ATTENTION
+       *  Define Editable Look and Feel using Custom Properties — 
+       * THIS IS WHERE YOU SHOULD BE FOCUSING YOUR ATTENTION
        */
 
+      /* Custom properties for controlling Fonts */
+      @property --heading-font {
+        syntax: "<string>#"; /* A comma-separated list of font names */
+        inherits: true;
+        initial-value: "Montserrat", "sans-serif"; /*the quotation marks are not optional */
+        }
+       
       /* --- YOUR CODE: START --- */
 
       /* Placeholder — REPLACE */
       table {
-        width: 200px;
+        width: 400px;
         border: 1px solid black;
         border-radius: 5px;
         margin: 2rem auto;
@@ -44,7 +52,12 @@
       td {
         padding: 0.25rem;
       }
-
+      th {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-family: var(--heading-font); /* Use the custom property for the heading font */ 
+      }
+      
       /* --- YOUR CODE: END --- */
 
     </style>
