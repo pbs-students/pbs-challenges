@@ -33,7 +33,7 @@
        * THIS IS WHERE YOU SHOULD BE FOCUSING YOUR ATTENTION
        */
 
-      /* Custom properties for controlling Fonts */
+      /* --- FONT PROPERTIES --- */
       @property --heading-font {
         syntax: "<string>#"; /* A comma-separated list of font names */
         inherits: true;
@@ -75,6 +75,15 @@
         syntax: "<color>";
         inherits: true;
         initial-value: red;
+      }
+      button {
+        /* Shadow right/down slight black blur */
+        box-shadow: 4px 4px 4px  black; 
+      }
+      button:hover {
+        /* Remove shadow & outline box on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        outline: 2px solid black;
       }
 
       /* ---DISPLAY PROPERTIES --- */
