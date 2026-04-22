@@ -39,6 +39,11 @@
         inherits: true;
         initial-value: "Montserrat", "sans-serif"; /*the quotation marks are not optional */
         }
+      @property --button-text-size-px {
+        syntax: "<integer>";
+        inherits: true;
+        initial-value: 16;
+      }
       @property --digit-button-color {
         syntax: "<color>";
         inherits: true;
@@ -74,10 +79,15 @@
         inherits: true;
         initial-value: "Montserrat", "sans-serif"; /* the quotation marks are not optional*/
       }
+      @property --display-text-size-px {
+        syntax: "<integer>";
+        inherits: true;
+        initial-value: 20;
+      }
       @property --display-background-color {
         syntax: "<color>";
         inherits: true;
-        initial-value: green;
+        initial-value: #1a4d2e; /* dark green */
       }
       @property --display-text-color {
         syntax: "<color>";
@@ -102,8 +112,15 @@
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
       }
+      button {
+        font-size: var(--button-text-size-px); /* Use the custom property for the button text size */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
       input.display {
         font-family: var(--display-font); /* Use the custom property for the display font */
+        font-size: calc(var(--display-text-size-px) * 2px); /* Use the custom property for the display text size */
         background-color: var(--display-background-color); /* Use the custom property for the display background color */
         color: var(--display-text-color); /* Use the custom property for the display text color */
       }
