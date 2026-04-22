@@ -44,6 +44,31 @@
         inherits: true;
         initial-value: #f4bc8d;
       }
+      @property --operator-button-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: red;
+      }
+      @property --button-text-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: white;
+      }
+      @property --clear-button-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: yellow;
+      }
+      @property --equals-button-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: blue;
+      }
+      @property --backspace-button-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: red;
+      }
        
       /* --- YOUR CODE: START --- */
 
@@ -62,8 +87,25 @@
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
       }
-      /* something with class=number-cell */
-      
+      button.digit {
+        background-color: var(--digit-button-color); /* Use the custom property for the digit button color */
+      }
+      button.operator {
+        color: var(--button-text-color); /* Use the custom property for the button text color */
+        background-color: var(--operator-button-color); /* Use the custom property for the operator button color */
+      }
+      button[data-action="clear"] {
+        background-color: var(--clear-button-color); /* Use the custom property for the operator button color */
+      }
+      button[data-action="calculate"] {
+        background-color: var(--equals-button-color); /* Use the custom property for the operator button color */
+        color: var(--button-text-color)
+      }
+      button[data-action="backspace"] {
+        background-color: var(--backspace-button-color); /* Use the custom property for the operator button color */
+        color: var(--button-text-color);
+      }
+
       /* --- YOUR CODE: END --- */
 
     </style>
