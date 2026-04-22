@@ -39,6 +39,8 @@
         inherits: true;
         initial-value: "Montserrat", "sans-serif"; /*the quotation marks are not optional */
         }
+      
+      /* --- BUTTON PROPERTIES --- */
       @property --button-text-size-px {
         syntax: "<integer>";
         inherits: true;
@@ -74,6 +76,8 @@
         inherits: true;
         initial-value: red;
       }
+
+      /* ---DISPLAY PROPERTIES --- */
       @property --display-font {
         syntax: "<string>#";
         inherits: true;
@@ -94,6 +98,11 @@
         inherits: true;
         initial-value: white;
       }
+      @property --space-rem { /* the base unit for padding and margins expressed in the root font's m-width */
+        syntax: "<integer>";
+        inherits: true;
+        initial-value: 1;
+      }
        
       /* --- YOUR CODE: START --- */
 
@@ -112,17 +121,22 @@
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
       }
-      button {
-        font-size: var(--button-text-size-px); /* Use the custom property for the button text size */
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+
+      /* --- DISPLAY --- */
       input.display {
         font-family: var(--display-font); /* Use the custom property for the display font */
         font-size: calc(var(--display-text-size-px) * 2px); /* Use the custom property for the display text size */
         background-color: var(--display-background-color); /* Use the custom property for the display background color */
         color: var(--display-text-color); /* Use the custom property for the display text color */
+        padding: calc(var(--space-rem) * 0.5rem); /* Use the custom property for the space unit */
+      }
+
+        /* --- BUTTONS --- */
+      button {
+        font-size: var(--button-text-size-px); /* Use the custom property for the button text size */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
       }
       button.digit {
         background-color: var(--digit-button-color); /* Use the custom property for the digit button color */
