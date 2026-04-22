@@ -39,6 +39,11 @@
         inherits: true;
         initial-value: "Montserrat", "sans-serif"; /*the quotation marks are not optional */
         }
+      @property --digit-button-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: #f4bc8d;
+      }
        
       /* --- YOUR CODE: START --- */
 
@@ -57,6 +62,7 @@
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
       }
+      /* something with class=number-cell */
       
       /* --- YOUR CODE: END --- */
 
