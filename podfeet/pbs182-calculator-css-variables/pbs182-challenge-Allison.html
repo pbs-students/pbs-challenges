@@ -69,6 +69,21 @@
         inherits: true;
         initial-value: red;
       }
+      @property --display-font {
+        syntax: "<string>#";
+        inherits: true;
+        initial-value: "Montserrat", "sans-serif"; /* the quotation marks are not optional*/
+      }
+      @property --display-background-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: green;
+      }
+      @property --display-text-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: white;
+      }
        
       /* --- YOUR CODE: START --- */
 
@@ -86,6 +101,11 @@
         padding: 0.5rem;
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
+      }
+      input.display {
+        font-family: var(--display-font); /* Use the custom property for the display font */
+        background-color: var(--display-background-color); /* Use the custom property for the display background color */
+        color: var(--display-text-color); /* Use the custom property for the display text color */
       }
       button.digit {
         background-color: var(--digit-button-color); /* Use the custom property for the digit button color */
