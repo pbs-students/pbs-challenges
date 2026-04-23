@@ -39,6 +39,13 @@
         inherits: true;
         initial-value: "Montserrat", "sans-serif"; /*the quotation marks are not optional */
         }
+
+        /* --- COLOUR PROPERTIES --- */
+      @property --body-color {
+        syntax: "<color>";
+        inherits: true;
+        initial-value: orange;
+      }
       
       /* --- BUTTON PROPERTIES --- */
       @property --button-text-size-px {
@@ -90,7 +97,7 @@
       @property --display-font {
         syntax: "<string>#";
         inherits: true;
-        initial-value: "Montserrat", "sans-serif"; /* the quotation marks are not optional*/
+        initial-value: "Courier New", "sans-serif"; /* the quotation marks are not optional*/
       }
       @property --display-text-size-px {
         syntax: "<integer>";
@@ -100,12 +107,12 @@
       @property --display-background-color {
         syntax: "<color>";
         inherits: true;
-        initial-value: #1a4d2e; /* dark green */
+        initial-value: black; /* dark green */
       }
       @property --display-text-color {
         syntax: "<color>";
         inherits: true;
-        initial-value: white;
+        initial-value: rgb(0, 251, 0);
       }
       @property --space-rem { /* the base unit for padding and margins expressed in the root font's m-width */
         syntax: "<integer>";
@@ -129,6 +136,11 @@
         padding: 0.5rem;
         font-size: 1.5rem;
         font-family: var(--heading-font); /* Use the custom property for the heading font */ 
+      }
+
+      /* --- Table Properites --- */
+      table {
+        background-color: var(--body-color); /* Use the custom property for the body background color */
       }
 
       /* --- DISPLAY --- */
